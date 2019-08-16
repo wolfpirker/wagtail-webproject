@@ -4,7 +4,7 @@ from .base import *
 DEBUG = True
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '!n^au+22@-&vgiu^*x!rj@@8r^usttw7ivg1ss9dod7red-r-^'
+SECRET_KEY = '2roek2^(acvamo*f6k8-7_+1urnl00_d@kta+(=)j5f-jf#1_)'
 
 # SECURITY WARNING: define the correct hosts in production!
 ALLOWED_HOSTS = ['*'] 
@@ -22,32 +22,6 @@ CACHES = {
         }
     }
 }
-
-WAGTAILSEARCH_BACKENDS = {
-    'default': {
-        'BACKEND': 'wagtail.search.backends.elasticsearch2',
-        'URLS': ['http://localhost:9200'],
-        'INDEX': 'wagtail',
-        'TIMEOUT': 5,
-        'OPTIONS': {},
-        'INDEX_SETTINGS': {},
-    }
-}
-
-# use not for development:
-#TEMPLATES = [{
-#    'BACKEND': 'django.template.backends.django.DjangoTemplates',
-#    'DIRS': [os.path.join(BASE_DIR, 'templates')],
-#    'OPTIONS': {
-#        'loaders': [
-#            ('django.template.loaders.cached.Loader', [
-#                'django.template.loaders.filesystem.Loader',
-#                'django.template.loaders.app_directories.Loader',
-#            ]),
-#        ],
-#    },
-#}]
-
 
 try:
     from .local import *
