@@ -23,6 +23,17 @@ CACHES = {
     }
 }
 
+#WAGTAILSEARCH_BACKENDS = {
+#    'default': {
+#        'BACKEND': 'wagtail.search.backends.elasticsearch2',
+#        'URLS': ['http://localhost:9200'],
+#        'INDEX': 'wagtail',
+#        'TIMEOUT': 5,
+#        'OPTIONS': {},
+#        'INDEX_SETTINGS': {},
+#    }
+#}
+
 try:
     from .local import *
 except ImportError:
