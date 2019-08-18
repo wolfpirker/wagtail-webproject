@@ -97,6 +97,8 @@ class StandardPage(Page):
         related_name='+',
         help_text='Landscape mode only; horizontal width between 1000px and 3000px.'
     )
+    body = RichTextField(features=["bold", "italic"])
+
     body = StreamField(
         BaseStreamBlock(), verbose_name="Page body", blank=True
     )
@@ -126,6 +128,7 @@ class FormPage(AbstractEmailForm):
         on_delete=models.SET_NULL,
         related_name='+'
     )
+    
     body = StreamField(BaseStreamBlock())
     thank_you_text = RichTextField(blank=True)
 
@@ -144,6 +147,3 @@ class FormPage(AbstractEmailForm):
             FieldPanel('subject'),
         ], "Email"),
     ]
-
-
-    

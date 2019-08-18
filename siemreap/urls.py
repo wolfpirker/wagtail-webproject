@@ -16,7 +16,7 @@ urlpatterns = [
     url(r'^documents/', include(wagtaildocs_urls)),
 
     url(r'^search/$', search_views.search, name='search'),
-
+    
     url('^sitemap\.xml$', sitemap),
 
     # For anything not caught by a more specific rule above, hand over to
