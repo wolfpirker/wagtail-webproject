@@ -11,6 +11,25 @@ ALLOWED_HOSTS = ['*']
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
+INSTALLED_APPS = INSTALLED_APPS + [
+    'debug_toolbar',
+]
+
+MIDDLEWARE = MIDDLEWARE + [
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
+]
+
+INTERNAL_IPS = ("127.0.0.1", "172.17.0.1")
+
+# urls.py; add these lines
+from django.urls import path
+
+#if settings.DEBUG:
+#    import debug_toolbar
+#    urlpatterns = [
+#        path('__debug__/', include(debug_toolbar.urls)),
+#    ] + urlpatterns
+
 CACHES = {
     'default': {
         'BACKEND': 'django_redis.cache.RedisCache',
@@ -22,6 +41,8 @@ CACHES = {
         }
     }
 }
+
+
 
 #WAGTAILSEARCH_BACKENDS = {
 #    'default': {
