@@ -22,7 +22,8 @@ class OurteamPage(Page):
 
     content = StreamField(
         [
-            ("title_and_text", blocks.TitleAndTextBlock())
+            ("title_and_text", blocks.TitleAndTextBlock()),
+            ("full_richtext", blocks.RichtextBlock())
         ],
         null=True,
         blank=True
