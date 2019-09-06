@@ -1,0 +1,90 @@
+.header.clearfix {
+    height: 46px;
+    background: #6d6356;
+}
+
+.banner {
+    height: 350px;
+    background-size: cover; 
+    background-position: center center;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #ccc;
+  }
+
+  h1 {
+      padding: 10;
+      margin: 0
+  }
+
+  .nav a{
+      height: 36px;
+  }
+   
+  .nav ul {
+    list-style: none;
+    background-color: rgb(71, 66, 62);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .nav li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8em;
+    line-height: 36px;
+    height: 36px;
+    border-bottom: 1px solid #888;
+  }
+   
+  .nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: .3s background-color;
+  }
+   
+  .nav a:hover {
+    background-color:#756652;
+  }
+   
+  .nav a.active {
+    background-color: #fff;
+    color: #444;
+    cursor: default;
+  }
+   
+  @media screen and (min-width: 800px) {
+    .nav li {
+      width: 120px;
+      border-bottom: none;
+      height: 36px;
+      line-height: 36px;
+      font-size: 1.0em;
+    }
+   
+    /* Option 1 - Display Inline */
+    .nav li {
+      display: inline-block;
+      margin-right: -4px;
+    }
+   
+    /* Options 2 - Float
+    .nav li {
+      float: left;
+    }
+    .nav ul {
+      overflow: auto;
+      width: 600px;
+      margin: 0 auto;
+    }
+    .nav {
+      background-color: #444;
+    }
+    */
+  }
