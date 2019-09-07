@@ -11,6 +11,7 @@
 
     {% for post in blogpages %}
         {% with post=post.specific %}
+            <div class="blogintro">
             <a href="{% pageurl post %}">
             <div class="highlight">
             {% with post.main_image as main_image %}
@@ -22,6 +23,7 @@
                 <p>{{ post.intro }}</p>
             </div>
             </a>  
+            </div>
             
         {% endwith %}
     {% endfor %}
