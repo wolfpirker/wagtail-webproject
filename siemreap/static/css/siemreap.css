@@ -12,19 +12,103 @@
     margin: 0;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background: #ccc;
+.banner h1,h2,h3,h4{ 
+  padding-top: 10px;
+}
+.banner h1{
+  padding-top: 30px;
+}
+p{
+  margin-left: 25px;
+  padding-top: 5px;
+}
+
+.template-blogindexpage {
+  margin: 0px;
+  padding: 0px;
+
+}
+
+.template-blogindexpage a {
+  margin-left: 40px;
+  padding: 0px;  
+}
+
+
+
+.template-blogindexpage img{
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 90px;
+  width: 480px;
+  min-height: 200px;
+  height: auto;
+  max-height: 480px;
+}
+
+.description {
+  margin-top: -188px;
+  margin-left: 40px;
+  width:480px;
+  background: linear-gradient(to bottom, rgba(136,136,136,0.2) 0%,rgba(14,10,8,0.6) 23%,rgba(14,10,8,1) 50%);
+  min-height: 100px;
+  max-height: 140px;
+  padding: 0px;
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.description a:focus, a:visited{
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.highlight {
+  /* background-color: #eb7400; */
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+}
+.highlight img:hover {
+  opacity: .5;
+}
+
+.description a:hover {
+  color: #eb7400;
+}
+
+.description p{
+  font-size: 1.4em;
+  font-weight: normal;
+}
+
+  body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin: 0px;
+    background: #a09a94;
   }
 
+  h1, h2, h3, h4, h5, h6 {
+    margin-left: 20px;
+    font-family: 'Prata', serif;
+    max-width: 800px;
+   }
+
+   p {
+    font-size: 1.3em;
+    max-width: 800px;
+   }
+
   h1 {
-      padding: 10;
-      margin: 0
+      margin-top: 0;
+      padding-top: 30px;
   }
 
   .nav a{
-      height: 36px;
+      margin-left: 0px;
+      height: 46px;
   }
    
   .nav ul {
@@ -36,9 +120,9 @@ body {
   }
   .nav li {
     font-family: 'Oswald', sans-serif;
-    font-size: 0.8em;
-    line-height: 36px;
-    height: 36px;
+    font-size: 0.94em;
+    line-height: 46px;
+    height: 46px;
     border-bottom: 1px solid #888;
   }
    
@@ -50,7 +134,7 @@ body {
   }
    
   .nav a:hover {
-    background-color:#756652;
+    background-color:#947751;
   }
    
   .nav a.active {
@@ -63,9 +147,9 @@ body {
     .nav li {
       width: 120px;
       border-bottom: none;
-      height: 36px;
+      height: 40px;
       line-height: 36px;
-      font-size: 1.0em;
+      font-size: 1.1em;
     }
    
     /* Option 1 - Display Inline */
