@@ -1,0 +1,43 @@
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block content %}
+    <h1>{{ self.title}}</h1>
+    {% for card in self.cards %}
+            <div class="card">
+            {% if card.button_page %}
+                <!-- internal page -->
+                <a href="{{ card.button_page.url }}">
+                <div class="highlight">
+                {% image card.image fill-260x200 %}  
+                </div>
+                <div class="description">
+                    <h2>{{ card.title }}</h2>
+                    <p>{{ card.text }}</p>
+                </div>
+                </a>  
+            {% elif card.button_url %}
+            <!-- external page -->
+                <a href="{{ card.button_url }}">
+                <div class="highlight">
+                {% image card.image fill-260x200 %}  
+                </div>
+                <div class="description">
+                    <h2>{{ card.title }}</h2>
+                    <p>{{ card.text }}</p>
+                </div>
+                </a>  
+            {% else %}
+            <a href="#">
+            <div class="highlight">
+            {% image card.image fill-260x200 %}  
+            </div>
+            <div class="description">
+                <h2>{{ card.title }}</h2>
+                <p>{{ card.text }}</p>
+            </div>
+            </a>  
+            {% endif %}
+            </div>
+    {% endfor %}
+
+{% endblock %}

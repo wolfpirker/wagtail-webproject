@@ -64,6 +64,25 @@ p{
   color: white;
 }
 
+.card {
+  margin-left: 25px;
+  margin-bottom: 25px;
+  display: inline-flex;
+}
+
+.card .description {
+  margin-top: -70px;
+  margin-left: 0px;
+  width:260px;
+  background: linear-gradient(to bottom, rgba(136,136,136,0.2) 0%,rgba(14,10,8,0.6) 23%,rgba(14,10,8,1) 50%);
+  min-height: 100px;
+  max-height: 100px;
+  padding: 0px;
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
 .description a:focus, a:visited{
   color: whitesmoke;
   text-decoration: none;
