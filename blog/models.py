@@ -29,7 +29,7 @@ class BlogPageTag(TaggedItemBase):
     )
 
 class BlogTagIndexPage(Page):
-
+    
     def get_context(self, request):
 
         # Filter by tag
