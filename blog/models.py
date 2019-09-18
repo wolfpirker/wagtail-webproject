@@ -21,9 +21,9 @@ class BlogIndexPage(Page):
         context['blogpages'] = blogpages
         return context
 
-    #content_panels = Page.content_panels + [
-    #    FieldPanel('intro', classname="full")
-    #]
+    content_panels = Page.content_panels + [
+        FieldPanel('intro', classname="full")
+    ]
 
 class BlogPageTag(TaggedItemBase):
     content_object = ParentalKey(

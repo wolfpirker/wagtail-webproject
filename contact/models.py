@@ -7,6 +7,8 @@ from wagtail.admin.edit_handlers import (
     MultiFieldPanel
 )
 
+from wagtail.images.edit_handlers import ImageChooserPanel
+
 from wagtail.core.fields import RichTextField
 from wagtail.contrib.forms.models import (
     AbstractEmailForm,
@@ -24,6 +26,14 @@ class FormField(AbstractFormField):
 
 class ContactPage(AbstractEmailForm):
     template = "contact/contact_page.html"
+    banner_image = models.ForeignKey(
+        "wagtailimages.Image", 
+        # classname of the image, see wagtail documentation
+        null=True,
+        blank=False,
+        on_delete=models.SET_NULL,
+        related_name="+"
+    )
 
     intro = RichTextField(blank=True)
     thank_you_text = RichTextField(blank=True)
@@ -39,4 +49,5 @@ class ContactPage(AbstractEmailForm):
             ]),
             FieldPanel("subject"),
         ], heading="Email Settings"),
+        ImageChooserPanel("banner_image"),
     ]
