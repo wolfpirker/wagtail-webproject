@@ -22,7 +22,7 @@
         
         {% for loop_cycle in self.carousel_images.all %}
           {% image loop_cycle.carousel_image fill-1100x600 as img %}
-          <div class="carousel-item{% if forloop.counter == 1 %} active{% endif %} data-interval='1000'">
+          <div class="carousel-item{% if forloop.counter == 1 %} active{% endif %} data-interval='250'">
           <img src="{{ img.url }}" class="d-block w-100" alt="{{ img.alt }}">
           </div>
         {% endfor %}
