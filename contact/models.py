@@ -14,6 +14,7 @@ from wagtail.contrib.forms.models import (
     AbstractEmailForm,
     AbstractFormField
 )
+from django.forms import widgets
 
 # Create your models here.
 class FormField(AbstractFormField):
@@ -25,6 +26,7 @@ class FormField(AbstractFormField):
 
 
 class ContactPage(AbstractEmailForm):
+
     template = "contact/contact_page.html"
     banner_image = models.ForeignKey(
         "wagtailimages.Image", 
@@ -51,3 +53,22 @@ class ContactPage(AbstractEmailForm):
         ], heading="Email Settings"),
         ImageChooserPanel("banner_image"),
     ]
+
+    def get_form(self, *args, **kwargs):
+        form = super().get_form(*args, **kwargs)
+        # iterate through the fields in the generated form
+        for name, field in form.fields.items():
+            # here we want to adjust the widgets on each field
+            # if the field is a TextArea - adjust the rows
+            if isinstance(field.widget, widgets.Input):
+                field.widget.attrs['placeholder'] = field.label
+                field.label = ''
+            if isinstance(field.widget, widgets.Textarea):
+                field.widget.attrs['placeholder'] = field.label
+                field.label = ''                               
+            # for all fields, get any existing CSS classes and add 'form-control'
+            # ensure the 'class' attribute is a string of classes with spaces
+            css_classes = field.widget.attrs.get('class', '').split()
+            css_classes.append('form-control')
+            field.widget.attrs.update({'class': ' '.join(css_classes)})
+        return form

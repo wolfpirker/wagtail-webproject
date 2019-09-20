@@ -23,37 +23,40 @@
 }
 
 /* Fields */
-textarea {
+textarea.form-control{
   /*   font-family: 'Prata', serif; */
   font-family: 'Lato', sans-serif;
   background-color: transparent; /* Remove background fill */  
   border-radius: 0; /* Remove corner curve */
   border: 2px solid #fff; /* 2px white border */
   color: #fff; /* White text */
-  height: 95px; /* Increase input height */
+  height: 115px; /* Increase input height */
   font-size: 1.2em;
-  margin-left: 90px;
+  margin-left: 25px;
+  margin-bottom: 15px;
+  width: 520px;
 }
 
 form {
   /* font-family: 'Prata', serif; */
   font-size: 1.2em;
-  margin: 30px;
+  margin: 20px;
 }
 
 form li{
   list-style-type: none;
 }
 
-form li input{
+form li input.form-control{
   font-family: 'Lato', sans-serif;
   font-size: 1.2em;
   background-color: transparent; /* Remove background fill */
   border-radius: 0; /* Remove corner curve */
   border: 2px solid #fff; /* 2px white border */
   color: #fff; /* White text */
-  margin-left: 90px;
-  width: 220px;
+  margin-left: 25px;
+  margin-bottom: 5px;
+  width: 340px;
 }
 
 
@@ -63,7 +66,8 @@ form input[type=submit], button[type=submit] {
  border: none;
  color: #fff;
  font-size: 1.1em;
- padding: 10px 50px;
+ padding: 15px 40px;
+ margin-left: 25px;
  text-transform: uppercase;
  font-weight: normal;
 }
