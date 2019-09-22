@@ -48,9 +48,10 @@ class BlogTagIndexPage(Page):
 class BlogPage(Page):
     date = models.DateField("Post date")
     intro = models.CharField(max_length=250)
+    author = models.CharField(max_length=64)
     body = RichTextField(blank=True)
     tags = ClusterTaggableManager(through=BlogPageTag, blank=True)
-
+    
     def main_image(self):
         gallery_item = self.gallery_images.first()
         if gallery_item:
@@ -61,12 +62,14 @@ class BlogPage(Page):
     search_fields = Page.search_fields + [
         index.SearchField('intro'),
         index.SearchField('body'),
+        index.SearchField('author'),
     ]
 
     content_panels = Page.content_panels + [
         MultiFieldPanel([
             FieldPanel('date'),
             FieldPanel('tags'),
+            FieldPanel('author'),
         ], heading="Blog information"),
         FieldPanel('intro'),
         FieldPanel('body'),

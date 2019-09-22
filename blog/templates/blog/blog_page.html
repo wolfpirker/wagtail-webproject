@@ -9,7 +9,7 @@
     <p class="meta">{{ page.date }}</p>
 
     <div class="intro"><p>{{ page.intro }}</p></div>
-
+    <div class="author"><p>{{ page.author}}</p></div>
     {{ page.body|richtext }}
 
     {% for item in page.gallery_images.all %}

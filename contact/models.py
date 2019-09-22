@@ -62,10 +62,10 @@ class ContactPage(AbstractEmailForm):
             # if the field is a TextArea - adjust the rows
             if isinstance(field.widget, widgets.Input):
                 field.widget.attrs['placeholder'] = field.label
-                field.label = ''
+                #field.label = ''
             if isinstance(field.widget, widgets.Textarea):
                 field.widget.attrs['placeholder'] = field.label
-                field.label = ''                               
+                #field.label = ''                               
             # for all fields, get any existing CSS classes and add 'form-control'
             # ensure the 'class' attribute is a string of classes with spaces
             css_classes = field.widget.attrs.get('class', '').split()

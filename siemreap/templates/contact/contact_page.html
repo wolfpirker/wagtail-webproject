@@ -9,9 +9,11 @@
         <h1>{{ page.title }}</h1>
         <div class="lead">{{ self.intro|richtext }}</div>
 
-        <form action="{% pageurl page %}" method="POST">
+        <form action="{% pageurl page %}" method="POST">            
             {% csrf_token %}
+            <!--<ul>-->
             {{ form.as_ul }}
+            <!--</ul>-->
             <input type="submit">
         </form>
     </div>
