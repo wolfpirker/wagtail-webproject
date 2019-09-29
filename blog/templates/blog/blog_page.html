@@ -9,7 +9,21 @@
     <p class="meta">{{ page.date }}</p>
 
     <div class="intro"><p>{{ page.intro }}</p></div>
-    <div class="author"><p>{{ page.author}}</p></div>
+    {# Loop through all blog authors #}
+    {% for iter in self.blog_authors.all %}
+        {% image iter.author.image fill-64x64 as img %}
+        <div>
+            <img src="{{ img.url }}" class="rounded-circle" alt="{{ iter.author.name }}">
+        </div>
+        {% if iter.author.website %}
+            <a href="{{ iter.author.website }}">
+                {{ iter.author.name }}
+            </a>
+        {% else %}
+            {{ iter.author.name }}
+        {% endif %}
+        </div>
+    {% endfor %}
     {{ page.body|richtext }}
 
     {% for item in page.gallery_images.all %}

@@ -21,8 +21,35 @@ from wagtail.admin.edit_handlers import (
 from wagtail.images.edit_handlers import ImageChooserPanel
 from wagtail.snippets.models import register_snippet
 
+"""Blog listing and blog detail pages."""
+from django.db import models
 
-#@register_snippet  # uncomment to use a decorator instead of a function
+from modelcluster.fields import ParentalKey
+from wagtail.admin.edit_handlers import (
+    FieldPanel,
+    MultiFieldPanel,
+    InlinePanel,
+)
+from wagtail.snippets.edit_handlers import SnippetChooserPanel
+from wagtail.core.models import Page, Orderable
+from wagtail.images.edit_handlers import ImageChooserPanel
+from wagtail.snippets.models import register_snippet
+
+class BlogAuthorsOrderable(Orderable):
+    """This allows us to select one or more blog authors from Snippets."""
+
+    page = ParentalKey("blog.BlogPage", related_name="blog_authors")
+    author = models.ForeignKey(
+        "blog.BlogAuthor",
+        on_delete=models.CASCADE,
+    )
+
+    panels = [
+    	# Use a SnippetChooserPanel because blog.BlogAuthor is registered as a snippet
+        SnippetChooserPanel("author"),
+    ]
+
+@register_snippet
 class BlogAuthor(models.Model):
     """Blog author for snippets."""
     # from learning wagtail lesson "Registering snippets"
@@ -121,7 +148,7 @@ class BlogPage(Page):
         MultiFieldPanel([
             FieldPanel('date'),
             FieldPanel('tags'),
-            FieldPanel('author'),
+            InlinePanel("blog_authors", label="Author", min_num=1, max_num=4)
         ], heading="Blog information"),
         FieldPanel('intro'),
         FieldPanel('body'),
