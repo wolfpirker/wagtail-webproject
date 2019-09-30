@@ -41,6 +41,23 @@ textarea.form-control{
   width: 520px;
 }
 
+img.blog-avatar {
+  margin-left: 1rem;
+  border-radius: 27px;
+}
+
+.author #text{
+  font-size:9px;
+  color: yellow;
+}
+
+address.author {
+  margin-left: 5rem;
+  margin-top: -20px;
+  display: inline-flex;
+  box-sizing: border-box;
+}
+
 form {
   /* font-family: 'Prata', serif; */
   font-size: 1.2em;
