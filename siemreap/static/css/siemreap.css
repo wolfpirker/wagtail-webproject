@@ -46,16 +46,9 @@ img.blog-avatar {
   border-radius: 27px;
 }
 
-.author #text{
-  font-size:9px;
-  color: yellow;
-}
-
-address.author {
-  margin-left: 5rem;
-  margin-top: -20px;
-  display: inline-flex;
-  box-sizing: border-box;
+div.author {
+  display: inline-block;
+  margin-left: 20px;
 }
 
 form {
