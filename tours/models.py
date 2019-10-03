@@ -116,6 +116,10 @@ class TourPage(Page):
     short_description = models.CharField(max_length=256)
     #author = models.CharField(max_length=64)
     body = RichTextField(blank=True)
+    tour_duration = models.DurationField(blank=True,null=True,help_text="enter the approximate duration usual for this tour")
+    price_low_season = models.IntegerField(blank=True,null=True,help_text="enter the price for the group on low season time [$]")
+    price_high_season = models.IntegerField(blank=True,null=True,help_text="enter the price for the group on high season time [$]")
+    max_num_people = models.IntegerField(blank=True,null=True,help_text="enter the maximum group size of people")
     image = models.ForeignKey(
         "wagtailimages.Image",
         on_delete=models.SET_NULL,
@@ -134,7 +138,13 @@ class TourPage(Page):
             FieldPanel('date'),
             ImageChooserPanel("image"),
             InlinePanel("tour_provinces", label="Province", min_num=1, max_num=3),            
-        ], heading="Tour information"),
+        ], heading="Tour general information"),
+        MultiFieldPanel([
+            FieldPanel('tour_duration'),
+            FieldPanel('price_low_season'),
+            FieldPanel('price_high_season'),
+            FieldPanel('max_num_people'),
+        ], heading="additional Tour information"),
         FieldPanel('short_description'),
         FieldPanel('body'),
     ]
