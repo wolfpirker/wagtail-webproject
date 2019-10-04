@@ -148,7 +148,7 @@ class TourPage(Page):
     short_description = models.CharField(max_length=255)
     #author = models.CharField(max_length=64)
     body = RichTextField(blank=True)
-    tour_duration = models.DurationField(blank=True,null=True,help_text="enter the approximate duration usual for this tour")
+    tour_duration = models.DurationField(blank=True,null=True,help_text="duration usual for this tour - type as 'DD HH:MM:SS' or 'HH:MM:SS'")
     price_low_season = models.IntegerField(blank=True,null=True,help_text="enter the price for the group on low season time [$]")
     price_high_season = models.IntegerField(blank=True,null=True,help_text="enter the price for the group on high season time [$]")
     max_num_people = models.IntegerField(blank=True,null=True,help_text="enter the maximum group size of people")

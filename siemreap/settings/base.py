@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'streams',
     'contact',
     'tours',
+    'destinations',
 
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',

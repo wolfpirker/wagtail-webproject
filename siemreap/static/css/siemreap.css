@@ -173,7 +173,7 @@ p{
 }
 
 .description a:focus, a:visited{
-  color: whitesmoke;
+  color: darkmagenta;
   text-decoration: none;
 }
 
