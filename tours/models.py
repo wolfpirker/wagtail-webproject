@@ -125,6 +125,7 @@ class ToursIndexPage(Page):
         context = super().get_context(request)
         tourpages = self.get_children().live().order_by('-first_published_at')
         context['tourpages'] = tourpages
+        context['categories'] = TourCategory.objects.all()
         return context
 
     content_panels = Page.content_panels + [

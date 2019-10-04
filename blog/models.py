@@ -98,7 +98,21 @@ class BlogIndexPage(Page):
         context = super().get_context(request)
         blogpages = self.get_children().live().order_by('-first_published_at')
         context['blogpages'] = blogpages
+        context['tags'] = []
+        for post in blogpages:
+            context['tags'] += post.specific.get_tags
+        context['tags'] = sorted(set(context['tags']))
         return context
+
+    # Returns the list of Tags for all child posts of this BlogPage.
+    #def get_child_tags(self):
+    #    # Note: this method makes loading the page quite slow (a issue if the pages are not cached)
+    #    tags = []
+    #    for post in self.get_children().live().descendant_of(self):
+    #        # Not tags.append() because we don't want a list of lists
+    #        tags += post.specific.get_tags
+    #    tags = sorted(set(tags))
+    #    return tags 
 
     content_panels = Page.content_panels + [
         FieldPanel('intro', classname="full")
@@ -137,6 +151,22 @@ class BlogPage(Page):
             return gallery_item.image
         else:
             return None
+
+    @property
+    def get_tags(self):
+        """
+        Similar to the authors function above we're returning all the tags that
+        are related to the blog post into a list we can access on the template.
+        We're additionally adding a URL to access BlogPage objects with that tag
+        """
+        tags = self.tags.all()
+        for tag in tags:
+            tag.url = '/'+'/'.join(s.strip('/') for s in [
+                self.get_parent().url,
+                'tags',
+                tag.slug
+            ])
+        return tags
 
     search_fields = Page.search_fields + [
         index.SearchField('intro'),
