@@ -106,7 +106,7 @@ class BlogIndexPage(Page):
 
     # Returns the list of Tags for all child posts of this BlogPage.
     #def get_child_tags(self):
-    #    # Note: this method makes loading the page quite slow (a issue if the pages are not cached)
+    #    # Note: this method makes loading the page quite slow (a issue especially if the pages are not cached)
     #    tags = []
     #    for post in self.get_children().live().descendant_of(self):
     #        # Not tags.append() because we don't want a list of lists

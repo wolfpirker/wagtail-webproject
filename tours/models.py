@@ -115,7 +115,6 @@ class TourProvince(models.Model):
 
 register_snippet(TourProvince)
 
-
 class ToursIndexPage(Page):
     template = "tours/tours_index_page.html"
     intro = RichTextField(blank=True)
@@ -126,6 +125,11 @@ class ToursIndexPage(Page):
         tourpages = self.get_children().live().order_by('-first_published_at')
         context['tourpages'] = tourpages
         context['categories'] = TourCategory.objects.all()
+        category = request.GET.get('category')
+        if category is not None:
+            category = category.capitalize()
+            tourpages_filtered = TourPage.objects.filter(categories__name=category)
+            context['tourpages_filtered'] = tourpages_filtered
         return context
 
     content_panels = Page.content_panels + [
