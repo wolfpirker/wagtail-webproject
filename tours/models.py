@@ -1,6 +1,7 @@
 from django.db import models
+from django import forms
 
-from modelcluster.fields import ParentalKey
+from modelcluster.fields import ParentalKey, ParentalManyToManyField
 from modelcluster.contrib.taggit import ClusterTaggableManager
 from taggit.models import TaggedItemBase
 
@@ -35,6 +36,32 @@ from wagtail.core.models import Page, Orderable
 from wagtail.images.edit_handlers import ImageChooserPanel
 from wagtail.snippets.models import register_snippet
 
+class TourCategory(models.Model):
+    """Tour category for a snippet"""
+
+    name = models.CharField(max_length=127)
+    slug = models.SlugField(
+        verbose_name="slug",
+        allow_unicode=True,
+        max_length=127,
+        help_text='A slug to identify tours by this category',
+    )
+
+    panels = [
+        FieldPanel("name"),
+        FieldPanel("slug"),
+    ]
+
+    class Meta:
+        verbose_name = "Tour Category"
+        verbose_name_plural = "Tour Categories"
+        ordering = ["name"]
+
+    def __str__(self):
+        return self.name
+
+register_snippet(TourCategory)
+
 class TourProvincesOrderable(Orderable):
     """This allows us to select one or more tour provinces from Snippets."""
 
@@ -51,7 +78,7 @@ class TourProvincesOrderable(Orderable):
 @register_snippet
 class TourProvince(models.Model):
     """Tour provinces for snippets."""
-    province_name = models.CharField(max_length=32)
+    province_name = models.CharField(max_length=31)
     province_website = models.URLField(blank=True, null=True)
     map_image = models.ForeignKey(
         "wagtailimages.Image",
@@ -113,7 +140,7 @@ class TourPage(Page):
     template = "tours/tour_page.html"
 
     date = models.DateField("Post date")
-    short_description = models.CharField(max_length=256)
+    short_description = models.CharField(max_length=255)
     #author = models.CharField(max_length=64)
     body = RichTextField(blank=True)
     tour_duration = models.DurationField(blank=True,null=True,help_text="enter the approximate duration usual for this tour")
@@ -128,6 +155,8 @@ class TourPage(Page):
         related_name="+",
     )
 
+    categories = ParentalManyToManyField("tours.TourCategory", blank=True)
+
     search_fields = Page.search_fields + [
         index.SearchField('short_description'),
         index.SearchField('body'),
@@ -137,8 +166,14 @@ class TourPage(Page):
         MultiFieldPanel([
             FieldPanel('date'),
             ImageChooserPanel("image"),
-            InlinePanel("tour_provinces", label="Province", min_num=1, max_num=3),            
+            InlinePanel("tour_provinces", label="Province", min_num=1, max_num=3),                        
         ], heading="Tour general information"),
+        MultiFieldPanel(
+            [
+                FieldPanel("categories", widget=forms.CheckboxSelectMultiple)
+            ],
+            heading="Categories"
+        ),
         MultiFieldPanel([
             FieldPanel('tour_duration'),
             FieldPanel('price_low_season'),
