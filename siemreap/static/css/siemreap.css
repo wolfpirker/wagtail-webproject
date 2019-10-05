@@ -143,7 +143,6 @@ p{
   bottom: 0;
 }
 
-/* Blog list view */
 .category-tags>li {
   border-right: 1px solid rgba(0,0,0,0.1);
   font-size: 0.9em;
@@ -165,7 +164,96 @@ p{
   display: inline-flex;
 }
 
+/* in column left: make the body have two-columns */
+.left {
+  max-width: 720px;
+  column-count: 2;
+}
 
+.left .element {
+  break-inside: avoid;
+}
+
+
+.row {
+  display: flex;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1024px) {
+  .column {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .row {
+    /* avoid that navbar at top overlaps with body */
+    margin-top: 40px;
+  }
+}
+
+figure.tour-location-map {
+  margin: 1rem;
+  margin-left: 2rem;
+  display: inline-block;
+}
+
+figure.tour-location-map figcaption{
+  margin-left: 5px;
+  font-family: serif;
+  font-stretch: expanded;
+  font-size: 1.1em;
+  font-weight: 600;
+  background-color: rgba(83, 52, 6, 0.8);
+  bottom: 0;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  width: 75%;
+}
+
+figure.tour-main-photo {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  position: static;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  padding: 8px;
+  background: whitesmoke;
+  display: inline-flex;
+}
+
+img.province-map {
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  padding: 1px;
+  background: whitesmoke;
+}
+
+img.province-map ::after{
+  content: '';
+  position: absolute;
+  z-index: -1; /* hide shadow behind image */
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  width: 70%;
+  left: 15%; /* one half of the remaining 30% */
+  height: 100px;
+  bottom: 0;
+}
 
 .intro p{
   font-size: 1.2em;
@@ -251,12 +339,12 @@ p{
   h1, h2, h3, h4, h5, h6 {
     margin-left: 20px;
     font-family: 'Prata', serif;
-    max-width: 800px;
+    max-width: 700px;
    }
 
    p {
     font-size: 1.15em;
-    max-width: 800px;
+    max-width: 700px;
    }
 
   h1 {

@@ -2,22 +2,33 @@
 {% load wagtailcore_tags wagtailimages_tags %}
 
 {% block content %}
-    <h1>{{ page.title }}</h1>
-    <div class="intro"><p>{{ page.short_description }}</p></div>
-    <h2>Categories</h2>
-    <ul>
-    {% for iter in self.categories.all %}
-        <ul>
-            <a href="{{ self.get_parent.url }}?category={{ iter.slug }}">
-            {{ iter.name }}
-            </a>
+    <div class="row">
+    <div class="column left">
+        <h1>{{ page.title }}</h1>
+        <div class="intro"><p>{{ page.short_description }}</p></div>
+        <ul class=category-tags>
+            {% for iter in self.categories.all %}
+            <li>
+                <a href="{{ self.get_parent.url }}?category={{ iter.slug }}">
+                {{ iter.name }}
+                </a>
+            </li>
+            {% endfor %}
         </ul>
-    {% endfor %}
-    </ul>
-    {% for iter in self.tour_provinces.all %}
-        {% image iter.province.map_image fill-100x100 class="province-map" %}
-        {{ iter.province.province_name }}
-    {% endfor %}
-    {% image page.image fill-1280x800 %}
-    {{ page.body|richtext }}
+        <figure class="tour-location-map">
+            {% for iter in self.tour_provinces.all %}
+                {% image iter.province.map_image fill-100x100 class="province-map" %}
+                <figcaption>{{ iter.province.province_name }}</figcaption>
+            {% endfor %} 
+        </figure>
+        {{ page.body|richtext }}
+    </div>
+    <div class="column right">
+        <figure class="tour-main-photo">
+            {% image page.image width-620 %}
+        </figure>
+    </div>
+    </div>
+
+
 {% endblock %}
