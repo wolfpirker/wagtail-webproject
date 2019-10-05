@@ -8,12 +8,11 @@
     <h1>{{ page.title }}</h1>
 
     <div class="intro">{{ page.intro|richtext }}</div>
-    <div class="tags">
-        <p>Tags</p>
-        {% for tag in tags %}
-            <a href="{% slugurl 'tags' %}?tag={{ tag }}"><button type="button">{{ tag }}</button></a>
-        {% endfor %}
-    </div>
+    <ul class=category-tags>
+    {% for tag in tags %}
+        <li><a href="{% slugurl 'tags' %}?tag={{ tag }}">{{ tag }}</a></li>
+    {% endfor %}
+    </ul>
 
     {% for post in blogpages %}
         {% with post=post.specific %}
