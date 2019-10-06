@@ -35,10 +35,12 @@
 
     <p><a href="{{ page.get_parent.url }}">Return to blog</a></p>
     {% if page.tags.all.count %}
-        <div class="tags">
-            <h3>Tags</h3>
+        <ul class=category-tags>
+            <li>Tags</li>
             {% for tag in page.tags.all %}
-                <a href="{% slugurl 'tags' %}?tag={{ tag }}"><button type="button">{{ tag }}</button></a>
+                <li>
+                <a href="{% slugurl 'tags' %}?tag={{ tag }}">{{ tag }}</a>
+                </li>
             {% endfor %}
         </div>
     {% endif %}

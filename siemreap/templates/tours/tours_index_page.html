@@ -28,6 +28,9 @@
         {% endfor %}        
     {% else %}
         <ul class=category-tags>
+        <li>
+            Categories:
+        </li>
         {% for iter in categories %}
             <li><a href="?category={{ iter.slug }}">
             {{ iter.name }}

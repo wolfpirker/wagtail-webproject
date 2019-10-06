@@ -7,6 +7,9 @@
         <h1>{{ page.title }}</h1>
         <div class="intro"><p>{{ page.short_description }}</p></div>
         <ul class=category-tags>
+            <li>
+                Categories:
+            </li>
             {% for iter in self.categories.all %}
             <li>
                 <a href="{{ self.get_parent.url }}?category={{ iter.slug }}">
@@ -15,15 +18,22 @@
             </li>
             {% endfor %}
         </ul>
-        <figure class="tour-location-map">
-            {% for iter in self.tour_provinces.all %}
-                {% image iter.province.map_image fill-100x100 class="province-map" %}
-                <figcaption>{{ iter.province.province_name }}</figcaption>
-            {% endfor %} 
-        </figure>
+        
+        <ul class=category-tags>
+            <li>Destinations</li>
+            <li>Angkor Wat</li>
+            <li>Angkor Thom</li>
+            <li>...</li>
+        </ul>
         {{ page.body|richtext }}
     </div>
     <div class="column right">
+        <figure class="tour-location-map">
+            {% for iter in self.tour_provinces.all %}
+                {% image iter.province.map_image fill-90x90 class="province-map" %}
+                <figcaption>{{ iter.province.province_name }}</figcaption>
+            {% endfor %} 
+        </figure>
         <figure class="tour-main-photo">
             {% image page.image width-620 %}
         </figure>

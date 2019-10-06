@@ -9,6 +9,9 @@
 
     <div class="intro">{{ page.intro|richtext }}</div>
     <ul class=category-tags>
+    <li>
+                Tags:
+    </li>
     {% for tag in tags %}
         <li><a href="{% slugurl 'tags' %}?tag={{ tag }}">{{ tag }}</a></li>
     {% endfor %}
@@ -26,10 +29,15 @@
             <div class="description">
                 <h2>{{ post.title }}</h2>
                 <p>{{ post.intro }}</p>
-            </div>
+            </div>            
             </a>  
+            <div class="small footer">
+                {% if post.date %}
+                  {{ post.date }} by 
+                {% endif %}
+                {{ post.get_author_names_as_string }}
             </div>
-            
+            </div>
         {% endwith %}
     {% endfor %}
 

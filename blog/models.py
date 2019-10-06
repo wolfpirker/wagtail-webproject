@@ -152,6 +152,19 @@ class BlogPage(Page):
         else:
             return None
 
+    def get_author_names(self):
+        authors = [
+            n.author.name for n in self.blog_authors.all()
+        ]
+        return authors
+
+    def get_author_names_as_string(self):
+        authors = ''
+        for author in self.get_author_names():
+            authors += author + ', ' 
+        authors = authors[:-2]
+        return authors
+
     @property
     def get_tags(self):
         """
