@@ -36,7 +36,8 @@
                   {{ post.date }} by 
                 {% endif %}
                 {{ post.get_author_names_as_string }}
-            </div>
+                <p><a class='cta link' href="{% pageurl post %}">Read the story</a></p>
+            </div>            
             </div>
         {% endwith %}
     {% endfor %}

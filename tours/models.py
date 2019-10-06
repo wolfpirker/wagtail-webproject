@@ -1,5 +1,6 @@
 from django.db import models
 from django import forms
+from django.utils import dateparse
 
 from modelcluster.fields import ParentalKey, ParentalManyToManyField
 from modelcluster.contrib.taggit import ClusterTaggableManager
@@ -159,6 +160,42 @@ class TourPage(Page):
         blank=False,
         related_name="+",
     )
+
+    def get_readable_tour_duration(self):
+        duration = dateparse.parse_duration(str(self.tour_duration))
+        minutes = duration.seconds / 60
+        if duration.days > 0:
+            # assumes that it just whole days, without added hours
+            return str(duration.days) + " days"
+        elif minutes >= 60:            
+            # assume that each tour duration is at least an hour
+            hours = minutes / 60
+            if int(hours)*60 == minutes:
+                # full hours
+                return str(int(hours)) + " hours"
+            else:
+                rest_min = minutes - int(hours)*60
+                if rest_min == 30:
+                    return str(int(hours)) + " 1/2 hours"
+                else:
+                    return str(int(hours)) + " hours, " + str(rest_min) + " minutes"
+            return 
+        else:
+            return None
+
+    def get_province_names(self):
+        provinces = [
+            n.province.province_name for n in self.tour_provinces.all()
+        ]
+        return provinces
+    
+    def get_province_names_as_string(self):
+        '''Tour could take place in several provinces, so I need a method to get it...'''
+        provinces = ''
+        for province in self.get_province_names():
+            provinces += province + ', ' 
+        provinces = provinces[:-2]
+        return provinces
 
     categories = ParentalManyToManyField("tours.TourCategory", blank=True)
 
