@@ -33,6 +33,12 @@ class DestinationsIndexPage(Page):
     template = "destinations/destinations_index_page.html"    
     intro = RichTextField(blank=True)
 
+    def get_context(self, request):
+        context = super().get_context(request)
+        destinationpages = self.get_children().live().order_by('-first_published_at')
+        context['destinationpages'] = destinationpages
+        return context
+
     content_panels = Page.content_panels + [
         FieldPanel('intro', classname="full")
     ]
@@ -73,9 +79,14 @@ class DestinationPage(Page):
     def main_image(self):
         carousel_item = self.carousel_images.first()
         if carousel_item:
-            return carousel_item.image
+            return carousel_item.carousel_image
         else:
             return None
+
+    search_fields = Page.search_fields + [
+        index.SearchField('destination_name'),
+        index.SearchField('body'),
+    ]
     
     content_panels = Page.content_panels + [
         FieldPanel('destination_name'),

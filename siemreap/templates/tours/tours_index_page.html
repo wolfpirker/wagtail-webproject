@@ -38,30 +38,30 @@
         {% endfor %}
         </ul>        
         {% for tour in tourpages %}
-        {% with tour=tour.specific %}
-            <div class="blogintro">
-            <a href="{% pageurl tour %}">
-            <div class="highlight">
-            {% with tour.image as tour_image %}
-                {% image tour_image fill-300x260 %}
-            {% endwith %}   
-            </div>
-            <div class="description">
-                <h2>{{ tour.title }}</h2>
-                <p>{{ tour.short_description }}</p>
-            </div>
-            </a>  
-            <div class="small footer">
-                {% if tour.tour_duration %}
-                  {{ tour.get_readable_tour_duration }} tour,
-                  from {{ tour.price_low_season }} dollars and up per tour.
-                  <br/>Province {{ tour.get_province_names_as_string }}
-                  <p><a class='cta link' href="{% pageurl tour %}">Find Out More</a></p>
-                {% endif %}
-            </div>
-            </div>
-        {% endwith %}
-    {% endfor %}
+            {% with tour=tour.specific %}
+                <div class="blogintro">
+                <a href="{% pageurl tour %}">
+                <div class="highlight">
+                {% with tour.image as tour_image %}
+                    {% image tour_image fill-300x260 %}
+                {% endwith %}   
+                </div>
+                <div class="description">
+                    <h2>{{ tour.title }}</h2>
+                    <p>{{ tour.short_description }}</p>
+                </div>
+                </a>  
+                <div class="small footer">
+                    {% if tour.tour_duration %}
+                    {{ tour.get_readable_tour_duration }} tour,
+                    from {{ tour.price_low_season }} dollars and up per tour.
+                    <br/>Province {{ tour.get_province_names_as_string }}
+                    <p><a class='cta link' href="{% pageurl tour %}">Find Out More</a></p>
+                    {% endif %}
+                </div>
+                </div>
+            {% endwith %}
+        {% endfor %}
     {% endif %}
 
     

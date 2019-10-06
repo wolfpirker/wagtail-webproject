@@ -309,6 +309,18 @@ img.province-map ::after{
   padding-right: 5px;
 }
 
+/*
+.carousel-inner {
+  display: inline-flex;
+  width: auto;
+}
+*/
+.carousel-destinations {
+  display: inline-flex;
+  width: auto; 
+  height: 600px;
+}
+
 .card {
   margin-left: 25px;
   margin-bottom: 25px;

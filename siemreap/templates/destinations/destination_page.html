@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block content %}
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+     <ol class="carousel-indicators">
+      {% for loop_cycle in self.carousel_images.all %}
+        <li data-target="#carouselExampleIndicators" data-slide-to="{{ forloop.counter0 }}" class="{% if forloop.counter == 1 %} active{% endif %}" ></li>
+      {% endfor %}
+    </ol>
+        <div class="carousel-inner">
+            
+            {% for loop_cycle in self.carousel_images.all %}
+            {% image loop_cycle.carousel_image height-600 as img %}
+            <div class="carousel-item{% if forloop.counter == 1 %} active{% endif %} data-interval='250'">
+            <img src="{{ img.url }}" class="d-block h-80" alt="{{ img.alt }}">
+            </div>
+            {% endfor %}
+    </div>
+  </div>
+  <h1>{{ page.title }}</h1>
+  <p>{{ page.destination_name }}</p>  
+  {{ page.body|richtext }}
+  
+{% endblock %}
