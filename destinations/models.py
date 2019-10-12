@@ -1,5 +1,6 @@
 from django.db import models
 from django.core.validators import RegexValidator
+from django.conf import settings
 
 from modelcluster.fields import ParentalKey
 from wagtail.core.models import Page, Orderable
@@ -63,7 +64,8 @@ class DestinationPage(Page):
         related_name='+'
     )
     body = RichTextField(blank=True)
-    lat_long = models.CharField(
+    use_destination_name_as_map_location = models.BooleanField(default=True,help_text="instead of coordinates use the location name for the map")
+    lat_long = models.CharField(blank=True,null=True,
         max_length=36,
         help_text="Comma separated lat/long. (Ex. 64.144367, -21.939182) \
                    Right click Google Maps and select 'What\'s Here'",
@@ -75,12 +77,22 @@ class DestinationPage(Page):
             ),
         ]
     )
+
+    # Makes additional context available to the template so that we can access
+    # the latitude, longitude and map API key to render the map
+    def get_context(self, request):
+        context = super(DestinationPage, self).get_context(request)
+        if self.use_destination_name_as_map_location:
+            context['map_location'] = self.title
+        else:
+            context['map_location'] = self.lat_long
+        return context
     
     def main_image(self):
         carousel_item = self.carousel_images.first()
         if carousel_item:
             return carousel_item.carousel_image
-        else:
+        else: 
             return None
 
     search_fields = Page.search_fields + [
@@ -88,10 +100,11 @@ class DestinationPage(Page):
         index.SearchField('body'),
     ]
     
-    content_panels = Page.content_panels + [
+    content_panels = Page.content_panels + [        
         FieldPanel('destination_name'),
         FieldPanel('body'),
         SnippetChooserPanel('province'),
+        FieldPanel('use_destination_name_as_map_location'),
         FieldPanel('lat_long'),
         MultiFieldPanel([
             InlinePanel("carousel_images", max_num=4, min_num=1, label="Image"),

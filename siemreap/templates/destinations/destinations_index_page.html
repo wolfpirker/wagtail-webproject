@@ -21,7 +21,11 @@
                 </div>
                 </a>  
                 <div class="small footer">
-                    <p><a class='cta link' href="https://google.com/maps/?q={{ destination.lat_long }}">See Map</a></p>
+                    {% if destination.use_destination_name_as_map_location %}
+                        <p><a class='cta link' href="https://google.com/maps/?q={{ destination.title }}">See Map</a></p>
+                    {% else %}
+                        <p><a class='cta link' href="https://google.com/maps/?q={{ destination.lat_long }}">See Map</a></p>
+                    {% endif %}
                 </div>
             </div>
         {% endwith %}

@@ -9,13 +9,20 @@
             {% block main_navigation %}
 
             <nav id="nav-menu-container">
-                <ul class="nav-menu">
+                <div id="mobile-icon">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <ul id="nav-menu">
                 <li class="menu-active"><a href="/tours">Tours</a></li>
                 <li><a href="/destinations">Destinations</a></li>
                 <li><a href="/blog">Blog</a></li>
                 <li><a href="/team">Our Team</a></li>
-                <li><a href="/contact">Get In Touch</a></li>
-                </ul>
+                <li><a href="/contact">Get In Touch</a></li> 
+                <ul>               
+
+                
             </nav>
             
                 <!-- bakery demo

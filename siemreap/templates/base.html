@@ -1,4 +1,4 @@
-{% load navigation_tags static wagtailuserbar %}
+{% load static wagtailuserbar %}
 
 {% block head %}
     {% include "includes/head.html" %}
@@ -21,5 +21,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     {% block extra_js %}
         {# Override this in templates to add extra javascript #}
+        <script>
+        function myFunction() {
+        var x = document.getElementById("nav-menu");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+        }
+        </script>
+
     {% endblock %}
 </body>

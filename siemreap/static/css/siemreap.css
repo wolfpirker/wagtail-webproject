@@ -37,6 +37,12 @@ textarea.form-control{
   width: 540px;
 }
 
+@media screen and (max-width: 768px) {
+  textarea.form-control{
+    width: 90%;
+  }
+}
+
 img.blog-avatar {
   margin-left: 1rem;
   border-radius: 27px;
@@ -162,7 +168,7 @@ p{
   display: block;
   position: absolute;
   font-size: 16px;
-  bottom: 0.15rem;
+  bottom: 0.0rem;
   margin-left: 1rem;
   color: #291804;
 }
@@ -193,6 +199,36 @@ p{
   max-width: 720px;
   column-count: 2;
 }
+
+@media screen and (max-width: 800px) {
+  .left {
+    max-width: 620px;
+    width: 100%;
+    column-count: 1;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .left {
+    max-width: 520px;
+    width: 100%;
+    column-count: 1;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .left {
+    max-width: 450px;
+    width: 100%;
+    column-count: 1;
+  }
+}
+
+#mapcanvas {
+  height: 400px;  /* The height is 400 pixels */
+  width: 100%;  /* The width is the width of the web page */
+ }
+
 
 .left .element {
   break-inside: avoid;
@@ -421,6 +457,7 @@ img.province-map ::after{
     height: 46px;
     border-bottom: 1px solid #888;
   }
+
    
   .nav a {
     text-decoration: none;
@@ -439,7 +476,7 @@ img.province-map ::after{
     cursor: default;
   }
    
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 768px) {
     .nav li {
       width: 120px;
       border-bottom: none;
@@ -447,24 +484,43 @@ img.province-map ::after{
       line-height: 36px;
       font-size: 1.0em;
     }
-   
+
+    #mobile-icon {
+      display: none;
+    }
+
     /* Option 1 - Display Inline */
     .nav li {
       display: inline-block;
       margin-right: -4px;
     }
-   
-    /* Options 2 - Float
-    .nav li {
-      float: left;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    #nav-menu-mobile-container {position: relative;}
+    #nav-menu-container .icon {
+      width: 50px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      text-align: center;
+      font-size: 22px;
+      background-color: rgb(88, 70, 55);
+      margin: 0 10px 0 0;
     }
-    .nav ul {
-      overflow: auto;
-      width: 600px;
-      margin: 0 auto;
+
+    #nav-menu {
+      display: none;
+      position: fixed;
+      text-align: center;
+      font-size: 1.5em;
+      width: 100%;
+      right: 0px;
+      z-index: 1000;
     }
-    .nav {
-      background-color: #444;
+
+    #mobile-icon {
+      display: block;
     }
-    */
   }
