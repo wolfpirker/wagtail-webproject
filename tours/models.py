@@ -63,6 +63,17 @@ class TourCategory(models.Model):
 
 register_snippet(TourCategory)
 
+class TourDestinationOrderable(Orderable):
+
+    page = ParentalKey("tours.TourPage", related_name="tour_destinations")
+    destination_pages = models.ForeignKey(
+        "destinations.DestinationPage",
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL,
+        related_name="+"
+    )
+
 class TourProvincesOrderable(Orderable):
     """This allows us to select one or more tour provinces from Snippets."""
 
@@ -210,6 +221,9 @@ class TourPage(Page):
             ImageChooserPanel("image"),
             InlinePanel("tour_provinces", label="Province", min_num=1, max_num=3),                        
         ], heading="Tour general information"),
+        MultiFieldPanel([
+            InlinePanel("tour_destinations", label="Destinations", min_num=0, max_num=6), 
+        ], heading="Tour Destinations"),
         MultiFieldPanel(
             [
                 FieldPanel("categories", widget=forms.CheckboxSelectMultiple)
