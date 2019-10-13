@@ -194,12 +194,23 @@ class TourPage(Page):
         else:
             return None
 
+    def destinations_exist(self):
+        if len(self.tour_destinations.all()) == 0:
+            return False
+        return True       
+
+    def get_destination_page(self):
+        destinations = [
+            n.destination_pages for n in self.tour_destinations.all()
+        ]
+        return destinations
+    
     def get_province_names(self):
         provinces = [
             n.province.province_name for n in self.tour_provinces.all()
         ]
         return provinces
-    
+
     def get_province_names_as_string(self):
         '''Tour could take place in several provinces, so I need a method to get it...'''
         provinces = ''

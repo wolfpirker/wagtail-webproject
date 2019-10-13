@@ -19,12 +19,18 @@
             {% endfor %}
         </ul>
         
+        {% if self.destinations_exist %}
         <ul class=category-tags>
             <li><em>Destinations</em></li>
-            <li>Angkor Wat</li>
-            <li>Angkor Thom</li>
-            <li>...</li>
+            {% for destination in self.get_destination_page %}
+                <li>
+                    <a href="{{ destination.url }}">
+                    {{ destination }}
+                    </a>
+                </li>
+            {% endfor %}
         </ul>
+        {% endif %}
         <p>Low season price: {{ page.price_low_season }} $ per tour;
         <br/>High season price: {{ page.price_high_season }} $ per tour;
         <br>Group size up to {{ page.max_num_people }} people.</p>
