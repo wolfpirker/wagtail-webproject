@@ -74,6 +74,9 @@ class TourDestinationOrderable(Orderable):
         related_name="+"
     )
 
+    def __str__(self):
+        return self.page.title
+
 class TourProvincesOrderable(Orderable):
     """This allows us to select one or more tour provinces from Snippets."""
 

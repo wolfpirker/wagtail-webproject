@@ -10,6 +10,7 @@ from wagtail.images.edit_handlers import ImageChooserPanel
 from wagtail.snippets.edit_handlers import SnippetChooserPanel
 from wagtail.search import index
 
+from tours.models import TourDestinationOrderable
 
 #from tours import models as tours_model
 
@@ -77,6 +78,11 @@ class DestinationPage(Page):
             ),
         ]
     )
+
+    def get_tours(self):
+        '''return tours which include this destination'''
+        all_tours = TourDestinationOrderable.objects.filter(destination_pages__title=self.title)
+        return all_tours
 
     # Makes additional context available to the template so that we can access
     # the latitude, longitude and map API key to render the map
