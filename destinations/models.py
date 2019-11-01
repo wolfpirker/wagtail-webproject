@@ -1,6 +1,7 @@
 from django.db import models
 from django.core.validators import RegexValidator
 from django.conf import settings
+from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 
 from modelcluster.fields import ParentalKey
 from wagtail.core.models import Page, Orderable
@@ -37,7 +38,15 @@ class DestinationsIndexPage(Page):
 
     def get_context(self, request):
         context = super().get_context(request)
-        destinationpages = self.get_children().live().order_by('-first_published_at')
+        all_destinationpages = self.get_children().live().order_by('-first_published_at')
+        paginator = Paginator(all_destinationpages, 5)
+        page = request.GET.get("page")
+        try:
+            destinationpages = paginator.page(page)
+        except PageNotAnInteger:
+            destinationpages = paginator.page(1)
+        except EmptyPage:
+            destinationpages = paginator.page(paginator.num_pages)
         context['destinationpages'] = destinationpages
         return context
 

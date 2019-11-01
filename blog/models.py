@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 from modelcluster.fields import ParentalKey
 from modelcluster.contrib.taggit import ClusterTaggableManager
 from taggit.models import TaggedItemBase
@@ -96,10 +96,18 @@ class BlogIndexPage(Page):
     def get_context(self, request):
         # Update context to include only published posts, ordered by reverse-chron
         context = super().get_context(request)
-        blogpages = self.get_children().live().order_by('-first_published_at')
-        context['blogpages'] = blogpages
+        all_posts = self.get_children().live().order_by('-first_published_at')
+        paginator = Paginator(all_posts, 5)
+        page = request.GET.get("page")
+        try:
+            posts = paginator.page(page)
+        except PageNotAnInteger:
+            posts = paginator.page(1)
+        except EmptyPage:
+            posts = paginator.page(paginator.num_pages)
+        context["posts"] = posts
         context['tags'] = []
-        for post in blogpages:
+        for post in all_posts:
             context['tags'] += post.specific.get_tags
         context['tags'] = sorted(set(context['tags']))
         return context

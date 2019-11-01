@@ -63,7 +63,32 @@
             {% endwith %}
         {% endfor %}
     {% endif %}
+    {% if tourpages.paginator.num_pages > 1 %}
+    <ul class=category-tags>
+        {% if tourpages.has_previous %}
+            <li class="page-item">
+            <a href="?page={{ tourpages.previous_page_number }}" class="page-link">
+                <span>&laquo;</span>
+            </a>
+            </li>
+        {% endif %}
+        {% for page_num in tourpages.paginator.page_range %}
+            <li class="page-item {% if page_num == tourpages.number %} active{% endif %}">
+            <a href="?page={{ page_num }}" class="page-link">
+                {{ page_num }}
+            </a>
+            </li>
+        {% endfor %}
 
+        {% if tourpages.has_next %}
+            <li class="page-item">
+            <a href="?page={{ tourpages.next_page_number }}" class="page-link">
+                <span>&raquo;</span>
+            </a>
+            </li>
+        {% endif %}
+    </ul>
+    {% endif %}
     
     
 {% endblock %}

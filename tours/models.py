@@ -1,6 +1,7 @@
 from django.db import models
 from django import forms
 from django.utils import dateparse
+from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 
 from modelcluster.fields import ParentalKey, ParentalManyToManyField
 from modelcluster.contrib.taggit import ClusterTaggableManager
@@ -137,8 +138,17 @@ class ToursIndexPage(Page):
     def get_context(self, request):
         # Update context to include only published posts, ordered by reverse-chron
         context = super().get_context(request)
-        tourpages = self.get_children().live().order_by('-first_published_at')
+        all_tourpages = self.get_children().live().order_by('-first_published_at')
+        paginator = Paginator(all_tourpages, 5)
+        page = request.GET.get("page")
+        try:
+            tourpages = paginator.page(page)
+        except PageNotAnInteger:
+            tourpages = paginator.page(1)
+        except EmptyPage:
+            tourpages = paginator.page(paginator.num_pages)
         context['tourpages'] = tourpages
+        
         context['categories'] = TourCategory.objects.all()
         category = request.GET.get('category')
         if category is not None:
