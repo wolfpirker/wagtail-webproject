@@ -2,10 +2,13 @@ from django.db import models
 from django import forms
 from django.utils import dateparse
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
+from django.core.cache import cache
+from django.core.cache.utils import make_template_fragment_key
 
 from modelcluster.fields import ParentalKey, ParentalManyToManyField
 from modelcluster.contrib.taggit import ClusterTaggableManager
 from taggit.models import TaggedItemBase
+
 
 from wagtail.core.models import Page, Orderable
 from wagtail.core.fields import RichTextField
@@ -184,6 +187,16 @@ class TourPage(Page):
         blank=False,
         related_name="+",
     )
+
+    def save(self, *args, **kwargs):
+        """Create a template fragment key.
+        Then delete the key."""
+        key = make_template_fragment_key(
+            "tour_preview",  # Matches the name of our template fragment in the blog_listing_page.html
+            [self.id]  # Matches the post.id in the template for loop (shown below)
+        )
+        cache.delete(key)
+        return super().save(*args, **kwargs)
 
     def get_readable_tour_duration(self):
         duration = dateparse.parse_duration(str(self.tour_duration))

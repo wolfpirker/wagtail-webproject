@@ -2,6 +2,8 @@ from django.db import models
 from django.core.validators import RegexValidator
 from django.conf import settings
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
+from django.core.cache import cache
+from django.core.cache.utils import make_template_fragment_key
 
 from modelcluster.fields import ParentalKey
 from wagtail.core.models import Page, Orderable
@@ -87,6 +89,16 @@ class DestinationPage(Page):
             ),
         ]
     )
+
+    def save(self, *args, **kwargs):
+        """Create a template fragment key.
+        Then delete the key."""
+        key = make_template_fragment_key(
+            "destination_preview",  # Matches the name of our template fragment in the blog_listing_page.html
+            [self.id]  # Matches the post.id in the template for loop (shown below)
+        )
+        cache.delete(key)
+        return super().save(*args, **kwargs)
 
     def get_tours(self):
         '''return tours which include this destination'''

@@ -1,5 +1,8 @@
 from django.db import models
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
+from django.core.cache import cache
+from django.core.cache.utils import make_template_fragment_key
+
 from modelcluster.fields import ParentalKey
 from modelcluster.contrib.taggit import ClusterTaggableManager
 from taggit.models import TaggedItemBase
@@ -152,6 +155,16 @@ class BlogPage(Page):
     #author = models.CharField(max_length=64)
     body = RichTextField(blank=True)
     tags = ClusterTaggableManager(through=BlogPageTag, blank=True)
+
+    def save(self, *args, **kwargs):
+        """Create a template fragment key.
+        Then delete the key."""
+        key = make_template_fragment_key(
+            "blog_post_preview",  # Matches the name of our template fragment in the blog_listing_page.html
+            [self.id]  # Matches the post.id in the template for loop (shown below)
+        )
+        cache.delete(key)
+        return super().save(*args, **kwargs)
     
     def main_image(self):
         gallery_item = self.gallery_images.first()
