@@ -1,10 +1,11 @@
 {% extends "base.html" %}
 
-{% load wagtailcore_tags wagtailimages_tags %}
+{% load wagtailcore_tags wagtailimages_tags cache %}
 
 {% block body_class %}template-indexpage{% endblock %}
 
 {% block content %}
+    {% cache 259200 blog_header %}
     <h1>{{ page.title }}</h1>
 
     <div class="intro">{{ page.intro|richtext }}</div>
@@ -12,34 +13,37 @@
     <li>
                 Tags:
     </li>
-    {% for tag in tags %}
-        <li><a href="{% slugurl 'tags' %}?tag={{ tag }}">{{ tag }}</a></li>
-    {% endfor %}
+        {% for tag in tags %}
+            <li><a href="{% slugurl 'tags' %}?tag={{ tag }}">{{ tag }}</a></li>
+        {% endfor %}        
     </ul>
+    {% endcache %}
 
     {% for post in posts %}
-        {% with post=post.specific %}
-            <div class="blogintro">
-            <a href="{% pageurl post %}">
-            <div class="highlight">
-            {% with post.main_image as main_image %}
-                {% if main_image %}{% image main_image fill-260x200 %}{% endif %}
-            {% endwith %}     
-            </div>
-            <div class="description">
-                <h2>{{ post.title }}</h2>
-                <p>{{ post.intro }}</p>
-            </div>            
-            </a>  
-            <div class="small footer">
-                {% if post.date %}
-                  {{ post.date }} by 
-                {% endif %}
-                {{ post.get_author_names_as_string }}
-                <p><a class='cta link' href="{% pageurl post %}">Read the story</a></p>
-            </div>            
-            </div>
-        {% endwith %}
+        {% cache 259200 blog_post_preview post.id %}
+            {% with post=post.specific %}
+                <div class="blogintro">
+                <a href="{% pageurl post %}">
+                <div class="highlight">
+                {% with post.main_image as main_image %}
+                    {% if main_image %}{% image main_image fill-260x200 %}{% endif %}
+                {% endwith %}     
+                </div>
+                <div class="description">
+                    <h2>{{ post.title }}</h2>
+                    <p>{{ post.intro }}</p>
+                </div>            
+                </a>  
+                <div class="small footer">
+                    {% if post.date %}
+                    {{ post.date }} by 
+                    {% endif %}
+                    {{ post.get_author_names_as_string }}
+                    <p><a class='cta link' href="{% pageurl post %}">Read the story</a></p>
+                </div>            
+                </div>
+            {% endwith %}
+        {% endcache %}
     {% endfor %}
     {% if posts.paginator.num_pages > 1 %}
     <ul class=category-tags>

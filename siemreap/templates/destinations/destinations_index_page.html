@@ -1,12 +1,15 @@
 {% extends "base.html" %}
-{% load wagtailcore_tags wagtailimages_tags %}
+{% load wagtailcore_tags wagtailimages_tags cache %}
 
 {% block body_class %}template-indexpage{% endblock %}
 
 {% block content %}
+    {% cache 259200 destinations_header %}
     <h1>{{ page.title }}</h1>
     <div class="intro">{{ page.intro|richtext }}</div>
+    {% endcache %}
     {% for destination in destinationpages %}
+        {% cache 259200 destination_preview destination.id %}
         {% with destination=destination.specific %}
             <div class="blogintro">
                 <a href="{% pageurl destination %}">
@@ -29,6 +32,7 @@
                 </div>
             </div>
         {% endwith %}
+        {% endcache %}
     {% endfor %}
     {% if destinationpages.paginator.num_pages > 1 %}
     <ul class=category-tags>

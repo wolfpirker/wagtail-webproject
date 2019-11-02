@@ -1,11 +1,13 @@
 {% extends "base.html" %}
-{% load wagtailcore_tags wagtailimages_tags %}
+{% load wagtailcore_tags wagtailimages_tags cache %}
 
 {% block body_class %}template-indexpage{% endblock %}
 
 {% block content %}
+    {% cache 259200 tours_header %}
     <h1>{{ page.title }}</h1>
     <div class="intro">{{ page.intro|richtext }}</div>
+    {% endcache %}
     {% if request.GET.category|length %}
         <h4>Showing tours in category "{{ request.GET.category.capitalize }}"</h4>
         <p><a href="{{ page.url }}">Show All Tours</a></p>
@@ -31,13 +33,16 @@
         <li>
             Categories:
         </li>
-        {% for iter in categories %}
-            <li><a href="?category={{ iter.slug }}">
-            {{ iter.name }}
-            </a></li>
-        {% endfor %}
+        {% cache 259200 tours_categories %}
+            {% for iter in categories %}
+                <li><a href="?category={{ iter.slug }}">
+                {{ iter.name }}
+                </a></li>
+            {% endfor %}
+        {% endcache %}
         </ul>        
         {% for tour in tourpages %}
+            {% cache 259200 tour_preview tour.id %}
             {% with tour=tour.specific %}
                 <div class="blogintro">
                 <a href="{% pageurl tour %}">
@@ -61,6 +66,7 @@
                 </div>
                 </div>
             {% endwith %}
+            {% endcache %}
         {% endfor %}
     {% endif %}
     {% if tourpages.paginator.num_pages > 1 %}
