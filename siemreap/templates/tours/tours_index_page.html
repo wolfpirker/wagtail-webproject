@@ -25,6 +25,14 @@
                 <p>{{ tour.short_description }}</p>
             </div>
             </a>  
+            <div class="small footer">
+                    {% if tour.tour_duration %}
+                    {{ tour.get_readable_tour_duration }} tour,
+                    from {{ tour.price_low_season }} dollars and up per tour.
+                    <br/>Province {{ tour.get_province_names_as_string }}
+                    <p><a class='cta link' href="{% pageurl tour %}">Find Out More</a></p>
+                    {% endif %}
+                </div>
             </div>
         {% endwith %}
         {% endfor %}        
@@ -57,12 +65,14 @@
                 </div>
                 </a>  
                 <div class="small footer">
-                    {% if tour.tour_duration %}
+                    {% if tour.tour_duration  %}
                     {{ tour.get_readable_tour_duration }} tour,
-                    from {{ tour.price_low_season }} dollars and up per tour.
-                    <br/>Province {{ tour.get_province_names_as_string }}
-                    <p><a class='cta link' href="{% pageurl tour %}">Find Out More</a></p>
                     {% endif %}
+                    {% if tour.price_low_season > 0 %}
+                    from {{ tour.price_low_season }} dollars and up per tour.
+                    {% endif %}
+                    <br/>Province {{ tour.get_province_names_as_string }}
+                    <p><a class='cta link' href="{% pageurl tour %}">Find Out More</a></p>                    
                 </div>
                 </div>
             {% endwith %}
