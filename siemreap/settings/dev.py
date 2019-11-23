@@ -37,6 +37,25 @@ CACHES = {
         }
 }
 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': './messages.log',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'WARNING',
+            'propagate': True,
+        },
+    },
+}
+
 #WAGTAILSEARCH_BACKENDS = {
 #    'default': {
 #        'BACKEND': 'wagtail.search.backends.elasticsearch2',
