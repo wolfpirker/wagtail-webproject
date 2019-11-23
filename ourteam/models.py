@@ -1,6 +1,7 @@
 """Our team page"""
 
 from django.db import models
+from django import forms
 
 from wagtail.core.models import Page, Orderable
 from wagtail.admin.edit_handlers import FieldPanel
@@ -8,14 +9,40 @@ from wagtail.admin.edit_handlers import FieldPanel
 from wagtail.core.fields import RichTextField
 from wagtail.search import index
 
-
-from modelcluster.fields import ParentalKey
+from modelcluster.fields import ParentalKey, ParentalManyToManyField
 from wagtail.core.fields import StreamField
 from wagtail.admin.edit_handlers import StreamFieldPanel, FieldPanel, InlinePanel, MultiFieldPanel
 from wagtail.images.edit_handlers import ImageChooserPanel
 from wagtail.snippets.edit_handlers import SnippetChooserPanel
 from wagtail.snippets.models import register_snippet
 from streams import blocks
+from django.utils.text import slugify
+
+class GuideQualification(models.Model):
+    """Guide qualification for a snippet"""
+
+    qualification = models.CharField(max_length=127)
+    slug = models.SlugField(
+        verbose_name="slug",
+        allow_unicode=True,
+        max_length=127,
+        help_text='A slug to identify guides by this qualification',
+    )
+
+    panels = [
+        FieldPanel("qualification"),
+        FieldPanel("slug"),
+    ]
+
+    class Meta:
+        verbose_name = "Guide Qualification"
+        verbose_name_plural = "Guide Qualifications"
+        ordering = ["qualification"]
+
+    def __str__(self):
+        return self.qualification
+
+register_snippet(GuideQualification)
 
 class GuideToursOrderable(Orderable):
     page = ParentalKey("ourteam.TourGuidePage", related_name="guide_tours")
@@ -69,7 +96,9 @@ class TourGuidePage(Page):
 
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
+    intro = models.CharField(max_length=254, null=True, blank=True)
     body = RichTextField(blank=True)
+    qualifications = ParentalManyToManyField("ourteam.GuideQualification", blank=True)
     include_contact_form = models.BooleanField()
     contact_email = models.CharField(max_length=100)
     image = models.ForeignKey(
@@ -80,9 +109,9 @@ class TourGuidePage(Page):
         related_name="+",
     )
 
-    allow_direct_guide_booking = models.BooleanField(help_text="wether this guide agrees to be booked for the hourly rate plus additional charge")
-    hourly_rate_low_season = models.IntegerField(help_text="hourly rate low season")
-    hourly_rate_high_season = models.IntegerField(help_text="hourly rate high season")
+    allow_direct_guide_booking = models.BooleanField(help_text="wether this guide agrees to be booked for an hourly rate plus additional charge")
+    hourly_rate_low_season = models.DecimalField(max_digits=4, decimal_places=2,help_text="hourly rate low season")
+    hourly_rate_high_season = models.DecimalField(max_digits=4, decimal_places=2,help_text="hourly rate high season")
     additional_charge_per_tour = models.IntegerField(help_text="added charge per group for each tour")
 
     main_province = models.ForeignKey(
@@ -93,7 +122,21 @@ class TourGuidePage(Page):
         related_name='+'
     )
 
-    content_panels = Page.content_panels + [
+    def clean(self):
+        """Override the values of title and slug before saving."""
+        super(TourGuidePage, self).clean()
+        self.title = "%s %s" % (self.first_name, self.last_name)
+        self.slug = slugify(self.title)
+
+    search_fields = Page.search_fields + [
+        index.SearchField('intro'),
+        index.SearchField('body'),
+        index.SearchField('qualifications'),
+        index.SearchField('guide_tours'),
+    ]
+
+    #content_panels = Page.content_panels + [
+    content_panels = [
         MultiFieldPanel([
             FieldPanel('first_name'),
             FieldPanel('last_name'),
@@ -102,6 +145,12 @@ class TourGuidePage(Page):
             ImageChooserPanel("image"),
             SnippetChooserPanel("main_province"),
         ], heading="Guide general information"),
+        MultiFieldPanel(
+            [
+                FieldPanel("qualifications", widget=forms.CheckboxSelectMultiple)
+            ],
+            heading="Guide Qualifications"
+        ),
         MultiFieldPanel([
             InlinePanel("guide_tours", label="Tours", min_num=0, max_num=10), 
             FieldPanel('allow_direct_guide_booking'),
@@ -109,5 +158,8 @@ class TourGuidePage(Page):
             FieldPanel('hourly_rate_high_season'),
             FieldPanel('additional_charge_per_tour'),
         ], heading="Tours Specification"),
+        FieldPanel('intro'),
         FieldPanel('body'),
     ]
+
+TourGuidePage._meta.get_field('slug').default = 'blank-slug'

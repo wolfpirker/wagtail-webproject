@@ -368,3 +368,385 @@ Traceback (most recent call last):
     raise new from exc
 django.template.exceptions.TemplateDoesNotExist: blocks/paragraph_block.html
 "GET /impressum/ HTTP/1.1" 500 206258
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 65, in resolve_template
+    return get_template(template, using=self.using)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: ourteam/tourguide_page.html
+"GET /team/john-doe/ HTTP/1.1" 500 99962
+Internal Server Error: /team/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'include_block'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 65, in resolve_template
+    return get_template(template, using=self.using)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 811, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'include_block', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+"GET /team/ HTTP/1.1" 500 179243
+Not Found: /amdin/
+"GET /amdin/ HTTP/1.1" 404 11025
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 65, in resolve_template
+    return get_template(template, using=self.using)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 205, in do_block
+    raise TemplateSyntaxError("'%s' tag with name '%s' appears more than once" % (bits[0], block_name))
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'content' appears more than once
+Internal Server Error: /admin/pages/25/edit/preview/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 65, in resolve_template
+    return get_template(template, using=self.using)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 205, in do_block
+    raise TemplateSyntaxError("'%s' tag with name '%s' appears more than once" % (bits[0], block_name))
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'content' appears more than once
+"GET /admin/pages/25/edit/preview/ HTTP/1.1" 500 164652
+Internal Server Error: /team/yasako/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 65, in resolve_template
+    return get_template(template, using=self.using)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 205, in do_block
+    raise TemplateSyntaxError("'%s' tag with name '%s' appears more than once" % (bits[0], block_name))
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'content' appears more than once
+"GET /team/yasako/ HTTP/1.1" 500 163322
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 65, in resolve_template
+    return get_template(template, using=self.using)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 205, in do_block
+    raise TemplateSyntaxError("'%s' tag with name '%s' appears more than once" % (bits[0], block_name))
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'content' appears more than once
+"GET /team/john-doe/ HTTP/1.1" 500 163350
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'image'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 65, in resolve_template
+    return get_template(template, using=self.using)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 5: 'image', expected 'endblock'. Did you forget to register or load this tag?
+"GET /team/john-doe/ HTTP/1.1" 500 167783
+Internal Server Error: /team/yasako/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'endfor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 65, in resolve_template
+    return get_template(template, using=self.using)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 952, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 46: 'endfor', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+"GET /team/yasako/ HTTP/1.1" 500 187427

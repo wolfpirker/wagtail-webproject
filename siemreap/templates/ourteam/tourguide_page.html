@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block content %}
+    <div class="portrait">
+    {% image page.image width-240 %}
+    </div>
+    <h1>{{ page.title }}</h1>
+    {% if page.intro %}
+        <div class="intro"><p>{{ page.intro }}</p></div>
+    {% endif %}
+    <p>Qualifications</p>
+    <ul class=guide-list>  
+        {% for iter in self.qualifications.all %}
+        <li>                
+            {{ iter.qualification }}                
+        </li>
+        {% endfor %}
+    </ul>
+    <p>Tours</p>
+    <ul class=guide-list>  
+        {% for iter in self.guide_tours.all %}
+        <li>      
+            <a href="{{ iter.tours_pages.url }}">          
+            {{ iter.tours_pages }}      
+            </a>          
+        </li>
+        {% endfor %}
+    </ul>   
+    {% if page.body %}
+        <div class="body">{{ page.body|richtext }}</div>
+    {% endif %}
+    <hr/>
+    {% if page.allow_direct_guide_booking %}
+        <p>This guide agrees to be booked at an hourly rate with fixed charge per tour added.
+        Please contact the guide in advance, best before booking. Changes to tours are subject to feasibility.</p>
+        <p>Booking Details:</p>        
+        <ul class=guide-list>  
+        <li>              
+            rate low season: {{ page.hourly_rate_low_season }} $ per hour             
+        </li>
+        <li>              
+            rate high season: {{ page.hourly_rate_high_season }} $ per hour             
+        </li>
+        <li>              
+            additional charge per tour: {{ page.additional_charge_per_tour }} $             
+        </li>
+        <li>
+            minimum time: 4 hours
+        </li>
+        <li>
+            maximum group size: 6 people
+        </li>
+    </ul>  
+    <p>
+    Booking tours directly not bound to specific guides is possible as well.
+    </p>
+    {% endif %} 
+    {% if page.include_contact_form %}
+
+    {% endif %} 
+{% endblock %}

@@ -524,3 +524,20 @@ img.province-map ::after{
       display: block;
     }
   }
+
+
+  .impressum {
+    font-size: 14px;
+  }
+
+  .footer ul{
+    list-style: none;
+    margin-top: 40px;
+    margin-right: 40px;
+    font-size: 16px;
+    text-align: right;
+  }
+
+  .footer a{
+    color: darkred;
+  }
