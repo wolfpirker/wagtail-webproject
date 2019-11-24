@@ -6,3 +6,2411 @@ Watching for file changes with StatReloader
 "POST /team/john-doe/ HTTP/1.1" 200 17588
 "GET /team/john-doe/ HTTP/1.1" 200 17606
 "POST /team/john-doe/ HTTP/1.1" 200 17113
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /team/john-doe/ HTTP/1.1" 200 17265
+"GET /admin/ HTTP/1.1" 200 27090
+"GET /admin/pages/11/edit/ HTTP/1.1" 200 104215
+"GET /admin/api/v2beta/pages/?child_of=1&for_explorer=1 HTTP/1.1" 200 1054
+"GET /admin/api/v2beta/pages/?child_of=3&for_explorer=1 HTTP/1.1" 200 8329
+"GET /admin/pages/14/edit/ HTTP/1.1" 200 62829
+"GET /admin/api/v2beta/pages/?child_of=1&for_explorer=1 HTTP/1.1" 200 1054
+"GET /admin/api/v2beta/pages/?child_of=3&for_explorer=1 HTTP/1.1" 200 8329
+"GET /admin/pages/11/edit/ HTTP/1.1" 200 104215
+"POST /admin/pages/11/edit/ HTTP/1.1" 302 0
+"GET /admin/pages/3/ HTTP/1.1" 200 53087
+"GET /team/ HTTP/1.1" 200 18736
+"GET /team/john-doe/ HTTP/1.1" 200 17264
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/models.py", line 721, in serve
+    self.get_context(request, *args, **kwargs)
+TypeError: get_context() takes 1 positional argument but 2 were given
+"GET /team/john-doe/ HTTP/1.1" 500 84703
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 12759
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/models.py", line 721, in serve
+    self.get_context(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 185, in get_context
+    context = super.get_context()
+AttributeError: type object 'super' has no attribute 'get_context'
+"GET /team/john-doe/ HTTP/1.1" 500 88781
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/models.py", line 721, in serve
+    self.get_context(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 185, in get_context
+    context = super.get_context(request)
+AttributeError: type object 'super' has no attribute 'get_context'
+"GET /team/john-doe/ HTTP/1.1" 500 88789
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/models.py", line 721, in serve
+    self.get_context(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 187, in get_context
+    context['parent'] = parent.form
+AttributeError: 'Page' object has no attribute 'form'
+"GET /team/john-doe/ HTTP/1.1" 500 89323
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/backends/django.py", line 59, in render
+    context = make_context(context, request, autoescape=self.backend.engine.autoescape)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/context.py", line 270, in make_context
+    raise TypeError('context must be a dict rather than %s.' % context.__class__.__name__)
+TypeError: context must be a dict rather than Page.
+"GET /team/john-doe/ HTTP/1.1" 500 92076
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /team/john-doe/ HTTP/1.1" 200 17129
+"GET /team/john-doe/ HTTP/1.1" 200 17127
+"GET /team/john-doe/ HTTP/1.1" 200 17162
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /team/john-doe/ HTTP/1.1" 200 17167
+"GET /team/john-doe/ HTTP/1.1" 200 17167
+"GET /team/john-doe/ HTTP/1.1" 200 17175
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/models.py", line 721, in serve
+    self.get_context(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 186, in get_context
+    parent = self.get_parent().live()
+TypeError: 'bool' object is not callable
+"GET /team/john-doe/ HTTP/1.1" 500 88994
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/models.py", line 721, in serve
+    self.get_context(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 186, in get_context
+    parent = self.get_parent().live()
+TypeError: 'bool' object is not callable
+"GET /team/john-doe/ HTTP/1.1" 500 89000
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/models.py", line 721, in serve
+    self.get_context(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 186, in get_context
+    parent = self.get_parent().live()
+TypeError: 'bool' object is not callable
+"GET /team/john-doe/ HTTP/1.1" 500 88991
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/models.py", line 721, in serve
+    self.get_context(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 186, in get_context
+    parent = self.get_parent().live()
+TypeError: 'bool' object is not callable
+"GET /team/john-doe/ HTTP/1.1" 500 88995
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/api/v2beta/pages/?child_of=1&for_explorer=1 HTTP/1.1" 200 1054
+"GET /admin/api/v2beta/pages/?child_of=3&for_explorer=1 HTTP/1.1" 200 8329
+"GET / HTTP/1.1" 200 17174
+"GET /team/ HTTP/1.1" 200 18737
+"GET /team/john-doe/ HTTP/1.1" 200 17153
+"GET /media/images/adult-casual-close-up-2857942.width-240.jpg HTTP/1.1" 304 0
+"GET /team/john-doe/ HTTP/1.1" 200 17162
+"GET /team/john-doe/ HTTP/1.1" 200 17164
+"GET /admin/ HTTP/1.1" 200 27078
+"GET /admin/pages/11/edit/ HTTP/1.1" 200 124305
+"GET / HTTP/1.1" 200 17174
+"GET /team/ HTTP/1.1" 200 18855
+"GET /team/ HTTP/1.1" 200 19454
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /team/ HTTP/1.1" 200 19454
+"GET /team/john-doe/ HTTP/1.1" 200 17163
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /team/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 237, in serve
+    form = self.get_form(page=self, user=request.user)
+TypeError: 'WagtailForm' object is not callable
+"GET /team/ HTTP/1.1" 500 84757
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /team/ HTTP/1.1" 200 19455
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /team/ HTTP/1.1" 200 19455
+"GET /team/john-doe/ HTTP/1.1" 200 17165
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'OurteamPage' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+TypeError: return_form() takes 0 positional arguments but 1 was given
+"GET /team/john-doe/ HTTP/1.1" 500 202426
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /team/john-doe/ HTTP/1.1" 200 17765
+Forbidden (CSRF token missing or incorrect.): /team/john-doe/
+"POST /team/john-doe/ HTTP/1.1" 403 11844
+Forbidden (CSRF token missing or incorrect.): /team/john-doe/
+"POST /team/john-doe/ HTTP/1.1" 403 11844
+"GET /team/john-doe/ HTTP/1.1" 200 17898
+"POST /team/john-doe/ HTTP/1.1" 200 17113
+"GET /admin/ HTTP/1.1" 200 27079
+"GET /admin/forms/ HTTP/1.1" 200 19268
+"GET /admin/forms/submissions/11/ HTTP/1.1" 200 22686
+"GET /admin/forms/ HTTP/1.1" 200 19268
+"GET /admin/forms/submissions/14/ HTTP/1.1" 200 28586
+"GET /admin/forms/ HTTP/1.1" 200 19268
+"GET /admin/forms/submissions/11/ HTTP/1.1" 200 22686
+"GET /admin/ HTTP/1.1" 200 27079
+"GET / HTTP/1.1" 200 17177
+"GET /team/ HTTP/1.1" 200 19454
+Forbidden (CSRF token missing or incorrect.): /team/
+"POST /team/ HTTP/1.1" 403 11844
+"GET /team/ HTTP/1.1" 200 19600
+"POST /team/ HTTP/1.1" 200 19777
+"GET /team/john-doe/ HTTP/1.1" 200 17922
+"POST /team/john-doe/ HTTP/1.1" 200 17113
+"GET /admin/ HTTP/1.1" 200 27079
+"GET /admin/forms/ HTTP/1.1" 200 19268
+"GET /admin/forms/submissions/11/ HTTP/1.1" 200 22686
+"GET /admin/forms/ HTTP/1.1" 200 19268
+"GET /admin/forms/submissions/14/ HTTP/1.1" 200 28586
+"GET /admin/forms/submissions/14/delete/?selected-submissions=8&selected-submissions=7 HTTP/1.1" 200 18427
+"POST /admin/forms/submissions/14/delete/?selected-submissions=8&selected-submissions=7 HTTP/1.1" 302 0
+"GET /admin/forms/submissions/14/ HTTP/1.1" 200 27508
+"GET / HTTP/1.1" 200 17174
+"GET /contact/ HTTP/1.1" 200 16062
+"POST /contact/ HTTP/1.1" 200 15242
+"GET /admin/ HTTP/1.1" 200 27078
+"GET /admin/forms/ HTTP/1.1" 200 19268
+"GET /admin/forms/submissions/14/ HTTP/1.1" 200 27934
+"GET /admin/forms/ HTTP/1.1" 200 19268
+"GET /admin/forms/submissions/11/ HTTP/1.1" 200 22686
+"GET /admin/forms/ HTTP/1.1" 200 19268
+"GET /admin/api/v2beta/pages/?child_of=1&for_explorer=1 HTTP/1.1" 200 1054
+"GET /admin/api/v2beta/pages/?child_of=3&for_explorer=1 HTTP/1.1" 200 8329
+"GET /admin/pages/14/edit/ HTTP/1.1" 200 62829
+"GET /admin/api/v2beta/pages/?child_of=1&for_explorer=1 HTTP/1.1" 200 1054
+"GET /admin/api/v2beta/pages/?child_of=3&for_explorer=1 HTTP/1.1" 200 8329
+"GET /admin/pages/11/edit/ HTTP/1.1" 200 124305
+"POST /admin/pages/11/edit/ HTTP/1.1" 302 0
+"GET /admin/pages/3/ HTTP/1.1" 200 53087
+"GET /team/ HTTP/1.1" 200 19512
+Internal Server Error: /team/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 235, in serve
+    return self.render_landing_page(request, form_submission, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 216, in render_landing_page
+    context
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: ourteam/ourteam_page_landing.html
+"POST /team/ HTTP/1.1" 500 113630
+"GET /admin/ HTTP/1.1" 200 27079
+"GET /admin/forms/ HTTP/1.1" 200 19268
+"GET /admin/forms/ HTTP/1.1" 200 19268
+"GET /admin/forms/submissions/11/ HTTP/1.1" 200 24588
+"GET / HTTP/1.1" 200 17174
+"GET /team/ HTTP/1.1" 200 19511
+"GET /team/john-doe/ HTTP/1.1" 200 17833
+"POST /team/john-doe/ HTTP/1.1" 200 17113
+"GET /admin/ HTTP/1.1" 200 27077
+"GET /admin/forms/ HTTP/1.1" 200 19268
+"GET /admin/forms/submissions/11/ HTTP/1.1" 200 24588
+"GET /admin/forms/ HTTP/1.1" 200 19268
+"GET / HTTP/1.1" 200 17176
+"GET /team/ HTTP/1.1" 200 19511
+"GET /team/john-doe/ HTTP/1.1" 200 17824
+Internal Server Error: /team/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 235, in serve
+    return self.render_landing_page(request, form_submission, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 216, in render_landing_page
+    context
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: ourteam/ourteam_page_landing.html
+"POST /team/ HTTP/1.1" 500 113579
+"GET /admin/ HTTP/1.1" 200 27078
+"GET /admin/forms/ HTTP/1.1" 200 19268
+"GET /admin/forms/submissions/11/ HTTP/1.1" 200 25233
+"GET /admin/api/v2beta/pages/?child_of=1&for_explorer=1 HTTP/1.1" 200 1054
+"GET /admin/api/v2beta/pages/?child_of=3&for_explorer=1 HTTP/1.1" 200 8329
+"GET /admin/pages/11/edit/ HTTP/1.1" 200 119363
+"POST /admin/pages/11/edit/ HTTP/1.1" 302 0
+"GET /admin/pages/3/ HTTP/1.1" 200 53087
+"GET /admin/forms/ HTTP/1.1" 200 19268
+"GET /admin/forms/submissions/11/ HTTP/1.1" 200 25527
+"GET /team/ HTTP/1.1" 200 19601
+"GET /team/john-doe/ HTTP/1.1" 200 17913
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /team/john-doe/ HTTP/1.1" 200 17927
+Internal Server Error: /team/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 235, in serve
+    return self.render_landing_page(request, form_submission, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 216, in render_landing_page
+    context
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: ourteam/ourteam_page_landing.html
+"POST /team/ HTTP/1.1" 500 113837
+"GET /admin/api/v2beta/pages/?child_of=1&for_explorer=1 HTTP/1.1" 200 1054
+"GET /admin/api/v2beta/pages/?child_of=3&for_explorer=1 HTTP/1.1" 200 8329
+"GET /admin/api/v2beta/pages/?child_of=11&for_explorer=1 HTTP/1.1" 200 1979
+"GET /admin/forms/ HTTP/1.1" 200 19268
+"GET /admin/pages/11/edit/ HTTP/1.1" 200 124341
+"GET /admin/forms/submissions/11/ HTTP/1.1" 200 26262
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /team/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 237, in serve
+    form = self.get_form(page=self, user=request.user)
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 120, in get_form
+    field.widget.attrs['value'] = self.page
+AttributeError: 'OurteamPage' object has no attribute 'page'
+"GET /team/ HTTP/1.1" 500 90168
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /team/ HTTP/1.1" 200 18741
+"GET /team/john-doe/ HTTP/1.1" 200 17931
+Internal Server Error: /team/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 235, in serve
+    return self.render_landing_page(request, form_submission, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 216, in render_landing_page
+    context
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: ourteam/ourteam_page_landing.html
+"POST /team/ HTTP/1.1" 500 114027
+"GET /admin/ HTTP/1.1" 200 27076
+"GET /static/wagtailadmin/js/vendor.js.map HTTP/1.1" 200 1108878
+"GET /static/wagtailadmin/js/wagtailadmin.js.map HTTP/1.1" 200 438510
+"GET /admin/forms/ HTTP/1.1" 200 19285
+"GET /admin/pages/11/edit/ HTTP/1.1" 200 124341
+"GET /admin/forms/submissions/11/ HTTP/1.1" 200 27022
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 17176
+"GET /team/ HTTP/1.1" 200 18741
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 858, in _resolve_lookup
+    current = current()
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 198, in get_form
+    self.get_parent().return_form(self.title)
+AttributeError: 'Page' object has no attribute 'return_form'
+"GET /team/john-doe/ HTTP/1.1" 500 187969
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 858, in _resolve_lookup
+    current = current()
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 198, in get_form
+    self.get_parent().specific.return_form(self.title)
+TypeError: return_form() missing 1 required positional argument: 'guide'
+"GET /team/john-doe/ HTTP/1.1" 500 187992
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 858, in _resolve_lookup
+    current = current()
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 198, in get_form
+    self.get_parent().specific.return_form(self, self.title)
+TypeError: return_form() missing 1 required positional argument: 'guide'
+"GET /team/john-doe/ HTTP/1.1" 500 188004
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 858, in _resolve_lookup
+    current = current()
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 198, in get_form
+    self.get_parent().specific.return_form(self.title)
+TypeError: return_form() missing 1 required positional argument: 'guide'
+"GET /team/john-doe/ HTTP/1.1" 500 187992
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 858, in _resolve_lookup
+    current = current()
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 198, in get_form
+    self.get_parent().specific.return_form(self.title, self.title)
+TypeError: return_form() missing 1 required positional argument: 'guide'
+"GET /team/john-doe/ HTTP/1.1" 500 188016
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 858, in _resolve_lookup
+    current = current()
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 198, in get_form
+    self.get_parent().specific.return_form(self.title)
+TypeError: 'WagtailForm' object is not callable
+"GET /team/john-doe/ HTTP/1.1" 500 187843
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 858, in _resolve_lookup
+    current = current()
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 198, in get_form
+    self.get_parent().specific.return_form()
+TypeError: 'WagtailForm' object is not callable
+"GET /team/john-doe/ HTTP/1.1" 500 187822
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 858, in _resolve_lookup
+    current = current()
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 198, in get_form
+    self.get_parent().specific.return_form()
+TypeError: 'WagtailForm' object is not callable
+"GET /team/john-doe/ HTTP/1.1" 500 187779
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 858, in _resolve_lookup
+    current = current()
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 198, in get_form
+    self.get_parent().specific.return_form()
+TypeError: 'WagtailForm' object is not callable
+"GET /team/john-doe/ HTTP/1.1" 500 187779
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 858, in _resolve_lookup
+    current = current()
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 198, in get_form
+    return self.get_parent().specific.return_form()
+TypeError: 'WagtailForm' object is not callable
+"GET /team/john-doe/ HTTP/1.1" 500 187836
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 858, in _resolve_lookup
+    current = current()
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 198, in get_form
+    return self.get_parent().specific.return_form()
+TypeError: 'WagtailForm' object is not callable
+"GET /team/john-doe/ HTTP/1.1" 500 187793
+"GET /team/john-doe/ HTTP/1.1" 200 17296
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 858, in _resolve_lookup
+    current = current()
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 198, in return_form
+    return self.get_parent().return_form()
+AttributeError: 'Page' object has no attribute 'return_form'
+"GET /team/john-doe/ HTTP/1.1" 500 187984
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 858, in _resolve_lookup
+    current = current()
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 198, in return_form
+    return self.get_parent().return_form()
+AttributeError: 'Page' object has no attribute 'return_form'
+"GET /team/john-doe/ HTTP/1.1" 500 187989
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'TourGuidePage' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 198, in return_form
+    return self.get_parent().specific.return_form()
+TypeError: 'WagtailForm' object is not callable
+"GET /team/john-doe/ HTTP/1.1" 500 193231
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/models.py", line 721, in serve
+    self.get_context(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 193, in get_context
+    parent = self.get_parent().live()
+TypeError: 'bool' object is not callable
+"GET /team/john-doe/ HTTP/1.1" 500 88969
+Watching for file changes with StatReloader
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/models.py", line 721, in serve
+    self.get_context(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 193, in get_context
+    parent = self.get_parent().live()
+TypeError: 'bool' object is not callable
+"GET /team/john-doe/ HTTP/1.1" 500 88969
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/models.py", line 721, in serve
+    self.get_context(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 193, in get_context
+    parent = self.get_parent().live()
+TypeError: 'bool' object is not callable
+"GET /team/john-doe/ HTTP/1.1" 500 88968
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/models.py", line 721, in serve
+    self.get_context(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 193, in get_context
+    parent = self.get_parent().live()
+TypeError: 'bool' object is not callable
+"GET /team/john-doe/ HTTP/1.1" 500 88968
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/models.py", line 721, in serve
+    self.get_context(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 193, in get_context
+    parent = self.get_parent().live()
+TypeError: 'bool' object is not callable
+"GET /team/john-doe/ HTTP/1.1" 500 88966
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/models.py", line 721, in serve
+    self.get_context(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 193, in get_context
+    parent = self.get_parent().live()
+TypeError: 'bool' object is not callable
+"GET /team/john-doe/ HTTP/1.1" 500 88965
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/models.py", line 721, in serve
+    self.get_context(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 193, in get_context
+    parent = self.get_parent().live()
+TypeError: 'bool' object is not callable
+"GET /team/john-doe/ HTTP/1.1" 500 88965
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/models.py", line 721, in serve
+    self.get_context(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 193, in get_context
+    parent = self.get_parent().live()
+TypeError: 'bool' object is not callable
+"GET /team/john-doe/ HTTP/1.1" 500 88968
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/models.py", line 721, in serve
+    self.get_context(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 193, in get_context
+    parent = self.get_parent().live()
+TypeError: 'bool' object is not callable
+"GET /team/john-doe/ HTTP/1.1" 500 88968
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/models.py", line 721, in serve
+    self.get_context(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 193, in get_context
+    parent = self.get_parent().live()
+TypeError: 'bool' object is not callable
+"GET /team/john-doe/ HTTP/1.1" 500 88971
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /team/john-doe/ HTTP/1.1" 200 17304
+"GET /static/favicon.ico HTTP/1.1" 200 2666
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /team/john-doe/ HTTP/1.1" 200 17304
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/models.py", line 721, in serve
+    self.get_context(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 194, in get_context
+    context['ourteamsform'] = parent.specific.return_form()
+TypeError: 'WagtailForm' object is not callable
+"GET /team/john-doe/ HTTP/1.1" 500 89234
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/models.py", line 721, in serve
+    self.get_context(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 194, in get_context
+    form = parent.specific.return_form()
+TypeError: 'WagtailForm' object is not callable
+"GET /team/john-doe/ HTTP/1.1" 500 89042
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/models.py", line 721, in serve
+    self.get_context(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 194, in get_context
+    form = parent.specific.return_form()
+TypeError: 'WagtailForm' object is not callable
+"GET /team/john-doe/ HTTP/1.1" 500 89170
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /team/john-doe/ HTTP/1.1" 200 17305
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /team/john-doe/ HTTP/1.1" 200 17897
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 858, in _resolve_lookup
+    current = current()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/forms/forms.py", line 294, in as_ul
+    errors_on_separate_row=False,
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/forms/forms.py", line 202, in _html_output
+    top_errors = self.non_field_errors()  # Errors that should be displayed above all fields.
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/forms/forms.py", line 313, in non_field_errors
+    return self.errors.get(NON_FIELD_ERRORS, self.error_class(error_class='nonfield'))
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/forms/forms.py", line 180, in errors
+    self.full_clean()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/forms/forms.py", line 381, in full_clean
+    self._clean_fields()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/forms/forms.py", line 393, in _clean_fields
+    value = field.widget.value_from_datadict(self.data, self.files, self.add_prefix(name))
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/forms/widgets.py", line 258, in value_from_datadict
+    return data.get(name)
+AttributeError: 'str' object has no attribute 'get'
+"GET /team/john-doe/ HTTP/1.1" 500 215402
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 858, in _resolve_lookup
+    current = current()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/forms/forms.py", line 294, in as_ul
+    errors_on_separate_row=False,
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/forms/forms.py", line 202, in _html_output
+    top_errors = self.non_field_errors()  # Errors that should be displayed above all fields.
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/forms/forms.py", line 313, in non_field_errors
+    return self.errors.get(NON_FIELD_ERRORS, self.error_class(error_class='nonfield'))
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/forms/forms.py", line 180, in errors
+    self.full_clean()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/forms/forms.py", line 381, in full_clean
+    self._clean_fields()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/forms/forms.py", line 393, in _clean_fields
+    value = field.widget.value_from_datadict(self.data, self.files, self.add_prefix(name))
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/forms/widgets.py", line 258, in value_from_datadict
+    return data.get(name)
+AttributeError: 'str' object has no attribute 'get'
+"GET /team/john-doe/ HTTP/1.1" 500 215401
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /team/john-doe/ HTTP/1.1" 200 17896
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 17177
+"GET /static/favicon.ico HTTP/1.1" 200 2666
+"GET /team/ HTTP/1.1" 200 18741
+"GET /team/john-doe/ HTTP/1.1" 200 17910
+Internal Server Error: /team/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 235, in serve
+    return self.render_landing_page(request, form_submission, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 216, in render_landing_page
+    context
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: ourteam/ourteam_page_landing.html
+"POST /team/ HTTP/1.1" 500 113951
+"GET /admin/ HTTP/1.1" 200 27086
+"GET /admin/forms/ HTTP/1.1" 200 19268
+"GET /admin/forms/submissions/11/ HTTP/1.1" 200 27768
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/api/v2beta/pages/?child_of=1&for_explorer=1 HTTP/1.1" 200 1054
+"GET / HTTP/1.1" 200 17177
+"GET /team/ HTTP/1.1" 200 18740
+"GET /team/yasako/ HTTP/1.1" 200 16765
+"GET /media/images/blurred-background-casual-close-up-2888113.width-240.jpg HTTP/1.1" 200 18181
+"GET /admin/ HTTP/1.1" 200 27086
+"GET /admin/pages/26/edit/ HTTP/1.1" 200 48764
+"POST /admin/pages/26/edit/ HTTP/1.1" 302 0
+"GET /admin/pages/11/ HTTP/1.1" 200 31530
+"GET /team/yasako/ HTTP/1.1" 200 17719
+Internal Server Error: /team/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 235, in serve
+    return self.render_landing_page(request, form_submission, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 216, in render_landing_page
+    context
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: ourteam/ourteam_page_landing.html
+"POST /team/ HTTP/1.1" 500 114081
+"GET /admin/ HTTP/1.1" 200 27076
+"GET /admin/forms/ HTTP/1.1" 200 19268
+"GET /admin/forms/submissions/11/ HTTP/1.1" 200 28536
+"GET /admin/ HTTP/1.1" 200 27075
+"GET / HTTP/1.1" 200 17174
+"GET /team/ HTTP/1.1" 200 18741
+"GET /team/yasako/ HTTP/1.1" 200 17716
+"GET /blog/ HTTP/1.1" 200 20468
+"GET /team/ HTTP/1.1" 200 18742
+"GET /team/john-doe/ HTTP/1.1" 200 17912
+Internal Server Error: /team/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 235, in serve
+    return self.render_landing_page(request, form_submission, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 216, in render_landing_page
+    context
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: ourteam/ourteam_page_landing.html
+"POST /team/ HTTP/1.1" 500 113915
+"GET /team/ HTTP/1.1" 200 18740
+"GET /team/ HTTP/1.1" 200 18740
+"GET /team/john-doe/ HTTP/1.1" 200 17912
+"GET /team/john-doe/ HTTP/1.1" 200 17910
+"GET /media/images/adult-casual-close-up-2857942.width-240.jpg HTTP/1.1" 304 0
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /team/john-doe/ HTTP/1.1" 200 17911
+Internal Server Error: /team/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view wagtail.core.views.serve didn't return an HttpResponse object. It returned None instead.
+"POST /team/ HTTP/1.1" 500 71516
+"GET /admin/forms/ HTTP/1.1" 200 19268
+"GET /admin/forms/submissions/11/ HTTP/1.1" 200 30014
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 17177
+"GET /team/ HTTP/1.1" 200 18741
+"GET /team/john-doe/ HTTP/1.1" 200 17910
+Internal Server Error: /team/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 235, in serve
+    return self.render_landing_page(request, form_submission, *args, **kwargs)
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 143, in render_landing_page
+    return redirect(guide_page, permanent=False)
+NameError: name 'guide_page' is not defined
+"POST /team/ HTTP/1.1" 500 91234
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /team/ HTTP/1.1" 200 18741
+"GET /team/john-doe/ HTTP/1.1" 200 17911
+Internal Server Error: /team/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/shortcuts.py", line 148, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 668, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'None' not found. 'None' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 235, in serve
+    return self.render_landing_page(request, form_submission, *args, **kwargs)
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 143, in render_landing_page
+    return redirect(self.guide_page, permanent=False)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/shortcuts.py", line 58, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/shortcuts.py", line 154, in resolve_url
+    if '/' not in to and '.' not in to:
+TypeError: argument of type 'NoneType' is not iterable
+"POST /team/ HTTP/1.1" 500 112868
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /team/john-doe/ HTTP/1.1" 200 17910
+Internal Server Error: /team/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 235, in serve
+    return self.render_landing_page(request, form_submission, *args, **kwargs)
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 143, in render_landing_page
+    return redirect(self.guide_page.url, permanent=False)
+AttributeError: 'NoneType' object has no attribute 'url'
+"POST /team/ HTTP/1.1" 500 91346
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /team/ HTTP/1.1" 200 18741
+"GET /team/yasako/ HTTP/1.1" 200 17716
+"POST /team/ HTTP/1.1" 200 18749
+"GET /admin/ HTTP/1.1" 200 27061
+"GET /admin/forms/ HTTP/1.1" 200 19268
+"GET /admin/forms/submissions/11/ HTTP/1.1" 200 32981
+"GET / HTTP/1.1" 200 17174
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /team/ HTTP/1.1" 200 18740
+"GET /team/yasako/ HTTP/1.1" 200 17714
+"POST /team/ HTTP/1.1" 200 15112
+"GET /team/ HTTP/1.1" 200 18740
+"GET /team/john-doe/ HTTP/1.1" 200 17910
+"POST /team/ HTTP/1.1" 200 15105
+"GET /team/ HTTP/1.1" 200 18740
+"GET /team/john-doe/ HTTP/1.1" 200 17910
+"POST /team/ HTTP/1.1" 200 15056
+"GET /team/ HTTP/1.1" 200 18740
+"GET /team/john-doe/ HTTP/1.1" 200 17910
+"POST /team/ HTTP/1.1" 200 15057
+"GET /admin/ HTTP/1.1" 200 27061
+"GET /admin/forms/ HTTP/1.1" 200 19268
+"GET /admin/forms/submissions/11/ HTTP/1.1" 200 35953
+"GET / HTTP/1.1" 200 17174
+"GET /team/ HTTP/1.1" 200 18740
+"GET /team/john-doe/ HTTP/1.1" 200 17910
+Internal Server Error: /team/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 235, in serve
+    return self.render_landing_page(request, form_submission, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 216, in render_landing_page
+    context
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 479, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/base.py", line 497, in extend_nodelist
+    token, '%r must be the first tag in the template.' % node,
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends "ourteam/tourguide_page.html"> must be the first tag in the template.
+"POST /team/ HTTP/1.1" 500 157990
+"GET /team/ HTTP/1.1" 200 18740
+"GET /team/john-doe/ HTTP/1.1" 200 17910
+"POST /team/ HTTP/1.1" 200 15044
+"GET /team/ HTTP/1.1" 200 18740
+"GET /team/john-doe/ HTTP/1.1" 200 17910
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /team/john-doe/ HTTP/1.1" 200 17913
+"GET /team/john-doe/ HTTP/1.1" 200 17914
+"GET /static/favicon.ico HTTP/1.1" 200 2666
+Internal Server Error: /team/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 235, in serve
+    return self.render_landing_page(request, form_submission, *args, **kwargs)
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 144, in render_landing_page
+    return redirect(self.guide_page.url, permanent=False)
+AttributeError: 'NoneType' object has no attribute 'url'
+"POST /team/ HTTP/1.1" 500 91284
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /team/ HTTP/1.1" 200 18741
+"GET /team/yasako/ HTTP/1.1" 200 17717
+Internal Server Error: /team/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/shortcuts.py", line 148, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 668, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'None' not found. 'None' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 235, in serve
+    return self.render_landing_page(request, form_submission, *args, **kwargs)
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 144, in render_landing_page
+    return redirect(page, permanent=False)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/shortcuts.py", line 58, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/shortcuts.py", line 154, in resolve_url
+    if '/' not in to and '.' not in to:
+TypeError: argument of type 'NoneType' is not iterable
+"POST /team/ HTTP/1.1" 500 112904
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /team/ HTTP/1.1" 200 18742
+"GET /team/yasako/ HTTP/1.1" 200 17714
+Internal Server Error: /team/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/shortcuts.py", line 148, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 668, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'None' not found. 'None' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 235, in serve
+    return self.render_landing_page(request, form_submission, *args, **kwargs)
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 144, in render_landing_page
+    return redirect(page, permanent=False)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/shortcuts.py", line 58, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/shortcuts.py", line 154, in resolve_url
+    if '/' not in to and '.' not in to:
+TypeError: argument of type 'NoneType' is not iterable
+"POST /team/ HTTP/1.1" 500 112898
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /team/ HTTP/1.1" 200 18742
+"GET /team/yasako/ HTTP/1.1" 200 17716
+"POST /team/ HTTP/1.1" 302 0
+Not Found: /team//Yasako .
+"GET /team//Yasako%20. HTTP/1.1" 404 12770
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /team//Yasako
+"GET /team//Yasako HTTP/1.1" 404 12763
+"GET /team/Yasako HTTP/1.1" 301 0
+Not Found: /team/Yasako/
+"GET /team/Yasako/ HTTP/1.1" 404 11037
+"GET /team/ HTTP/1.1" 200 18741
+"GET /team/yasako/ HTTP/1.1" 200 17717
+"POST /team/ HTTP/1.1" 302 0
+Not Found: /team/Yasako .
+"GET /team/Yasako%20. HTTP/1.1" 404 12767
+Not Found: /team/Yasako .
+"GET /team/Yasako%20. HTTP/1.1" 404 12767
+Not Found: /team/Yasako .
+"GET /team/Yasako%20. HTTP/1.1" 404 12767
+"GET /team/ HTTP/1.1" 200 18741
+"GET /team/yasako/ HTTP/1.1" 200 17716
+"GET /team/ HTTP/1.1" 200 18740
+"GET /team/john-doe/ HTTP/1.1" 200 17910
+"POST /team/ HTTP/1.1" 302 0
+Not Found: /team/John Doe
+"GET /team/John%20Doe HTTP/1.1" 404 12767
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /team/ HTTP/1.1" 200 18741
+"GET /team/john-doe/ HTTP/1.1" 200 17910
+"POST /team/ HTTP/1.1" 302 0
+"GET /team/ HTTP/1.1" 200 18741
+"GET /admin/ HTTP/1.1" 200 27061
+"GET /admin/forms/ HTTP/1.1" 200 19268
+"GET /admin/forms/submissions/11/ HTTP/1.1" 200 39010
+"GET / HTTP/1.1" 200 17175
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /team/ HTTP/1.1" 200 18741
+"GET /team/yasako/ HTTP/1.1" 200 17719
+"POST /team/ HTTP/1.1" 302 0
+"GET /team/yasako/ HTTP/1.1" 200 17722
+"GET /admin/ HTTP/1.1" 200 27048
+"GET /admin/forms/ HTTP/1.1" 200 19268
+"GET /admin/forms/submissions/11/ HTTP/1.1" 200 38987
+"GET /team/ HTTP/1.1" 200 18740
+"GET /team/yasako/ HTTP/1.1" 200 17719
+"GET / HTTP/1.1" 200 17177
+"GET /team/ HTTP/1.1" 200 18740
+"GET /team/john-doe/ HTTP/1.1" 200 17936
+"POST /team/ HTTP/1.1" 302 0
+"GET /team/john-doe/ HTTP/1.1" 200 17936
+"GET /admin/forms/ HTTP/1.1" 200 19268
+"GET /admin/forms/submissions/11/ HTTP/1.1" 200 38993
+"GET /team/john-doe/ HTTP/1.1" 200 17936
+"POST /team/ HTTP/1.1" 302 0
+"GET /team/john-doe/ HTTP/1.1" 200 17936
+"GET /team/john-doe/ HTTP/1.1" 200 17945
+"POST /team/john-doe/ HTTP/1.1" 200 17167
+"GET /admin/ HTTP/1.1" 200 27061
+"GET /admin/forms/ HTTP/1.1" 200 19268
+"GET /admin/forms/submissions/11/ HTTP/1.1" 200 39015
+"GET /team/john-doe/ HTTP/1.1" 200 17936
+"GET /team/john-doe/ HTTP/1.1" 200 17937
+"POST /team/ HTTP/1.1" 302 0
+"GET /team/john-doe/ HTTP/1.1" 200 17937
+"GET /admin/forms/submissions/11/ HTTP/1.1" 200 39030
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /team/ HTTP/1.1" 200 18740
+"GET /team/ HTTP/1.1" 200 18740
+"GET /team/john-doe/ HTTP/1.1" 200 17937
+Internal Server Error: /team/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 235, in serve
+    return self.render_landing_page(request, form_submission, *args, **kwargs)
+  File "/home/wolf/siemreap-page/ourteam/models.py", line 150, in render_landing_page
+    self.form_sent = True
+AttributeError: can't set attribute
+"POST /team/ HTTP/1.1" 500 91395
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /team/ HTTP/1.1" 200 18742
+"GET /team/john-doe/ HTTP/1.1" 200 17937
+"POST /team/ HTTP/1.1" 302 0
+"GET /team/john-doe/ HTTP/1.1" 200 17937
+"GET /admin/forms/submissions/11/ HTTP/1.1" 200 39062
+"GET / HTTP/1.1" 200 17174
+"GET /team/ HTTP/1.1" 200 18740
+"GET /team/john-doe/ HTTP/1.1" 200 17937
+"GET /team/john-doe/ HTTP/1.1" 200 17938
+"POST /team/ HTTP/1.1" 302 0
+"GET /team/john-doe/ HTTP/1.1" 200 17936
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/tours/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/tours/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /team/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 235, in serve
+    return self.render_landing_page(request, form_submission, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 212, in render_landing_page
+    context['form_submission'] = form_submission
+TypeError: 'NoneType' object does not support item assignment
+"POST /team/ HTTP/1.1" 500 91387
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /team/ HTTP/1.1" 200 18742
+"GET /team/ HTTP/1.1" 200 18743
+"GET /team/john-doe/ HTTP/1.1" 200 17910
+Internal Server Error: /team/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 235, in serve
+    return self.render_landing_page(request, form_submission, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 216, in render_landing_page
+    context
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: ourteam/ourteam_page_landing.html
+"POST /team/ HTTP/1.1" 500 113945
+"GET /team/ HTTP/1.1" 200 18740
+"GET /team/yasako/ HTTP/1.1" 200 17716
+Internal Server Error: /team/
+Traceback (most recent call last):
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/core/views.py", line 24, in serve
+    return page.serve(request, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 235, in serve
+    return self.render_landing_page(request, form_submission, *args, **kwargs)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/wagtail/contrib/forms/models.py", line 216, in render_landing_page
+    context
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/wolf/siemreap-page/env/lib/python3.5/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: ourteam/ourteam_page_landing.html
+"POST /team/ HTTP/1.1" 500 113877
+"GET /team/ HTTP/1.1" 200 18740
+"GET /team/john-doe/ HTTP/1.1" 200 17910
+"POST /team/ HTTP/1.1" 200 18749
+"GET /team/john-doe/ HTTP/1.1" 200 17910
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /team/john-doe/ HTTP/1.1" 200 17911
+"POST /team/ HTTP/1.1" 200 15127
+"GET /team/ HTTP/1.1" 200 18740
+"GET /team/john-doe/ HTTP/1.1" 200 17912
+"GET /team/john-doe/ HTTP/1.1" 200 17911
+"POST /team/ HTTP/1.1" 200 15166
+"GET /team/ HTTP/1.1" 200 18740
+"GET /team/yasako/ HTTP/1.1" 200 17717
+"GET /team/yasako/ HTTP/1.1" 200 17717
+"GET /team/ HTTP/1.1" 200 18740
+"GET /team/john-doe/ HTTP/1.1" 200 17910
+"GET /team/ HTTP/1.1" 200 18741
+"GET /team/yasako/ HTTP/1.1" 200 17716
+"POST /team/ HTTP/1.1" 200 15166
+"GET /admin/ HTTP/1.1" 200 27078
+"GET /admin/forms/ HTTP/1.1" 200 19268
+"GET /admin/api/v2beta/pages/?child_of=1&for_explorer=1 HTTP/1.1" 200 1054
+"GET /admin/api/v2beta/pages/?child_of=3&for_explorer=1 HTTP/1.1" 200 8329
+"GET /admin/api/v2beta/pages/?child_of=11&for_explorer=1 HTTP/1.1" 200 1979
+"GET /admin/pages/14/ HTTP/1.1" 200 24293
+"GET /admin/api/v2beta/pages/?child_of=1&for_explorer=1 HTTP/1.1" 200 1054
+"GET /admin/api/v2beta/pages/?child_of=3&for_explorer=1 HTTP/1.1" 200 8329
+"GET /admin/pages/11/edit/ HTTP/1.1" 200 124341
+"GET /static/wagtailadmin/js/draftail.js.map HTTP/1.1" 200 2139103
+"POST /admin/pages/11/edit/ HTTP/1.1" 302 0
+"GET /admin/pages/3/ HTTP/1.1" 200 53080
+"GET /team/yasako/ HTTP/1.1" 200 17714
+"POST /team/ HTTP/1.1" 200 15192
+"GET /admin/ HTTP/1.1" 200 27066
+"GET /admin/pages/11/edit/ HTTP/1.1" 200 124366
+"POST /admin/pages/11/edit/ HTTP/1.1" 302 0
+"GET /admin/pages/3/ HTTP/1.1" 200 53080

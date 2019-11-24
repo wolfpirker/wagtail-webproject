@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load wagtailcore_tags %}
+
+{% block content %}
+   <h1>{{ self.subtitle }}</h1>
+    {% if request.POST.guide|length %}
+        <h2>Contact {{ request.POST.guide }}</h2>
+    {% endif %}
+    {{ page.thank_you_text|richtext }}
+    
+{% endblock %}

@@ -57,15 +57,13 @@
     </p>
     {% endif %} 
     {% if page.include_contact_form %}
-        <h3>Contact this guide</h3>
-        {% if request.POST %}
-            <p>Thank you for your message! This guide will respond to you within few days.</p>
-        {% else %}
-        <form method="post">
+        <h3>Contact {{ self.title }}</h3>
+        <form action="{% pageurl page.get_parent.specific %}" method="post">
             {% csrf_token %}
-            {{ page.form.as_p }}
+            <ul>
+            {{ ourteamsform.as_ul }}
+            </ul>
             <input type="submit" value="Submit" />
         </form>
-        {% endif %}
     {% endif %} 
 {% endblock %}
