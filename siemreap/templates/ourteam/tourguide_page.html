@@ -2,9 +2,8 @@
 {% load wagtailcore_tags wagtailimages_tags %}
 
 {% block content %}
-    <div class="portrait">
-    {% image page.image width-240 %}
-    </div>
+    <div class="row">
+    <div class="column left">
     <h1>{{ page.title }}</h1>
     {% if page.intro %}
         <div class="intro"><p>{{ page.intro }}</p></div>
@@ -43,20 +42,25 @@
             rate high season: {{ page.hourly_rate_high_season }} $ per hour             
         </li>
         <li>              
-            additional charge per tour: {{ page.additional_charge_per_tour }} $             
+            additional charge per day: {{ page.additional_charge_per_day }} $             
         </li>
         <li>
-            minimum time: 4 hours
+            minimum time per day: 3 hours
         </li>
         <li>
             maximum group size: 6 people
         </li>
     </ul>  
     <p>
-    Booking tours directly not bound to specific guides is possible as well.
+    Note: Booking tours directly is possible as well. If you have no guide preference, this might be better for you.
     </p>
     {% endif %} 
-    {% if page.include_contact_form %}
+    </div>
+    <div class="column right">
+        <figure class="framed-photo">
+        {% image page.image width-240 %}
+        </figure>
+        {% if page.include_contact_form %}
         <h3>Contact {{ self.title }}</h3>
         <form action="{% pageurl page.get_parent.specific %}" method="post">
             {% csrf_token %}
@@ -65,5 +69,9 @@
             </ul>
             <input type="submit" value="Submit" />
         </form>
-    {% endif %} 
+    {% endif %}  
+    </div>
+    </div>
+
+   
 {% endblock %}

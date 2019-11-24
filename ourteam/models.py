@@ -194,7 +194,7 @@ class TourGuidePage(Page):
     allow_direct_guide_booking = models.BooleanField(help_text="wether this guide agrees to be booked for an hourly rate plus additional charge")
     hourly_rate_low_season = models.DecimalField(max_digits=4, decimal_places=2,help_text="hourly rate low season")
     hourly_rate_high_season = models.DecimalField(max_digits=4, decimal_places=2,help_text="hourly rate high season")
-    additional_charge_per_tour = models.IntegerField(help_text="added charge per group for each tour")
+    additional_charge_per_day = models.DecimalField(max_digits=4, decimal_places=2, help_text="added charge per group for each day", default=20.00)
     #form = ContactForm()
 
     main_province = models.ForeignKey(
@@ -263,7 +263,7 @@ class TourGuidePage(Page):
             FieldPanel('allow_direct_guide_booking'),
             FieldPanel('hourly_rate_low_season'),
             FieldPanel('hourly_rate_high_season'),
-            FieldPanel('additional_charge_per_tour'),
+            FieldPanel('additional_charge_per_day'),
         ], heading="Tours Specification"),
         FieldPanel('intro'),
         FieldPanel('body'),

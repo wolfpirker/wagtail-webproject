@@ -31,7 +31,7 @@ textarea.form-control{
   border: 2px solid #fff; /* 2px white border */
   color: #fff; /* White text */
   height: 150px; /* Increase input height */
-  font-size: 1.1em;
+  font-size: 1.15em;
   margin-left: 15px;
   margin-bottom: 15px;
   width: 540px;
@@ -55,7 +55,7 @@ div.author {
 
 form {
   /* font-family: 'Prata', serif; */
-  font-size: 1.2em;
+  font-size: 1.15em;
   margin: 20px;
 }
 
@@ -117,7 +117,7 @@ form input[type=submit], button[type=submit] {
 
 h1 {
   padding-top: 30px;
-  font-size: 2.6em;
+  font-size: 2.4em;
 }
 
 @media screen and (max-width: 1024px) {
@@ -139,9 +139,9 @@ p{
 
 .blogintro {
   margin-left: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   display: inline-flex;
-  font-size: 1.0em;
+  font-size: 1.1em;
 }
 
 .blogintro {
@@ -167,7 +167,7 @@ p{
 .small {
   display: block;
   position: absolute;
-  font-size: 16px;
+  font-size: 15px;
   bottom: 0.0rem;
   margin-left: 1rem;
   color: #291804;
@@ -175,7 +175,7 @@ p{
 
 .category-tags>li {
   border-right: 1px solid rgba(0,0,0,0.1);
-  font-size: 0.9em;
+  font-size: 1.0em;
   margin-left: -6px;
   padding: 4px 18px;
   text-transform: uppercase;
@@ -285,7 +285,7 @@ figure.tour-location-map figcaption{
   width: 150px;
 }
 
-figure.tour-main-photo {
+figure.framed-photo {
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 1rem;
@@ -316,7 +316,7 @@ img.province-map ::after{
 }
 
 .intro p{
-  font-size: 1.2em;
+  font-size: 1.15em;
   font-family: 'Prata', serif;
 }
 
@@ -359,7 +359,7 @@ img.province-map ::after{
 
 .card {
   margin-left: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   display: inline-flex;
 }
 
@@ -397,7 +397,7 @@ img.province-map ::after{
 }
 
 .description p{
-  font-size: 1.2em;
+  font-size: 1.15em;
   font-weight: normal;
 }
 
@@ -406,7 +406,6 @@ img.province-map ::after{
     font-weight: 300;
     margin: 0px;
     background: #b2a79f;
-    font-size: 14px;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -452,7 +451,7 @@ img.province-map ::after{
   }
   .nav li {
     font-family: 'Oswald', sans-serif;
-    font-size: 0.84em;
+    font-size: 1.1em;
     line-height: 46px;
     height: 46px;
     border-bottom: 1px solid #888;
@@ -482,7 +481,7 @@ img.province-map ::after{
       border-bottom: none;
       height: 40px;
       line-height: 36px;
-      font-size: 1.0em;
+      font-size: 1.2em;
     }
 
     #mobile-icon {
@@ -514,7 +513,7 @@ img.province-map ::after{
       display: none;
       position: fixed;
       text-align: center;
-      font-size: 1.5em;
+      font-size: 1.22em;
       width: 100%;
       right: 0px;
       z-index: 1000;
@@ -526,7 +525,7 @@ img.province-map ::after{
   }
 
   .impressum {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .footer ul{
@@ -539,4 +538,8 @@ img.province-map ::after{
 
   .footer a{
     color: darkred;
+  }
+
+  ul.guide-list{
+    font-size: 1.15em;
   }
