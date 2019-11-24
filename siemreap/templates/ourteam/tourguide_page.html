@@ -57,6 +57,15 @@
     </p>
     {% endif %} 
     {% if page.include_contact_form %}
-
+        <h3>Contact this guide</h3>
+        {% if request.POST %}
+            <p>Thank you for your message! This guide will respond to you within few days.</p>
+        {% else %}
+        <form method="post">
+            {% csrf_token %}
+            {{ page.form.as_p }}
+            <input type="submit" value="Submit" />
+        </form>
+        {% endif %}
     {% endif %} 
 {% endblock %}

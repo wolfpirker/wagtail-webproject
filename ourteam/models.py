@@ -3,6 +3,12 @@
 from django.db import models
 from django import forms
 
+# django contact form
+from django.shortcuts import render
+from django.views.generic import View
+from django.http import HttpResponse # Add this
+from .forms import ContactForm
+
 from wagtail.core.models import Page, Orderable
 from wagtail.admin.edit_handlers import FieldPanel
 
@@ -11,7 +17,13 @@ from wagtail.search import index
 
 from modelcluster.fields import ParentalKey, ParentalManyToManyField
 from wagtail.core.fields import StreamField
-from wagtail.admin.edit_handlers import StreamFieldPanel, FieldPanel, InlinePanel, MultiFieldPanel
+from wagtail.admin.edit_handlers import (
+    StreamFieldPanel, 
+    FieldPanel, 
+    InlinePanel, 
+    FieldRowPanel,
+    MultiFieldPanel
+)
 from wagtail.images.edit_handlers import ImageChooserPanel
 from wagtail.snippets.edit_handlers import SnippetChooserPanel
 from wagtail.snippets.models import register_snippet
@@ -113,6 +125,7 @@ class TourGuidePage(Page):
     hourly_rate_low_season = models.DecimalField(max_digits=4, decimal_places=2,help_text="hourly rate low season")
     hourly_rate_high_season = models.DecimalField(max_digits=4, decimal_places=2,help_text="hourly rate high season")
     additional_charge_per_tour = models.IntegerField(help_text="added charge per group for each tour")
+    form = ContactForm()
 
     main_province = models.ForeignKey(
         'tours.TourProvince',
@@ -126,7 +139,18 @@ class TourGuidePage(Page):
         """Override the values of title and slug before saving."""
         super(TourGuidePage, self).clean()
         self.title = "%s %s" % (self.first_name, self.last_name)
-        self.slug = slugify(self.title)
+        self.slug = slugify(self.title)    
+
+    def contact_us(self, request):
+        if request.method == 'POST':
+            form = ContactForm(request.POST)
+            if form.is_valid():
+                # send email code goes here
+                return HttpResponse('Thanks for contacting us!')
+        else:
+            form = ContactForm()
+
+        return render(request, 'contact-landing.html', {'form': form})
 
     search_fields = Page.search_fields + [
         index.SearchField('intro'),
