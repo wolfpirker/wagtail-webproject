@@ -12,12 +12,15 @@
     {% for iter in self.blog_authors.all %}
         
         {% if iter.author.website %}       
-            {% image iter.author.image fill-54x54 as img %}
-            <img src="{{ img.url }}" class="blog-avatar" alt="{{ iter.author.name }}">   
+            {% image iter.author.image fill-64x64 as img %}
+            <img src="{{ img.url }}" class="blog-avatar" alt="{{ iter.author.name }}" />   
             <address class="author">By <a rel="author" href="{ iter.author.website }}">{{ iter.author.name }}</a></address>   
         {% else %}
-            <div class="author">{% image iter.author.image fill-54x54 class="blog-avatar" %}
-            {{ iter.author.name }}</div>                 
+			<figure class="image is-64x64">
+				{% image iter.author.image fill-64x64 as img %}
+				<img src="{{ img.url }}" class="is-rounded" alt="Banner Image" >   
+			</figure>
+            By {{ iter.author.name }}</div>                 
         {% endif %}
         </address>
         </div>

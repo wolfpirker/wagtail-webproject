@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load wagtailcore_tags wagtailimages_tags %}
+{% load render_bundle from webpack_loader %}
 
 {% block content %}
     <div class="row">
@@ -62,7 +63,13 @@
         <figure class="framed-photo">
         {% image page.image width-240 %}
         </figure>
-        {% if page.include_contact_form %}
+        <figure class="calendar">
+			<div id="app">
+				<demo></demo>
+			</div>
+		{% render_bundle 'main' %}
+        </figure>
+        {% if page.include_contact_form %}        
         <h3>Contact {{ self.title }}</h3>
         <form action="{% pageurl page.get_parent.specific %}" method="post">
             {% csrf_token %}
