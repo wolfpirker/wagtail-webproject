@@ -31,8 +31,8 @@
     {% endif %}
     <hr/>
     {% if page.allow_direct_guide_booking %}
-        <p>This guide agrees to be booked at an hourly rate with fixed charge per tour added.
-        Please contact the guide in advance, best before booking. Changes to tours are subject to feasibility.</p>
+        <p>This guide can be booked at an hourly rate with a fixed charge per each day added.
+        If you use this: Please contact the guide in advance, best before booking. Wished changes to tours are subject to feasibility.</p>
         <p>Booking Details:</p>        
         <ul class=guide-list>  
         <li>              
@@ -48,12 +48,14 @@
             minimum time per day: 3 hours
         </li>
         <li>
-            maximum group size: 6 people
+            maximum group size: 7 people
         </li>
     </ul>  
     <p>
     Note: Booking tours directly is possible as well. If you have no guide preference, this might be better for you.
     </p>
+    {% else %}
+    <p>Note: currently this guide cannot be booked directly. Please book the tours instead, you can give your guide preference in the checkout process.</p>
     {% endif %} 
     </div>
     <div class="column right">
