@@ -3862,3 +3862,147 @@ Watching for file changes with StatReloader
 "GET /media/images/P1020803.2e16d0ba.fill-1100x600.jpg HTTP/1.1" 200 8192
 "GET /static/favicon.ico HTTP/1.1" 200 2666
 "GET /static/debug_toolbar/img/djdt_vertical.png HTTP/1.1" 200 882
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/siemreap/settings/base.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 17560
+"GET /static/css/main.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 17556
+"GET /tours/ HTTP/1.1" 200 20571
+"GET /media/images/P1020803.2e16d0ba.fill-300x260.jpg HTTP/1.1" 200 7164
+"GET /team/ HTTP/1.1" 200 19121
+/home/wolf/siemreap-page/siemreap/settings/base.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/siemreap/settings/base.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/siemreap/settings/base.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/siemreap/settings/base.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/siemreap/settings/base.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/siemreap/settings/base.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/siemreap-page/siemreap/settings/base.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 15857
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 15859
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 15861
+"GET /static/css/bulma.min.css HTTP/1.1" 200 194420
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/webpack_loader/loader.py", line 26, in _load_assets
+    with open(self.config['STATS_FILE'], encoding="utf-8") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/wolf/Projekte/dev/venv/siemreappage/webpack-stats.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/library.py", line 192, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/webpack_loader/templatetags/webpack_loader.py", line 12, in render_bundle
+    tags = utils.get_as_tags(bundle_name, extension=extension, config=config, attrs=attrs)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/webpack_loader/utils.py", line 45, in get_as_tags
+    bundle = _get_bundle(bundle_name, extension, config)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/webpack_loader/utils.py", line 23, in _get_bundle
+    bundle = get_loader(config).get_bundle(bundle_name)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/webpack_loader/loader.py", line 60, in get_bundle
+    assets = self.get_assets()
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/webpack_loader/loader.py", line 39, in get_assets
+    return self._load_assets()
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/webpack_loader/loader.py", line 32, in _load_assets
+    self.config['STATS_FILE']))
+OSError: Error reading /home/wolf/Projekte/dev/venv/siemreappage/webpack-stats.json. Are you sure webpack has generated the file and the path is correct?
+"GET / HTTP/1.1" 500 168845
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/webpack_loader/loader.py", line 26, in _load_assets
+    with open(self.config['STATS_FILE'], encoding="utf-8") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/wolf/Projekte/dev/venv/siemreappage/webpack-stats.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/library.py", line 192, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/webpack_loader/templatetags/webpack_loader.py", line 12, in render_bundle
+    tags = utils.get_as_tags(bundle_name, extension=extension, config=config, attrs=attrs)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/webpack_loader/utils.py", line 45, in get_as_tags
+    bundle = _get_bundle(bundle_name, extension, config)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/webpack_loader/utils.py", line 23, in _get_bundle
+    bundle = get_loader(config).get_bundle(bundle_name)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/webpack_loader/loader.py", line 60, in get_bundle
+    assets = self.get_assets()
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/webpack_loader/loader.py", line 39, in get_assets
+    return self._load_assets()
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/webpack_loader/loader.py", line 32, in _load_assets
+    self.config['STATS_FILE']))
+OSError: Error reading /home/wolf/Projekte/dev/venv/siemreappage/webpack-stats.json. Are you sure webpack has generated the file and the path is correct?
+"GET / HTTP/1.1" 500 168846
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 15985
+"GET /static/bundles/app.js HTTP/1.1" 200 786263

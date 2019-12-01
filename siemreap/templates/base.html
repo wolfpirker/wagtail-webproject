@@ -1,4 +1,5 @@
 {% load static wagtailuserbar %}
+{% load render_bundle from webpack_loader %}
 
 {% block head %}
     {% include "includes/head.html" %}
@@ -12,6 +13,10 @@
     {% include "includes/header.html" with parent=site_root calling_page=self %}
     {% endblock header %}
 
+    <div id="app">
+        <demo></demo>
+    </div>
+    {% render_bundle 'main' %}
 
     {% block content %}{% endblock %}
 
