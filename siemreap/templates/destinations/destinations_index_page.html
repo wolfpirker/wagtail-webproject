@@ -5,7 +5,14 @@
 
 {% block content %}
     {% cache 259200 destinations_header %}
-    <h1>{{ page.title }}</h1>
+        <div class="hero is-light is-bold" >
+		<div class="hero-body">
+			<div class="container">
+				<h1 class="title">{{ page.title }}</h1>
+			    <h2 class="subtitle">For your travel through Cambodia!</h2>
+			</div>
+		</div>
+    </div>
     <div class="intro">{{ page.intro|richtext }}</div>
     {% endcache %}
     {% for destination in destinationpages %}

@@ -6,17 +6,21 @@
 
 {% block content %}
     {% cache 259200 blog_header %}
-    <h1 class="title">{{ page.title }}</h1>
+    <div class="hero is-light is-bold" >
+		<div class="hero-body">
+			<div class="container">
+				<h1 class="title">Blog</h1>
+			    <h2 class="subtitle">{{ page.title }}</h2>
+			</div>
+		</div>
+    </div>
 
     <div class="intro">{{ page.intro|richtext }}</div>
-    <ul class=category-tags>
-    <li>
-                Tags:
-    </li>
-        {% for tag in tags %}
-            <li><a href="{% slugurl 'tags' %}?tag={{ tag }}">{{ tag }}</a></li>
-        {% endfor %}        
-    </ul>
+    <div class="tags are-medium">
+	{% for tag in tags %}
+		<a class="tag is-link" href="{% slugurl 'tags' %}?tag={{ tag }}">{{ tag }}</a>
+	{% endfor %}        
+    </div>
     {% endcache %}
 
     {% for post in posts %}

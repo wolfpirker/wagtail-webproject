@@ -5,7 +5,15 @@
 
 {% block content %}
     {% cache 259200 tours_header %}
-    <h1 class="title">{{ page.title }}</h1>
+    
+    <div class="hero is-light is-bold" >
+		<div class="hero-body">
+			<div class="container">
+				<h1 class="title">Tours</h1>
+			    <h2 class="subtitle">{{ page.title }}</h2>
+			</div>
+		</div>
+    </div>
     <div class="intro">{{ page.intro|richtext }}</div>
     {% endcache %}
     {% if request.GET.category|length %}
@@ -37,18 +45,15 @@
         {% endwith %}
         {% endfor %}        
     {% else %}
-        <ul class=category-tags>
-        <li>
-            Categories:
-        </li>
+        <div class="tags are-medium">
         {% cache 259200 tours_categories %}
             {% for iter in categories %}
-                <li><a href="?category={{ iter.slug }}">
+                <a class="tag is-link" href="?category={{ iter.slug }}">
                 {{ iter.name }}
-                </a></li>
+                </a>
             {% endfor %}
         {% endcache %}
-        </ul>        
+        </div>        
         {% for tour in tourpages %}
             {% cache 259200 tour_preview tour.id %}
             {% with tour=tour.specific %}
