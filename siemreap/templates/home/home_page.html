@@ -3,15 +3,20 @@
 {% load wagtailcore_tags wagtailimages_tags %}
 
 {% block content %}
-	<figure class="image">
+
+
+    <div class="hero is-light is-bold" >
+		<div class="hero-body">
+			<div class="container">
+			    <h1 class="title">{{ self.banner_title }}</h1>
+        
+				<h2 class="subtitle">{{ self.banner_subtitle|richtext }}</h2>
+			</div>
+		</div>
+		<figure class="image">
 		{% image self.banner_image width-1368 as img %}
 		<img src="{{ img.url }}" alt="Banner Image" >   
-	</figure>
-
-    <div class="banner" style="background-image: url('{{ img.url }}')">
-        <h1>{{ self.banner_title }}</h1>
-        
-        <div class="lead">{{ self.banner_subtitle|richtext }}</div>
+		</figure>
     </div>
 
     <hr/>

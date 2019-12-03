@@ -5540,3 +5540,261 @@ Not Found: /blog/another-big-plog-post/static/js/siemreap.js
 Not Found: /js/siemreap.js
 "GET /js/siemreap.js HTTP/1.1" 404 12770
 "GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 15450
+"GET /static/bulma/css/style.css HTTP/1.1" 200 223374
+"GET /static/js/siemreap.js HTTP/1.1" 200 710
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET / HTTP/1.1" 200 15447
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET /tours/ HTTP/1.1" 200 18331
+Not Found: /tours/js/siemreap.js
+"GET /tours/js/siemreap.js HTTP/1.1" 404 12788
+Not Found: /tours/static/js/siemreap.js
+"GET /tours/static/js/siemreap.js HTTP/1.1" 404 12809
+"GET / HTTP/1.1" 200 15447
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET / HTTP/1.1" 200 15447
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET /tours/ HTTP/1.1" 200 18404
+Not Found: /tours/js/siemreap.js
+"GET /tours/js/siemreap.js HTTP/1.1" 404 12788
+Not Found: /tours/static/js/siemreap.js
+"GET /tours/static/js/siemreap.js HTTP/1.1" 404 12809
+"GET /static/favicon.ico HTTP/1.1" 200 2666
+"GET /tours/battambang-culture-sightseeing/ HTTP/1.1" 200 16569
+Not Found: /tours/battambang-culture-sightseeing/js/siemreap.js
+"GET /tours/battambang-culture-sightseeing/js/siemreap.js HTTP/1.1" 404 12881
+"GET /media/images/Siem_Reap_locator_map.2e16d0ba.fill-90x90.png HTTP/1.1" 200 12846
+"GET /media/images/Battambang_locator_map.2e16d0ba.fill-90x90.png HTTP/1.1" 200 11167
+"GET /media/images/Battambang_shrine.width-620.jpg HTTP/1.1" 200 48547
+Not Found: /tours/battambang-culture-sightseeing/static/js/siemreap.js
+"GET /tours/battambang-culture-sightseeing/static/js/siemreap.js HTTP/1.1" 404 12902
+"GET / HTTP/1.1" 200 15520
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET /blog HTTP/1.1" 301 0
+"GET /blog/ HTTP/1.1" 200 18684
+Not Found: /blog/js/siemreap.js
+"GET /blog/js/siemreap.js HTTP/1.1" 404 12785
+"GET /media/images/P1020261_zugeschnitten.2e16d0ba.fill-260x200.jpg HTTP/1.1" 200 16898
+"GET /media/images/P1020796_stripe.2e16d0ba.fill-260x200.jpg HTTP/1.1" 200 14622
+"GET /media/images/P1020609.2e16d0ba.fill-260x200.jpg HTTP/1.1" 200 18529
+"GET /media/images/mexico.2e16d0ba.fill-260x200.jpg HTTP/1.1" 200 16557
+Not Found: /blog/static/js/siemreap.js
+"GET /blog/static/js/siemreap.js HTTP/1.1" 404 12806
+"GET /blog/blog-article-5/ HTTP/1.1" 200 16730
+Not Found: /blog/blog-article-5/js/siemreap.js
+"GET /blog/blog-article-5/js/siemreap.js HTTP/1.1" 404 12830
+"GET /media/images/blurred-background-casual-close-up.2e16d0ba.fill-320x240.jpg HTTP/1.1" 200 15397
+"GET /media/images/P1020796_stripe.2e16d0ba.fill-320x240.jpg HTTP/1.1" 200 20232
+"GET /media/images/author_wolfgang.2e16d0ba.fill-64x64.jpg HTTP/1.1" 200 2249
+Not Found: /blog/blog-article-5/static/js/siemreap.js
+"GET /blog/blog-article-5/static/js/siemreap.js HTTP/1.1" 404 12851
+"GET / HTTP/1.1" 200 15520
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET /tours/ HTTP/1.1" 200 18404
+Not Found: /tours/js/siemreap.js
+"GET /tours/js/siemreap.js HTTP/1.1" 404 12788
+Not Found: /tours/static/js/siemreap.js
+"GET /tours/static/js/siemreap.js HTTP/1.1" 404 12809
+"GET /tours/battambang-culture-sightseeing/ HTTP/1.1" 200 16571
+Not Found: /tours/battambang-culture-sightseeing/js/siemreap.js
+"GET /tours/battambang-culture-sightseeing/js/siemreap.js HTTP/1.1" 404 12881
+Not Found: /tours/battambang-culture-sightseeing/static/js/siemreap.js
+"GET /tours/battambang-culture-sightseeing/static/js/siemreap.js HTTP/1.1" 404 12902
+"GET /tours/battambang-culture-sightseeing/ HTTP/1.1" 200 16583
+Not Found: /tours/battambang-culture-sightseeing/js/siemreap.js
+"GET /tours/battambang-culture-sightseeing/js/siemreap.js HTTP/1.1" 404 12881
+Not Found: /tours/battambang-culture-sightseeing/static/js/siemreap.js
+"GET /tours/battambang-culture-sightseeing/static/js/siemreap.js HTTP/1.1" 404 12902
+"GET /tours/battambang-culture-sightseeing/ HTTP/1.1" 200 16585
+Not Found: /tours/battambang-culture-sightseeing/static/js/siemreap.js
+"GET /tours/battambang-culture-sightseeing/static/js/siemreap.js HTTP/1.1" 404 12902
+Not Found: /tours/battambang-culture-sightseeing/js/siemreap.js
+"GET /tours/battambang-culture-sightseeing/js/siemreap.js HTTP/1.1" 404 12881
+Not Found: /tours/battambang-culture-sightseeing/static/js/siemreap.js
+"GET /tours/battambang-culture-sightseeing/static/js/siemreap.js HTTP/1.1" 404 12902
+"GET /tours/battambang-culture-sightseeing/ HTTP/1.1" 200 16585
+"GET /static/bulma/css/style.css HTTP/1.1" 200 223388
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 41
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 14835
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13213
+Not Found: /tours/battambang-culture-sightseeing/js/siemreap.js
+"GET /tours/battambang-culture-sightseeing/js/siemreap.js HTTP/1.1" 404 12881
+"GET /static/debug_toolbar/img/ajax-loader.gif HTTP/1.1" 200 404
+"GET /media/images/Battambang_locator_map.2e16d0ba.fill-90x90.png HTTP/1.1" 200 11167
+"GET /media/images/Siem_Reap_locator_map.2e16d0ba.fill-90x90.png HTTP/1.1" 200 12846
+"GET /media/images/Battambang_shrine.width-620.jpg HTTP/1.1" 200 48547
+Not Found: /tours/battambang-culture-sightseeing/static/js/siemreap.js
+"GET /tours/battambang-culture-sightseeing/static/js/siemreap.js HTTP/1.1" 404 12902
+"GET /static/favicon.ico HTTP/1.1" 200 2666
+"GET /tours/battambang-culture-sightseeing/ HTTP/1.1" 200 16583
+"GET /static/bulma/css/style.css HTTP/1.1" 200 223374
+Not Found: /tours/battambang-culture-sightseeing/js/siemreap.js
+"GET /tours/battambang-culture-sightseeing/js/siemreap.js HTTP/1.1" 404 12881
+Not Found: /tours/battambang-culture-sightseeing/static/js/siemreap.js
+"GET /tours/battambang-culture-sightseeing/static/js/siemreap.js HTTP/1.1" 404 12902
+"GET /static/debug_toolbar/img/djdt_vertical.png HTTP/1.1" 200 882
+"GET /tours/battambang-culture-sightseeing/ HTTP/1.1" 200 16583
+"GET /static/bulma/css/style.css HTTP/1.1" 200 223374
+Not Found: /tours/battambang-culture-sightseeing/js/siemreap.js
+"GET /tours/battambang-culture-sightseeing/js/siemreap.js HTTP/1.1" 404 12881
+Not Found: /tours/battambang-culture-sightseeing/static/js/siemreap.js
+"GET /tours/battambang-culture-sightseeing/static/js/siemreap.js HTTP/1.1" 404 12902
+"GET / HTTP/1.1" 200 15520
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+"GET /static/js/siemreap.js HTTP/1.1" 200 710
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET /media/images/P1020803.2e16d0ba.fill-1100x600.jpg HTTP/1.1" 200 35820
+"GET /media/images/AnkgorWat_panorama_bit_darker.width-1368.jpg HTTP/1.1" 200 90491
+"GET /media/images/P1020847.2e16d0ba.fill-1100x600.jpg HTTP/1.1" 200 55642
+"GET /media/images/P1020450_ausschnitt.2e16d0ba.fill-1100x600.jpg HTTP/1.1" 200 220690
+"GET /media/images/P1020969.2e16d0ba.fill-1100x600.jpg HTTP/1.1" 200 168828
+"GET / HTTP/1.1" 200 15534
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET / HTTP/1.1" 200 15536
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET / HTTP/1.1" 200 15545
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET / HTTP/1.1" 200 15551
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET / HTTP/1.1" 200 15551
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET /tours HTTP/1.1" 301 0
+"GET /tours/ HTTP/1.1" 200 18419
+Not Found: /tours/js/siemreap.js
+"GET /tours/js/siemreap.js HTTP/1.1" 404 12788
+"GET /media/images/Battambang_shrine.2e16d0ba.fill-300x260.jpg HTTP/1.1" 200 18466
+"GET /media/images/P1020803.2e16d0ba.fill-300x260.jpg HTTP/1.1" 200 7164
+"GET /media/images/siemreap_countryside.2e16d0ba.fill-300x260.jpg HTTP/1.1" 200 20951
+Not Found: /tours/static/js/siemreap.js
+"GET /tours/static/js/siemreap.js HTTP/1.1" 404 12809
+"GET /media/images/P1020085.2e16d0ba.fill-300x260.jpg HTTP/1.1" 200 20909
+"GET /tours/ HTTP/1.1" 200 18419
+Not Found: /tours/static/js/siemreap.js
+"GET /tours/static/js/siemreap.js HTTP/1.1" 404 12809
+Not Found: /tours/js/siemreap.js
+"GET /tours/js/siemreap.js HTTP/1.1" 404 12788
+Not Found: /tours/static/js/siemreap.js
+"GET /tours/static/js/siemreap.js HTTP/1.1" 404 12809
+Watching for file changes with StatReloader
+"GET /tours/ HTTP/1.1" 200 18437
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+Not Found: /tours/js/siemreap.js
+"GET /tours/js/siemreap.js HTTP/1.1" 404 12788
+Not Found: /tours/static/js/siemreap.js
+"GET /tours/static/js/siemreap.js HTTP/1.1" 404 12809
+"GET / HTTP/1.1" 200 15552
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET / HTTP/1.1" 200 15576
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET / HTTP/1.1" 200 15576
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET / HTTP/1.1" 200 15553
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET / HTTP/1.1" 200 15644
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET / HTTP/1.1" 200 15555
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET / HTTP/1.1" 200 15547
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET / HTTP/1.1" 200 15555
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET / HTTP/1.1" 200 15545
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET / HTTP/1.1" 200 15538
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET / HTTP/1.1" 200 15545
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET / HTTP/1.1" 200 15536
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET / HTTP/1.1" 200 15545
+"GET /static/bulma/css/style.css HTTP/1.1" 200 223374
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET / HTTP/1.1" 200 15547
+"GET /static/bulma/css/style.css HTTP/1.1" 200 223374
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET / HTTP/1.1" 200 15545
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET / HTTP/1.1" 200 15545
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET / HTTP/1.1" 200 15545
+"GET /static/bulma/css/style.css HTTP/1.1" 200 223374
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 15549
+"GET /static/bulma/css/style.css HTTP/1.1" 200 223370
+"GET /static/js/siemreap.js HTTP/1.1" 200 710
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET /static/debug_toolbar/img/djdt_vertical.png HTTP/1.1" 200 882
+"GET /tours/ HTTP/1.1" 200 18433
+"GET /static/bulma/css/style.css HTTP/1.1" 200 223370
+Not Found: /tours/static/js/siemreap.js
+"GET /tours/static/js/siemreap.js HTTP/1.1" 404 12809
+Not Found: /tours/js/siemreap.js
+"GET /tours/js/siemreap.js HTTP/1.1" 404 12788
+"GET /media/images/P1020803.2e16d0ba.fill-300x260.jpg HTTP/1.1" 200 7164
+Not Found: /tours/static/js/siemreap.js
+"GET /tours/static/js/siemreap.js HTTP/1.1" 404 12809
+"GET / HTTP/1.1" 200 15545
+"GET /static/js/siemreap.js HTTP/1.1" 200 710
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET /tours/ HTTP/1.1" 200 18433
+Not Found: /tours/js/siemreap.js
+"GET /tours/js/siemreap.js HTTP/1.1" 404 12788
+"GET /media/images/P1020803.2e16d0ba.fill-300x260.jpg HTTP/1.1" 304 0
+Not Found: /tours/static/js/siemreap.js
+"GET /tours/static/js/siemreap.js HTTP/1.1" 404 12809
+"GET /team/ HTTP/1.1" 200 16968
+Not Found: /team/static/js/siemreap.js
+"GET /team/static/js/siemreap.js HTTP/1.1" 404 12806
+Not Found: /team/js/siemreap.js
+"GET /team/js/siemreap.js HTTP/1.1" 404 12785
+Not Found: /team/static/js/siemreap.js
+"GET /team/static/js/siemreap.js HTTP/1.1" 404 12806
+"GET / HTTP/1.1" 200 15545
+"GET /static/js/siemreap.js HTTP/1.1" 304 0
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770

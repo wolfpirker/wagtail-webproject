@@ -2,9 +2,9 @@
 {% load wagtailcore_tags wagtailimages_tags %}
 
 {% block content %}
-    <div class="row">
-    <div class="column left">
-        <h1>{{ page.title }}</h1>
+    <div class="columns">
+    <div class="column">
+        <h1 class="title">{{ page.title }}</h1>
         <div class="intro"><p>{{ page.short_description }}</p></div>
         <ul class=category-tags>
             <li>
@@ -39,7 +39,7 @@
         {% endif %}
         {{ page.body|richtext }}
     </div>
-    <div class="column right">
+    <div class="column">
         <figure class="tour-location-map">
             {% for iter in self.tour_provinces.all %}
                 {% image iter.province.map_image fill-90x90 class="province-map" %}
