@@ -5,47 +5,51 @@
 {% block body_class %}template-blogpage{% endblock %}
 
 {% block content %}
+	<section class="section" >
+	<div class="container">
     <h1 class="title">{{ page.title }}</h1>
-    <div class="intro"><p>{{ page.intro }}</p></div>
-    {# Loop through all blog authors #}
-    <!--<div class="blog-avatar">-->
-    {% for iter in self.blog_authors.all %}
-        
-        {% if iter.author.website %}       
-            {% image iter.author.image fill-64x64 as img %}
-            <img src="{{ img.url }}" class="blog-avatar" alt="{{ iter.author.name }}" />   
-            <address class="author">By <a rel="author" href="{ iter.author.website }}">{{ iter.author.name }}</a></address>   
-        {% else %}
-			<figure class="image is-64x64">
-				{% image iter.author.image fill-64x64 as img %}
-				<img src="{{ img.url }}" class="is-rounded" alt="Banner Image" >   
-			</figure>
-            By {{ iter.author.name }}</div>                 
-        {% endif %}
-        </address>
-        </div>
-    {% endfor %}
-    <!--</div>-->
-    <p class="meta">{{ page.date }}</p>
-    {{ page.body|richtext }}
-
-    {% for item in page.gallery_images.all %}
-        <div style="float: left; margin: 10px">
-            {% image item.image fill-320x240 %}
-            <p>{{ item.caption }}</p>
-        </div>
-    {% endfor %}
-
-    <p><a href="{{ page.get_parent.url }}">Return to blog</a></p>
+    <p class="subtitle">{{ page.intro }}</p>
     {% if page.tags.all.count %}
-        <ul class=category-tags>
-            <li>Tags</li>
+        <div class="tags are-medium">
             {% for tag in page.tags.all %}
-                <li>
-                <a href="{% slugurl 'tags' %}?tag={{ tag }}">{{ tag }}</a>
-                </li>
+                <a class="tag is-link" href="{% slugurl 'tags' %}?tag={{ tag }}">{{ tag }}</a>
             {% endfor %}
         </div>
-    {% endif %}
+    {% endif %}    
+    </div>
+    </section>
+    <div class="card">
+    {# Loop through all blog authors #}
+    <!--<div class="blog-avatar">-->
+    <div class="card-content">
+    {% for iter in self.blog_authors.all %}
+        
+	<div class="columns" >
+		<div class="column" >
+			<div class="media">
+			  <div class="media-left">
+				<figure class="image is-64x64">
+					{% image iter.author.image fill-64x64 as img %}
+					<img src="{{ img.url }}" class="is-rounded" alt="Author Portrait" >   
+				</figure>
+			  </div>
+			  <div class="media-content">
+				<p class="subtitle is-5">{{ iter.author.name }}</p>
+			  </div>
+			</div>
+			{% endfor %}    
+			on {{ page.date }}
+			</div>
+		</div>
+		{{ page.body|richtext }}
+	</div>
+	<div class="column">
+    {% for item in page.gallery_images.all %}
+        <figure class="image is-4by3" >
+            {% image item.image fill-320x240 %}
+            <p>{{ item.caption }}</p>
+        </figure>
+    {% endfor %}
+    </div>
 {% endblock %}
 
