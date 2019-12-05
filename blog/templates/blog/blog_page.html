@@ -41,7 +41,9 @@
 			on {{ page.date }}
 			</div>
 		</div>
-		{{ page.body|richtext }}
+		<div class="content">
+			{{ page.body|richtext }}
+		</div>
 	</div>
 	<div class="column">
     {% for item in page.gallery_images.all %}

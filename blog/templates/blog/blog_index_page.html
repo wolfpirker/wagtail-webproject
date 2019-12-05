@@ -6,74 +6,83 @@
 
 {% block content %}
     {% cache 259200 blog_header %}
-    <div class="hero is-light is-bold" >
-		<div class="hero-body">
-			<div class="container">
-				<h1 class="title">Blog</h1>
-			    <h2 class="subtitle">{{ page.title }}</h2>
+      <section class="section">
+		<div class="container">
+			<h1 class="title">Blog</h1>
+			<h2 class="subtitle">{{ page.title }}</h2>
+			<div class="intro">{{ page.intro|richtext }}</div>
+			<div class="tags are-medium">
+			{% for tag in tags %}
+				<a class="tag is-link" href="{% slugurl 'tags' %}?tag={{ tag }}">{{ tag }}</a>
+			{% endfor %}        
 			</div>
 		</div>
     </div>
-
-    <div class="intro">{{ page.intro|richtext }}</div>
-    <div class="tags are-medium">
-	{% for tag in tags %}
-		<a class="tag is-link" href="{% slugurl 'tags' %}?tag={{ tag }}">{{ tag }}</a>
-	{% endfor %}        
-    </div>
     {% endcache %}
 
-    {% for post in posts %}
-        {% cache 259200 blog_post_preview post.id %}
-            {% with post=post.specific %}
-                <div class="blogintro">
-                <a href="{% pageurl post %}">
-                <div class="highlight">
-                {% with post.main_image as main_image %}
-                    {% if main_image %}{% image main_image fill-260x200 %}{% endif %}
-                {% endwith %}     
-                </div>
-                <div class="description">
-                    <h2>{{ post.title }}</h2>
-                    <p>{{ post.intro }}</p>
-                </div>            
-                </a>  
-                <div class="small footer">
-                    {% if post.date %}
-                    {{ post.date }} by 
-                    {% endif %}
-                    {{ post.get_author_names_as_string }}
-                    <p><a class='cta link' href="{% pageurl post %}">Read the story</a></p>
-                </div>            
-                </div>
-            {% endwith %}
-        {% endcache %}
-    {% endfor %}
-    {% if posts.paginator.num_pages > 1 %}
-    <ul class=category-tags>
-        {% if posts.has_previous %}
-            <li class="page-item">
-            <a href="?page={{ posts.previous_page_number }}" class="page-link">
-                <span>&laquo;</span>
-            </a>
-            </li>
-        {% endif %}
-        {% for page_num in posts.paginator.page_range %}
-            <li class="page-item {% if page_num == posts.number %} active{% endif %}">
-            <a href="?page={{ page_num }}" class="page-link">
-                {{ page_num }}
-            </a>
-            </li>
-        {% endfor %}
+	<section class="section" >
+		<div class="container">
+		{% for post in posts %}
+			{% cache 259200 blog_post_preview post.id %}
+				{% with post=post.specific %}
+					<div class="card">
+						<div class="card-content">
+							<div class="media">
+								<div class="media-left">
+									<a href="{% pageurl post %}">
+									<figure class="has-ratio" width="260">								
+									{% with post.main_image as main_image %}
+										{% image main_image fill-260x200 as img %}
+										<img src="{{ img.url }}" class="image is-5-by-4" alt="post main image" >   
+									{% endwith %}     
+									</figure>      
+									</a>
+								</div>
+								<div class="media-content">
+									<h2 class="card-header-title">{{ post.title }}</h2>								
+								</div>
+							</div>
+							<div class="content">
+							<p>{{ post.intro }}</p>
+							<p>by {{ post.get_author_names_as_string }}
+							{% if post.date %}
+							on <time>{{ post.date }}</time>							
+							{% endif %}							
+							</p>
+							<p><a class='cta link' href="{% pageurl post %}">Read the story</a></p>
+							</div>
+						</div>                  
+					</div>
+				{% endwith %}
+			{% endcache %}
+		{% endfor %}
+		{% if posts.paginator.num_pages > 1 %}
+		<ul class=category-tags>
+			{% if posts.has_previous %}
+				<li class="page-item">
+				<a href="?page={{ posts.previous_page_number }}" class="page-link">
+					<span>&laquo;</span>
+				</a>
+				</li>
+			{% endif %}
+			{% for page_num in posts.paginator.page_range %}
+				<li class="page-item {% if page_num == posts.number %} active{% endif %}">
+				<a href="?page={{ page_num }}" class="page-link">
+					{{ page_num }}
+				</a>
+				</li>
+			{% endfor %}
 
-        {% if posts.has_next %}
-            <li class="page-item">
-            <a href="?page={{ posts.next_page_number }}" class="page-link">
-                <span>&raquo;</span>
-            </a>
-            </li>
-        {% endif %}
-    </ul>
-    {% endif %}
+			{% if posts.has_next %}
+				<li class="page-item">
+				<a href="?page={{ posts.next_page_number }}" class="page-link">
+					<span>&raquo;</span>
+				</a>
+				</li>
+			{% endif %}
+		</ul>
+		{% endif %}
+		</div>
+    </div>
 
 {% endblock %}
