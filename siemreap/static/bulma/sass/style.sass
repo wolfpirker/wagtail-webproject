@@ -2,13 +2,23 @@
 @import "./node_modules/bulma/sass/utilities/initial-variables"
 
 // 2. Set your own initial variables
-$purple: #8A4D76;
-$gold: #d58c09;
-$lilac: #c8a2c8;
-$whitegraylilac: #e3cbdb;
-$navbar-background-color: #e3cbdb;
+$purple: #8A4D76
+$gold: #d58c09
+$lilac: #c8a2c8
+$whitegraylilac: #e3cbdb
+$whitebluelilac: #d5cbe3
+$navbar-background-color: $whitebluelilac
+$body-font-size: 1.05em
+$family-primary: 'Helvetica Neue', BlinkMacSystemFont, 'Segoe UI', 'Cantarell', 'Open Sans', sans-serif
+$family-secondary: 'Prata', serif
+$white-terd: #e8e0e0
+$body-background-color: $white-terd
+$title-family: $family-secondary
+$subtitle-family: $family-secondary
+
 
 // 3. Import the rest of Bulma
 @import "./node_modules/bulma/bulma"
 
 // 4. Import your stuff here
+@import "../../sass/main.sass"
