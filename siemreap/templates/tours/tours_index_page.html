@@ -4,18 +4,27 @@
 {% block body_class %}template-indexpage{% endblock %}
 
 {% block content %}
-    {% cache 259200 tours_header %}
+{% cache 259200 tours_header %}
     
-    <div class="hero is-light is-bold" >
-		<div class="hero-body">
-			<div class="container">
-				<h1 class="title">Tours</h1>
-			    <h2 class="subtitle">{{ page.title }}</h2>
-			</div>
-		</div>
-    </div>
-    <div class="intro">{{ page.intro|richtext }}</div>
-    {% endcache %}
+<section class="section">
+	<div class="container">
+		<h1 class="title">Tours</h1>
+		<h2 class="subtitle">{{ page.title }}</h2>
+		<div class="intro">{{ page.intro|richtext }}</div>
+		<div class="tags are-medium">
+		{% for iter in categories %}
+			<a class="tag is-link" href="?category={{ iter.slug }}">
+			{{ iter.name }}
+			</a>
+		{% endfor %}
+		</div>    
+	</div>
+</section>
+
+{% endcache %}
+    
+<section class="section" >
+	<div class="container">
     {% if request.GET.category|length %}
         <h4>Showing tours in category "{{ request.GET.category.capitalize }}"</h4>
         <p><a href="{{ page.url }}">Show All Tours</a></p>
@@ -44,16 +53,7 @@
             </div>
         {% endwith %}
         {% endfor %}        
-    {% else %}
-        <div class="tags are-medium">
-        {% cache 259200 tours_categories %}
-            {% for iter in categories %}
-                <a class="tag is-link" href="?category={{ iter.slug }}">
-                {{ iter.name }}
-                </a>
-            {% endfor %}
-        {% endcache %}
-        </div>        
+    {% else %}            
         {% for tour in tourpages %}
             {% cache 259200 tour_preview tour.id %}
             {% with tour=tour.specific %}
@@ -84,6 +84,9 @@
             {% endcache %}
         {% endfor %}
     {% endif %}
+
+	</div>
+</section>
     {% if tourpages.paginator.num_pages > 1 %}
     <ul class=category-tags>
         {% if tourpages.has_previous %}

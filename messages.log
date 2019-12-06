@@ -7283,3 +7283,116 @@ Not Found: /blog/js/siemreap.js
 "GET /blog/js/siemreap.js HTTP/1.1" 404 12785
 Not Found: /blog/static/js/siemreap.js
 "GET /blog/static/js/siemreap.js HTTP/1.1" 404 12806
+Watching for file changes with StatReloader
+"GET /blog/ HTTP/1.1" 200 19113
+Not Found: /blog/js/siemreap.js
+"GET /blog/js/siemreap.js HTTP/1.1" 404 12785
+Not Found: /blog/static/js/siemreap.js
+"GET /blog/static/js/siemreap.js HTTP/1.1" 404 12806
+"GET /blog/ HTTP/1.1" 200 19113
+Not Found: /blog/js/siemreap.js
+Not Found: /blog/static/js/siemreap.js
+"GET /blog/static/js/siemreap.js HTTP/1.1" 404 12806
+"GET /blog/js/siemreap.js HTTP/1.1" 404 12785
+"GET /blog/ HTTP/1.1" 200 19088
+Not Found: /blog/static/js/siemreap.js
+Not Found: /blog/js/siemreap.js
+"GET /blog/js/siemreap.js HTTP/1.1" 404 12785
+"GET /blog/static/js/siemreap.js HTTP/1.1" 404 12806
+Not Found: /blog/static/js/siemreap.js
+"GET /blog/static/js/siemreap.js HTTP/1.1" 404 12806
+"GET /blog/ HTTP/1.1" 200 19113
+Not Found: /blog/js/siemreap.js
+"GET /blog/js/siemreap.js HTTP/1.1" 404 12785
+Not Found: /blog/static/js/siemreap.js
+"GET /blog/static/js/siemreap.js HTTP/1.1" 404 12806
+"GET /blog/ HTTP/1.1" 200 19113
+Not Found: /blog/static/js/siemreap.js
+"GET /blog/static/js/siemreap.js HTTP/1.1" 404 12806
+Not Found: /blog/js/siemreap.js
+"GET /blog/js/siemreap.js HTTP/1.1" 404 12785
+Not Found: /blog/static/js/siemreap.js
+"GET /blog/static/js/siemreap.js HTTP/1.1" 404 12806
+"GET /blog/ HTTP/1.1" 200 19113
+Not Found: /blog/js/siemreap.js
+"GET /blog/js/siemreap.js HTTP/1.1" 404 12785
+Not Found: /blog/static/js/siemreap.js
+"GET /blog/static/js/siemreap.js HTTP/1.1" 404 12806
+"GET /blog/ HTTP/1.1" 200 19112
+Not Found: /blog/static/js/siemreap.js
+"GET /blog/static/js/siemreap.js HTTP/1.1" 404 12806
+Not Found: /blog/js/siemreap.js
+"GET /blog/js/siemreap.js HTTP/1.1" 404 12785
+Not Found: /blog/static/js/siemreap.js
+"GET /blog/static/js/siemreap.js HTTP/1.1" 404 12806
+"GET /blog/ HTTP/1.1" 200 18926
+Not Found: /blog/js/siemreap.js
+"GET /blog/js/siemreap.js HTTP/1.1" 404 12785
+Not Found: /blog/static/js/siemreap.js
+"GET /blog/static/js/siemreap.js HTTP/1.1" 404 12806
+"GET /static/js/siemreap.js HTTP/1.1" 200 710
+"GET /static/debug_toolbar/img/ajax-loader.gif HTTP/1.1" 200 404
+"GET / HTTP/1.1" 200 15586
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 14835
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET /blog/ HTTP/1.1" 200 18925
+Not Found: /blog/js/siemreap.js
+"GET /blog/js/siemreap.js HTTP/1.1" 404 12785
+Not Found: /blog/static/js/siemreap.js
+"GET /blog/static/js/siemreap.js HTTP/1.1" 404 12806
+"GET /blog/blog-article-5/ HTTP/1.1" 200 16978
+Not Found: /blog/blog-article-5/js/siemreap.js
+Not Found: /blog/blog-article-5/static/js/siemreap.js
+"GET /blog/blog-article-5/static/js/siemreap.js HTTP/1.1" 404 12851
+"GET /blog/blog-article-5/js/siemreap.js HTTP/1.1" 404 12830
+Not Found: /blog/blog-article-5/static/js/siemreap.js
+"GET /blog/blog-article-5/static/js/siemreap.js HTTP/1.1" 404 12851
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 17289
+"GET /static/bulma/css/style.css HTTP/1.1" 200 223374
+"GET /media/images/AnkgorWat_panorama_bit_darker.width-1368.jpg HTTP/1.1" 200 90491
+"GET /media/images/P1020450_ausschnitt.2e16d0ba.fill-1100x600.jpg HTTP/1.1" 200 220690
+"GET /static/js/siemreap.js HTTP/1.1" 200 710
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+"GET /media/images/P1020803.2e16d0ba.fill-1100x600.jpg HTTP/1.1" 200 35820
+"GET /media/images/P1020969.2e16d0ba.fill-1100x600.jpg HTTP/1.1" 200 168828
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+"GET /media/images/P1020847.2e16d0ba.fill-1100x600.jpg HTTP/1.1" 200 55642
+"GET /static/debug_toolbar/img/ajax-loader.gif HTTP/1.1" 304 0
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+"GET /static/debug_toolbar/img/djdt_vertical.png HTTP/1.1" 304 0
+"GET /static/wagtailadmin/fonts/wagtail.woff HTTP/1.1" 200 24140
+"GET /static/wagtailadmin/fonts/opensans-regular.woff2 HTTP/1.1" 200 68812
+"GET / HTTP/1.1" 200 17288
+Not Found: /js/siemreap.js
+"GET /js/siemreap.js HTTP/1.1" 404 12770
+"GET /tours/ HTTP/1.1" 200 20370
+"GET /media/images/P1020803.2e16d0ba.fill-300x260.jpg HTTP/1.1" 304 0
+"GET /media/images/Battambang_shrine.2e16d0ba.fill-300x260.jpg HTTP/1.1" 200 18466
+"GET /media/images/siemreap_countryside.2e16d0ba.fill-300x260.jpg HTTP/1.1" 200 20951
+"GET /media/images/P1020085.2e16d0ba.fill-300x260.jpg HTTP/1.1" 200 20909
+Not Found: /tours/static/js/siemreap.js
+"GET /tours/static/js/siemreap.js HTTP/1.1" 404 12809
+Not Found: /tours/js/siemreap.js
+"GET /tours/js/siemreap.js HTTP/1.1" 404 12788
+Not Found: /tours/static/js/siemreap.js
+"GET /tours/static/js/siemreap.js HTTP/1.1" 404 12809
+"GET /blog/ HTTP/1.1" 200 20626
+"GET /media/images/P1020261_zugeschnitten.2e16d0ba.fill-260x200.jpg HTTP/1.1" 200 16898
+"GET /media/images/P1020796_stripe.2e16d0ba.fill-260x200.jpg HTTP/1.1" 200 14622
+"GET /media/images/P1020609.2e16d0ba.fill-260x200.jpg HTTP/1.1" 200 18529
+"GET /media/images/mexico.2e16d0ba.fill-260x200.jpg HTTP/1.1" 200 16557
+Not Found: /blog/js/siemreap.js
+"GET /blog/js/siemreap.js HTTP/1.1" 404 12785
+Not Found: /blog/static/js/siemreap.js
+"GET /blog/static/js/siemreap.js HTTP/1.1" 404 12806
+"GET /tours/ HTTP/1.1" 200 20051
+Not Found: /tours/static/js/siemreap.js
+"GET /tours/static/js/siemreap.js HTTP/1.1" 404 12809
+Not Found: /tours/js/siemreap.js
+"GET /tours/js/siemreap.js HTTP/1.1" 404 12788
+Not Found: /tours/static/js/siemreap.js
+"GET /tours/static/js/siemreap.js HTTP/1.1" 404 12809
