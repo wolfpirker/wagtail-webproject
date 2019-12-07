@@ -13,10 +13,12 @@
 				<h2 class="subtitle is-family-secondary">{{ self.banner_subtitle|richtext }}</h2>
 			</div>
 		</div>
-		<figure class="image">
-		{% image self.banner_image width-1368 as img %}
-		<img src="{{ img.url }}" alt="Banner Image" >   
+
+		<figure class="banner image">
+			{% image self.banner_image width-1368 as img %}
+			<img src="{{ img.url }}" alt="Banner Image" >   
 		</figure>
+
     </div>
 
 {% endblock %}
