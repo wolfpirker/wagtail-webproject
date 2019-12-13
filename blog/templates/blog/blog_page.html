@@ -37,18 +37,22 @@
 	</br>
 	<section class="section">
 		<div class="columns">
-			<div class="column is-widescreen">
+			<div class="column">
 				<article class="content">
 					{{ page.body|richtext }}
 				</article>
 			</div>
+			<div class="container is-fluid">
 			<div class="gallery column">
-					{% for item in page.gallery_images.all %}
-					<figure class="image is-4by3" >
-						{% image item.image fill-480x360 %}
-						<p>{{ item.caption }}</p>
-					</figure>
+				{% for item in page.gallery_images.all %}					
+				<figure class="image is-4by3" >
+					{% image item.image fill-480x360 %}
+					<p>{{ item.caption }}</p>
+				</figure>	
+				</br>
 				{% endfor %}
+			</div>
+			</div>
 			</div>
 		</div>
 	</section>
