@@ -26,37 +26,11 @@
 <section class="section" >
 	<div class="container is-fluid">
     {% if request.GET.category|length %}
-        <h4>Showing tours in category "{{ request.GET.category.capitalize }}"</h4>
+        <h4 class="title">Showing tours in category "{{ request.GET.category.capitalize }}"</h4>
         <p><a href="{{ page.url }}">Show All Tours</a></p>
         {% for tour in tourpages_filtered %}
         {% with tour=tour.specific %}
             <div class="acticleintro">
-            <a href="{% pageurl tour %}">
-            <div class="highlight">
-            {% with tour.image as tour_image %}
-                {% image tour_image fill-300x260 %}
-            {% endwith %}   
-            </div>
-            <div class="description">
-                <h2>{{ tour.title }}</h2>
-                <p>{{ tour.short_description }}</p>
-            </div>
-            </a>  
-            <detail>
-                    {% if tour.tour_duration %}
-                    {{ tour.get_readable_tour_duration }} tour,
-                    from {{ tour.price_low_season }} dollars and up per tour.
-                    <br/>Province {{ tour.get_province_names_as_string }}                    
-                    {% endif %}                
-            </detail>
-            <button class="button is-link" onclick="window.location.href = '{% pageurl tour %}';">Find Out More</button>
-        {% endwith %}
-        {% endfor %}        
-    {% else %}            
-        {% for tour in tourpages %}
-            {% cache 259200 tour_preview tour.id %}
-            {% with tour=tour.specific %}
-                <div class="acticleintro">
                 <a href="{% pageurl tour %}">
                 <div class="highlight">
                 {% with tour.image as tour_image %}
@@ -64,20 +38,47 @@
                 {% endwith %}   
                 </div>
                 <div class="description">
-                    <h3 class="title">{{ tour.title }}</h2>
+                    <h3 class="title">{{ tour.title }}</h2>                
                 </div>
                 </a>  
                 <detail>
-                    <p>{{ tour.short_description }}</p>
-                    {% if tour.tour_duration  %}
-                    {{ tour.get_readable_tour_duration }} tour,
-                    {% endif %}
-                    {% if tour.price_low_season > 0 %}
-                    from {{ tour.price_low_season }} dollars and up per tour.
-                    {% endif %}
-                    <br/>Province {{ tour.get_province_names_as_string }}                    
+                        <p>{{ tour.short_description }}</p>
+                        {% if tour.tour_duration %}
+                        {{ tour.get_readable_tour_duration }} tour,
+                        from {{ tour.price_low_season }} dollars and up per tour.
+                        <br/>Province {{ tour.get_province_names_as_string }}                    
+                        {% endif %}                
                 </detail>
-                <button class="button is-link cta" onclick="window.location.href = '{% pageurl tour %}';">Find Out More</button>                    
+                <button class="cta button is-link" onclick="window.location.href = '{% pageurl tour %}';">Find Out More</button>
+            </div>
+        {% endwith %}
+        {% endfor %}        
+    {% else %}            
+        {% for tour in tourpages %}
+            {% cache 259200 tour_preview tour.id %}
+            {% with tour=tour.specific %}
+                <div class="acticleintro">
+                    <a href="{% pageurl tour %}">
+                    <div class="highlight">
+                    {% with tour.image as tour_image %}
+                        {% image tour_image fill-480x384 %}
+                    {% endwith %}   
+                    </div>
+                    <div class="description">
+                        <h3 class="title">{{ tour.title }}</h2>
+                    </div>
+                    </a>  
+                    <detail>
+                        <p>{{ tour.short_description }}</p>
+                        {% if tour.tour_duration  %}
+                        {{ tour.get_readable_tour_duration }} tour,
+                        {% endif %}
+                        {% if tour.price_low_season > 0 %}
+                        from {{ tour.price_low_season }} dollars and up per tour.
+                        {% endif %}
+                        <br/>Province {{ tour.get_province_names_as_string }}                    
+                    </detail>
+                    <button class="cta button is-link" onclick="window.location.href = '{% pageurl tour %}';">Find Out More</button>                    
                 </div>
             {% endwith %}
             {% endcache %}

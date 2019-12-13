@@ -8,7 +8,24 @@
 	<section class="section" >
 	<div class="container">
     <h1 class="title">{{ page.title }}</h1>
-    <p class="subtitle">{{ page.intro }}</p>
+	<p class="subtitle">{{ page.intro }}</br>
+	on <time>{{ page.date }}</time>, by</p>
+	<div class="container">
+		{% for iter in self.blog_authors.all %}
+		<div class="media">
+			<div class="media-left">
+			  <figure class="image is-64x64">
+				  {% image iter.author.image fill-64x64 as img %}
+				  <img src="{{ img.url }}" class="is-rounded" alt="Author Portrait" >   
+			  </figure>
+			</div>
+			<div class="media-content">
+			  <p class="subtitle is-5">{{ iter.author.name }}</p>
+			</div>
+		  </div>
+		{% endfor %}  
+	</div>
+	</br>
     {% if page.tags.all.count %}
         <div class="tags are-medium">
             {% for tag in page.tags.all %}
@@ -16,42 +33,25 @@
             {% endfor %}
         </div>
     {% endif %}    
-    </div>
-    </section>
-    <div class="card">
-    {# Loop through all blog authors #}
-    <!--<div class="blog-avatar">-->
-    <div class="card-content">
-    {% for iter in self.blog_authors.all %}
-        
-	<div class="columns" >
-		<div class="column" >
-			<div class="media">
-			  <div class="media-left">
-				<figure class="image is-64x64">
-					{% image iter.author.image fill-64x64 as img %}
-					<img src="{{ img.url }}" class="is-rounded" alt="Author Portrait" >   
-				</figure>
-			  </div>
-			  <div class="media-content">
-				<p class="subtitle is-5">{{ iter.author.name }}</p>
-			  </div>
-			</div>
-			{% endfor %}    
-			on {{ page.date }}
-			</div>
-		</div>
-		<div class="content">
-			{{ page.body|richtext }}
-		</div>
 	</div>
-	<div class="column">
-    {% for item in page.gallery_images.all %}
-        <figure class="image is-4by3" >
-            {% image item.image fill-320x240 %}
-            <p>{{ item.caption }}</p>
-        </figure>
-    {% endfor %}
-    </div>
+	</br>
+	<section class="section">
+		<div class="columns">
+			<div class="column is-widescreen">
+				<article class="content">
+					{{ page.body|richtext }}
+				</article>
+			</div>
+			<div class="gallery column">
+					{% for item in page.gallery_images.all %}
+					<figure class="image is-4by3" >
+						{% image item.image fill-480x360 %}
+						<p>{{ item.caption }}</p>
+					</figure>
+				{% endfor %}
+			</div>
+		</div>
+	</section>
+
 {% endblock %}
 

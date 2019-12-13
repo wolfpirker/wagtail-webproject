@@ -10559,13 +10559,16 @@ body p {
 }
 
 .banner {
-  height: 530px;
   background-size: cover;
   background-position: center center;
   color: white;
   padding: 0;
   margin: 0;
   box-shadow: 0 8px 10px rgba(10, 10, 10, 0.25), 0 0 0 1px rgba(10, 10, 10, 0.25);
+}
+
+.gallery {
+  max-width: 480px;
 }
 
 .highlight {
@@ -10624,8 +10627,8 @@ detail {
 
 .cta {
   position: absolute;
-  right: 3;
-  bottom: 3;
+  right: 3px;
+  bottom: 3px;
   z-index: 11;
 }
 
