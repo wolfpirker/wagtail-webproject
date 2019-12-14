@@ -11,8 +11,8 @@
         </br>
     </div>
     <div class="container">
-        <p class="subtitle">Categories</p>
         <div class="tags are-medium">
+                <span class="tag is-light">Categories</span>
             {% for iter in self.categories.all %}
 
                 <a class="tag is-link" href="{{ self.get_parent.url }}?category={{ iter.slug }}">
@@ -21,8 +21,8 @@
             {% endfor %}
         </div>
         {% if self.destinations_exist %}
-        <p class="subtitle">Destinations</p>
         <div class="tags are-medium">
+        <span class="tag is-light">Destinations</span>
         {% for destination in self.get_destination_page %}
             <a class="tag is-link" href="{{ destination.url }}">
             {{ destination }}
@@ -32,16 +32,22 @@
         {% endif %}
         </br>
     </div>
+    <div class="container">
+        <div class="content">
+            <ul>
+            <li>Low season price: {{ page.price_low_season }} $ per tour;</li>
+            <li>High season price: {{ page.price_high_season }} $ per tour;</li>
+            <li>Group size up to {{ page.max_num_people }} people;</li>
+            {% if self.tour_duration %}
+                <li>Tour duration: {{ self.get_readable_tour_duration }}</li>
+            {% endif %}
+            </ul>
+        </div>
+    </div>
 </section>
 <section class="section">
     <div class="columns">
-    <div class="column">
-        <p>Low season price: {{ page.price_low_season }} $ per tour;
-        <br/>High season price: {{ page.price_high_season }} $ per tour;
-        <br/>Group size up to {{ page.max_num_people }} people.
-        {% if self.tour_duration %}
-            <br/>Tour duration: {{ self.get_readable_tour_duration }}</p>
-        {% endif %}
+    <div class="column">       
         <article class="content">
         {{ page.body|richtext }}
         </article>
