@@ -28,6 +28,7 @@
 	</br>
     {% if page.tags.all.count %}
         <div class="tags are-medium">
+			<span class="tag is-light">Tags</span>
             {% for tag in page.tags.all %}
                 <a class="tag is-link" href="{% slugurl 'tags' %}?tag={{ tag }}">{{ tag }}</a>
             {% endfor %}

@@ -12,6 +12,7 @@
 			<h2 class="subtitle">{{ page.title }}</h2>
 			<div class="intro">{{ page.intro|richtext }}</div>
 			<div class="tags are-medium">
+				<span class="tag is-light">Tags</span>
 			{% for tag in tags %}
 				<a class="tag is-link" href="{% slugurl 'tags' %}?tag={{ tag }}">{{ tag }}</a>
 			{% endfor %}        

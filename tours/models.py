@@ -41,6 +41,8 @@ from wagtail.core.models import Page, Orderable
 from wagtail.images.edit_handlers import ImageChooserPanel
 from wagtail.snippets.models import register_snippet
 
+from ourteam.models import GuideToursOrderable
+
 class TourCategory(models.Model):
     """Tour category for a snippet"""
 
@@ -187,6 +189,11 @@ class TourPage(Page):
         blank=False,
         related_name="+",
     )
+
+    def get_guide(self):
+        '''return tours which include this destination'''
+        all_guides = GuideToursOrderable.objects.filter(tours_pages__title=self.title)
+        return all_guides
 
     def save(self, *args, **kwargs):
         """Create a template fragment key.

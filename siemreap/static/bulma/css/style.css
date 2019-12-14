@@ -10565,6 +10565,7 @@ body p {
   padding: 0;
   margin: 0;
   box-shadow: 0 8px 10px rgba(10, 10, 10, 0.25), 0 0 0 1px rgba(10, 10, 10, 0.25);
+  z-index: 1;
 }
 
 .gallery {
@@ -10630,6 +10631,47 @@ detail {
   right: 3px;
   bottom: 3px;
   z-index: 11;
+}
+
+textarea.form-control {
+  background-color: transparent;
+  border-radius: 0;
+  border: 2px solid #fff;
+  color: #fff;
+  height: 150px;
+  font-size: 1.15em;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  width: 540px;
+}
+
+form {
+  font-size: 1.15em;
+  margin: 20px;
+}
+
+form li {
+  list-style-type: none;
+}
+
+form li input.form-control {
+  font-size: 1.1em;
+  background-color: transparent;
+  border-radius: 0;
+  border: 2px solid #fff;
+  color: #fff;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  width: 340px;
+}
+
+.container {
+  z-index: 5;
+}
+
+#mapcanvas {
+  height: 400px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

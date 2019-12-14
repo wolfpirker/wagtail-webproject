@@ -66,6 +66,7 @@ register_snippet(GuideQualification)
 
 class GuideToursOrderable(Orderable):
     page = ParentalKey("ourteam.TourGuidePage", related_name="guide_tours")
+    # Note: tours pages for each guide
     tours_pages = models.ForeignKey(
         "tours.TourPage",
         null=True,

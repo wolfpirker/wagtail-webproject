@@ -10815,3 +10815,207 @@ Not Found: /favicon.ico
 "GET /tours/battambang-culture-sightseeing/ HTTP/1.1" 200 17683
 "GET /tours/battambang-culture-sightseeing/ HTTP/1.1" 200 17777
 "GET /tours/battambang-culture-sightseeing/ HTTP/1.1" 200 17847
+Watching for file changes with StatReloader
+"GET /team HTTP/1.1" 301 0
+"GET /team/ HTTP/1.1" 200 18069
+"GET /media/images/beautiful-bike-biker-2885429.2e16d0ba.fill-260x200.jpg HTTP/1.1" 200 17321
+"GET /media/images/blurred-background-casual-close-up.2e16d0ba.fill-260x200.jpg HTTP/1.1" 200 11555
+"GET /media/images/adult-casual-close-up-2857942.2e16d0ba.fill-260x200.jpg HTTP/1.1" 200 10278
+"GET /team/john-doe/ HTTP/1.1" 200 19225
+"GET /static/bundles/app.js HTTP/1.1" 200 390023
+"GET /media/images/adult-casual-close-up-2857942.width-240.jpg HTTP/1.1" 200 16194
+"GET /tours HTTP/1.1" 301 0
+"GET /tours/ HTTP/1.1" 200 19795
+"GET /media/images/P1020803.2e16d0ba.fill-480x384.jpg HTTP/1.1" 200 12813
+"GET /media/images/Battambang_shrine.2e16d0ba.fill-480x384.jpg HTTP/1.1" 200 36865
+"GET /media/images/P1020085.2e16d0ba.fill-480x384.jpg HTTP/1.1" 200 42468
+"GET /media/images/siemreap_countryside.2e16d0ba.fill-480x384.jpg HTTP/1.1" 200 46648
+"GET /destinations HTTP/1.1" 301 0
+"GET /destinations/ HTTP/1.1" 200 16095
+"GET /media/images/TaProhm_tree.2e16d0ba.fill-300x260.jpg HTTP/1.1" 200 32297
+"GET /media/images/P1020085.2e16d0ba.fill-300x260.jpg HTTP/1.1" 200 20909
+"GET /destinations/ta-prohm/ HTTP/1.1" 200 16442
+"GET /media/images/TaProhm_tree.height-600.jpg HTTP/1.1" 200 85854
+"GET /media/images/P1020450_ausschnitt.height-600.jpg HTTP/1.1" 200 256109
+/home/wolf/Projekte/dev/venv/siemreappage/tours/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/Projekte/dev/venv/siemreappage/tours/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/Projekte/dev/venv/siemreappage/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/Projekte/dev/venv/siemreappage/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/Projekte/dev/venv/siemreappage/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/Projekte/dev/venv/siemreappage/ourteam/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/Projekte/dev/venv/siemreappage/tours/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/Projekte/dev/venv/siemreappage/tours/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/Projekte/dev/venv/siemreappage/tours/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolf/Projekte/dev/venv/siemreappage/tours/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /tours/ HTTP/1.1" 200 19797
+"GET /tours/siem-reap-countryside/ HTTP/1.1" 200 18017
+"GET /media/images/siemreap_countryside.width-620.jpg HTTP/1.1" 200 63808
+"GET /tours/ HTTP/1.1" 200 19795
+"GET /tours/angkor-wat-cycling-tour/ HTTP/1.1" 200 18642
+"GET /media/images/P1020085.width-620.jpg HTTP/1.1" 200 56924
+"GET /tours/ HTTP/1.1" 200 19795
+"GET /tours/battambang-culture-sightseeing/ HTTP/1.1" 200 18079
+"GET /team/yasako/ HTTP/1.1" 200 17259
+"GET /media/images/blurred-background-casual-close-up-2888113.width-240.jpg HTTP/1.1" 200 18181
+"GET /tours/ HTTP/1.1" 200 19795
+"GET /tours/ HTTP/1.1" 200 19796
+"GET / HTTP/1.1" 200 14590
+"GET /media/images/AnkgorWat_panorama_bit_darker.width-1368.jpg HTTP/1.1" 200 90491
+"GET /tours/ HTTP/1.1" 200 19795
+"GET /tours/siem-reap-countryside/ HTTP/1.1" 200 18016
+"GET /team/fumie/ HTTP/1.1" 200 15535
+"GET /media/images/beautiful-bike-biker-2885429.width-240.jpg HTTP/1.1" 200 22823
+"GET /tours/ HTTP/1.1" 200 19795
+"GET /tours/battambang-culture-sightseeing/ HTTP/1.1" 200 18081
+"GET /static/debug_toolbar/img/djdt_vertical.png HTTP/1.1" 200 882
+"GET /blog HTTP/1.1" 301 0
+"GET /blog/ HTTP/1.1" 200 19808
+"GET /media/images/P1020261_zugeschnitten.2e16d0ba.fill-260x200.jpg HTTP/1.1" 200 16898
+"GET /media/images/P1020796_stripe.2e16d0ba.fill-260x200.jpg HTTP/1.1" 200 14622
+"GET /media/images/mexico.2e16d0ba.fill-260x200.jpg HTTP/1.1" 200 16557
+"GET /media/images/P1020609.2e16d0ba.fill-260x200.jpg HTTP/1.1" 200 18529
+"GET /blog/blog-article-5/ HTTP/1.1" 200 17899
+"GET /media/images/blurred-background-casual-close-up.2e16d0ba.fill-480x360.jpg HTTP/1.1" 200 29174
+"GET /media/images/P1020796_stripe.2e16d0ba.fill-480x360.jpg HTTP/1.1" 200 41946
+"GET /media/images/author_wolfgang.2e16d0ba.fill-64x64.jpg HTTP/1.1" 200 2249
+"GET /tours/ HTTP/1.1" 200 19795
+"GET /tours/battambang-culture-sightseeing/ HTTP/1.1" 200 18079
+"GET /blog/ HTTP/1.1" 200 19807
+"GET /tags/?tag=baum HTTP/1.1" 200 14413
+Not Found: /favicon.ico
+"GET /tags/?tag=temple HTTP/1.1" 200 14585
+Not Found: /favicon.ico
+"GET /blog/4th-blog-post/ HTTP/1.1" 200 17223
+"GET /media/images/P1020609.2e16d0ba.fill-480x360.jpg HTTP/1.1" 200 54197
+"GET /media/images/P1020261_zugeschnitten.2e16d0ba.fill-480x360.jpg HTTP/1.1" 200 49024
+"GET /team/ HTTP/1.1" 200 18066
+"GET /tours/ HTTP/1.1" 200 19795
+"GET /tours/siem-reap-countryside/ HTTP/1.1" 200 18017
+"GET /contact HTTP/1.1" 301 0
+"GET /contact/ HTTP/1.1" 200 15206
+"GET / HTTP/1.1" 200 14590
+"GET /contact/ HTTP/1.1" 200 15206
+"GET / HTTP/1.1" 200 14590
+"GET /contact/ HTTP/1.1" 200 15206
+"GET /contact/ HTTP/1.1" 200 15433
+"GET / HTTP/1.1" 200 14590
+"GET /contact/ HTTP/1.1" 200 15433
+"GET / HTTP/1.1" 200 14590
+"GET /contact/ HTTP/1.1" 200 15433
+"GET / HTTP/1.1" 200 14590
+"GET / HTTP/1.1" 200 14590
+"GET / HTTP/1.1" 200 14590
+"GET /destinations/ HTTP/1.1" 200 16093
+"GET /contact/ HTTP/1.1" 200 15433
+"GET /tours/ HTTP/1.1" 200 19795
+"GET /tours/siem-reap-countryside/ HTTP/1.1" 200 18015
+"GET /tours/ HTTP/1.1" 200 19795
+"GET /tours/battambang-culture-sightseeing/ HTTP/1.1" 200 18081
+"GET /tours/ HTTP/1.1" 200 19795
+"GET /tours/new-tour-page/ HTTP/1.1" 200 16216
+"GET /media/images/P1020803.width-620.jpg HTTP/1.1" 200 17349
+"GET /tours/ HTTP/1.1" 200 19795
+"GET /tours/battambang-culture-sightseeing/ HTTP/1.1" 200 18081
+"GET /blog/ HTTP/1.1" 200 19807
+"GET /blog/4th-blog-post/ HTTP/1.1" 200 17223
+"GET /media/images/P1020261_zugeschnitten.2e16d0ba.fill-480x360.jpg HTTP/1.1" 304 0
+"GET /tags/?tag=temple HTTP/1.1" 200 14585
+"GET /blog/another-big-plog-post/ HTTP/1.1" 200 16523
+"GET /media/images/P1020803.width-500.jpg HTTP/1.1" 200 12788
+"GET /media/images/P1020085.2e16d0ba.fill-480x360.jpg HTTP/1.1" 200 40146
+"GET / HTTP/1.1" 200 14590
+"GET /tours/ HTTP/1.1" 200 19795
+"GET /tours/new-tour-page/ HTTP/1.1" 200 16214
+"GET /tours/ HTTP/1.1" 200 19795
+"GET /tours/battambang-culture-sightseeing/ HTTP/1.1" 200 18082
+"GET /tours/ HTTP/1.1" 200 19795
+"GET /tours/siem-reap-countryside/ HTTP/1.1" 200 18015
+"GET /team/ HTTP/1.1" 200 18066
+"GET /team/ HTTP/1.1" 200 18068
+"GET /tours/ HTTP/1.1" 200 19795
+"GET /tours/siem-reap-countryside/ HTTP/1.1" 200 18015
+"GET /tours/ HTTP/1.1" 200 19795
+"GET /team/ HTTP/1.1" 200 18066
+"GET /destinations/ HTTP/1.1" 200 16093
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 15516
+"GET /media/images/P1020085.height-600.jpg HTTP/1.1" 200 106923
+"GET /team/ HTTP/1.1" 200 18066
+"GET /tours/ HTTP/1.1" 200 19795
+"GET / HTTP/1.1" 200 14590
+"GET / HTTP/1.1" 200 14590
+"GET /tours/ HTTP/1.1" 200 19795
+"GET /tours/siem-reap-countryside/ HTTP/1.1" 200 18017
+"GET /blog/ HTTP/1.1" 200 19807
+"GET /contact/ HTTP/1.1" 200 15433
+Watching for file changes with StatReloader
+"GET /contact/ HTTP/1.1" 200 15437
+"GET /contact/ HTTP/1.1" 200 15434
+"GET /static/bulma/css/style.css HTTP/1.1" 200 225124
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 41
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 14835
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13213
+"GET /static/debug_toolbar/img/ajax-loader.gif HTTP/1.1" 200 404
+"GET /media/images/AnkgorWat_panorama_bit_darker.width-1368.jpg HTTP/1.1" 200 90491
+"GET /static/favicon.ico HTTP/1.1" 200 2666
+"GET /contact/ HTTP/1.1" 200 15433
+"GET /static/bulma/css/style.css HTTP/1.1" 200 225054
+"GET /static/bulma/css/style.css.map HTTP/1.1" 200 265074
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /contact/ HTTP/1.1" 200 15433
+"GET /static/bulma/css/style.css HTTP/1.1" 200 225280
+"GET /contact/ HTTP/1.1" 200 15469
+"GET /static/bulma/css/style.css HTTP/1.1" 200 225054
+"GET /contact/ HTTP/1.1" 200 15387
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+"GET /static/bulma/css/style.css.map HTTP/1.1" 200 265074
+"GET /contact/ HTTP/1.1" 200 15348
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 14590
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /contact HTTP/1.1" 301 0
+"GET /contact/ HTTP/1.1" 200 15348
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /contact/ HTTP/1.1" 200 15528
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /contact/ HTTP/1.1" 200 15520
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /static/debug_toolbar/img/djdt_vertical.png HTTP/1.1" 200 882
+"GET / HTTP/1.1" 200 14590
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /contact/ HTTP/1.1" 200 15520
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /contact/ HTTP/1.1" 200 15504
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /contact/ HTTP/1.1" 200 15504
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /contact/ HTTP/1.1" 200 15504
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 14590
+"GET /static/bulma/css/style.css HTTP/1.1" 200 225099
+"GET /static/bulma/css/style.css.map HTTP/1.1" 200 265144
+"GET / HTTP/1.1" 200 14590
+"GET /static/bulma/css/style.css HTTP/1.1" 200 225098
+"GET /static/bulma/css/style.css.map HTTP/1.1" 200 265144
+"GET /contact/ HTTP/1.1" 200 15504
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /contact/ HTTP/1.1" 200 15504
+"GET /static/bulma/css/style.css HTTP/1.1" 200 225098
+"GET /static/bulma/css/style.css.map HTTP/1.1" 200 265144

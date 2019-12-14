@@ -30,6 +30,16 @@
         {% endfor %}
         </div>
         {% endif %}
+        <div class="tags are-medium">
+            <span class="tag is-light">Guides</span>
+            {% for guide in self.get_guide %}
+            <a class="tag is-link" href="{{ guide.page.url }}">      
+                {{ guide }}
+            </a>
+     {% endfor %}
+        </div>
+
+
         </br>
     </div>
     <div class="container">
