@@ -2,42 +2,49 @@
 {% load wagtailcore_tags wagtailimages_tags %}
 
 {% block content %}
-    <div class="columns">
-    <div class="column">
+
+<section class="section" >
+	<div class="container">
+
         <h1 class="title">{{ page.title }}</h1>
-        <div class="intro"><p>{{ page.short_description }}</p></div>
-        <ul class=category-tags>
-            <li>
-                <em>Categories</em>
-            </li>
+        <p class="subtitle">{{ page.short_description }}</p>
+        </br>
+    </div>
+    <div class="container">
+        <p class="subtitle">Categories</p>
+        <div class="tags are-medium">
             {% for iter in self.categories.all %}
-            <li>
-                <a href="{{ self.get_parent.url }}?category={{ iter.slug }}">
+
+                <a class="tag is-link" href="{{ self.get_parent.url }}?category={{ iter.slug }}">
                 {{ iter.name }}
                 </a>
-            </li>
             {% endfor %}
-        </ul>
-        
+        </div>
         {% if self.destinations_exist %}
-        <ul class=category-tags>
-            <li><em>Destinations</em></li>
-            {% for destination in self.get_destination_page %}
-                <li>
-                    <a href="{{ destination.url }}">
-                    {{ destination }}
-                    </a>
-                </li>
-            {% endfor %}
-        </ul>
+        <p class="subtitle">Destinations</p>
+        <div class="tags are-medium">
+        {% for destination in self.get_destination_page %}
+            <a class="tag is-link" href="{{ destination.url }}">
+            {{ destination }}
+            </a>
+        {% endfor %}
+        </div>
         {% endif %}
+        </br>
+    </div>
+</section>
+<section class="section">
+    <div class="columns">
+    <div class="column">
         <p>Low season price: {{ page.price_low_season }} $ per tour;
         <br/>High season price: {{ page.price_high_season }} $ per tour;
         <br/>Group size up to {{ page.max_num_people }} people.
         {% if self.tour_duration %}
             <br/>Tour duration: {{ self.get_readable_tour_duration }}</p>
         {% endif %}
+        <article class="content">
         {{ page.body|richtext }}
+        </article>
     </div>
     <div class="column">
         <figure class="tour-location-map">
@@ -51,6 +58,7 @@
         </figure>
     </div>
     </div>
+</section>
 
 
 {% endblock %}
