@@ -10551,22 +10551,22 @@ label.panel-block:hover {
 }
 
 ::-webkit-input-placeholder {
-  color: #aaa;
+  color: #eee;
   opacity: 1;
 }
 
 :-moz-placeholder {
-  color: #aaa;
+  color: #eee;
   opacity: 1;
 }
 
 ::-moz-placeholder {
-  color: #aaa;
+  color: #eee;
   opacity: 1;
 }
 
 :-ms-input-placeholder {
-  color: #aaa;
+  color: #eee;
   opacity: 1;
 }
 
@@ -10587,10 +10587,16 @@ body p {
   box-shadow: 0 8px 10px rgba(10, 10, 10, 0.25), 0 0 0 1px rgba(10, 10, 10, 0.25);
 }
 
-.contact img {
-  margin-top: -460px;
-  min-height: 300px;
-  z-index: 1;
+.bannercontact {
+  height: 530px;
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  padding: 0;
+  margin: 0;
+  z-index: -1;
+  /* hide shadow behind image */
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
 }
 
 .gallery {
@@ -10693,8 +10699,18 @@ form li input.form-control {
   display: block;
 }
 
-.container {
-  z-index: 5;
+.form-control:focus {
+  color: #111111;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+@media screen and (max-width: 768px) {
+  textarea.form-control {
+    width: 88%;
+  }
 }
 
 label {
