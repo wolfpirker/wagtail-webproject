@@ -1,0 +1,140 @@
+::-webkit-input-placeholder {
+  color: #aaa;
+  opacity: 1;
+}
+:-moz-placeholder {
+  color: #aaa;
+  opacity: 1;
+}
+::-moz-placeholder {
+  color: #aaa;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: #aaa;
+  opacity: 1;
+}
+body p {
+  max-width: 800px;
+}
+.footer {
+  background-color: #e8e0e0;
+}
+.banner {
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 8px 10px rgba(10, 10, 10, 0.25),
+    0 0 0 1px rgba(10, 10, 10, 0.25);
+}
+.contact img {
+  margin-top: -460px;
+  min-height: 300px;
+  z-index: 1;
+}
+.gallery {
+  max-width: 480px;
+}
+.highlight {
+  background-color: #daa2c8;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+}
+.highlight img:hover {
+  opacity: 0.5;
+}
+.acticleintro {
+  margin-left: 0px;
+  margin-right: 25px;
+  margin-bottom: 20px;
+  display: inline-flex;
+  font-size: 1.1em;
+  position: relative;
+  box-shadow: 0 8px 10px rgba(10, 10, 10, 0.25),
+    0 0 0 1px rgba(10, 10, 10, 0.25);
+  padding: 1px;
+  padding-bottom: 6rem;
+  background: whitesmoke;
+}
+.description {
+  margin-top: -110px;
+  margin-left: 0px;
+  width: 480px;
+  background: linear-gradient(
+    to bottom,
+    rgba(250, 245, 255, 0.2) 0%,
+    #e0e0e0 50%
+  );
+  height: 105px;
+  padding: 0px;
+  position: relative;
+  z-index: 1;
+  color: black;
+  padding-right: 5px;
+}
+.description h3 {
+  font-size: 1.4em;
+  color: black;
+  padding: 10px;
+}
+detail {
+  display: block;
+  position: absolute;
+  font-size: 15px;
+  bottom: 0rem;
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+  color: black;
+  z-index: 10;
+}
+.cta {
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+  z-index: 11;
+}
+textarea.form-control {
+  display: block;
+  background-color: transparent;
+  border-radius: 0;
+  border: 2px solid #fff;
+  color: #fff;
+  height: 150px;
+  font-size: 1.15em;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  width: 540px;
+}
+form {
+  font-size: 1.15em;
+  margin: 10px;
+}
+form li {
+  list-style-type: none;
+  color: white;
+}
+form li input.form-control {
+  font-size: 1.1em;
+  background-color: transparent;
+  border-radius: 0;
+  border: 2px solid #fff;
+  color: #fff;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  width: 340px;
+  display: block;
+}
+.container {
+  z-index: 5;
+}
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+#mapcanvas {
+  height: 400px;
+  width: 100%;
+}

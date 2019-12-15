@@ -10550,6 +10550,26 @@ label.panel-block:hover {
   padding: 3rem 1.5rem 6rem;
 }
 
+::-webkit-input-placeholder {
+  color: #aaa;
+  opacity: 1;
+}
+
+:-moz-placeholder {
+  color: #aaa;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  color: #aaa;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #aaa;
+  opacity: 1;
+}
+
 body p {
   max-width: 800px;
 }
@@ -10565,6 +10585,11 @@ body p {
   padding: 0;
   margin: 0;
   box-shadow: 0 8px 10px rgba(10, 10, 10, 0.25), 0 0 0 1px rgba(10, 10, 10, 0.25);
+}
+
+.contact img {
+  margin-top: -460px;
+  min-height: 300px;
   z-index: 1;
 }
 
@@ -10591,9 +10616,9 @@ body p {
   font-size: 1.1em;
   position: relative;
   box-shadow: 0 8px 10px rgba(10, 10, 10, 0.25), 0 0 0 1px rgba(10, 10, 10, 0.25);
-  box-shadow-padding: 1px;
-  box-shadow-padding-bottom: 6.0rem;
-  box-shadow-background: whitesmoke;
+  padding: 1px;
+  padding-bottom: 6.0rem;
+  background: whitesmoke;
 }
 
 .description {
@@ -10601,7 +10626,7 @@ body p {
   margin-left: 0px;
   width: 480px;
   background: linear-gradient(to bottom, rgba(250, 245, 255, 0.2) 0%, #e0e0e0 50%);
-  height: 200px;
+  height: 105px;
   padding: 0px;
   position: relative;
   z-index: 1;
@@ -10634,6 +10659,7 @@ detail {
 }
 
 textarea.form-control {
+  display: block;
   background-color: transparent;
   border-radius: 0;
   border: 2px solid #fff;
@@ -10647,11 +10673,12 @@ textarea.form-control {
 
 form {
   font-size: 1.15em;
-  margin: 20px;
+  margin: 10px;
 }
 
 form li {
   list-style-type: none;
+  color: white;
 }
 
 form li input.form-control {
@@ -10663,10 +10690,16 @@ form li input.form-control {
   margin-left: 15px;
   margin-bottom: 5px;
   width: 340px;
+  display: block;
 }
 
 .container {
   z-index: 5;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: .5rem;
 }
 
 #mapcanvas {
