@@ -10627,6 +10627,10 @@ body p {
   background: whitesmoke;
 }
 
+.guidecard {
+  height: 280px;
+}
+
 .description {
   margin-top: -110px;
   margin-left: 0px;
@@ -10638,6 +10642,17 @@ body p {
   z-index: 1;
   color: black;
   padding-right: 5px;
+}
+
+.guide {
+  margin-top: -80px;
+  margin-left: 0px;
+  width: 300px;
+  height: 80px;
+}
+
+.guide p {
+  padding-left: 20px;
 }
 
 .description h3 {

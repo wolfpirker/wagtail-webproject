@@ -3,35 +3,35 @@
 {% block content %}
     <h1>{{ self.title}}</h1>
     {% for card in self.cards %}
-            <div class="card">
+            <div class="acticleintro guidecard">
             {% if card.button_page %}
                 <!-- internal page -->
                 <a href="{{ card.button_page.url }}">
                 <div class="highlight">
-                {% image card.image fill-260x200 %}  
+                {% image card.image fill-300x240 %}  
                 </div>
-                <div class="description">
-                    <h2>{{ card.title }}</h2>
-                    <p>{{ card.text }}</p>
+                <div class="description guide">
+                    <h3 class="title">{{ card.title }}</h2> 
+                     <p class="subtitle">{{ card.text }}</p>                   
                 </div>
                 </a>  
             {% elif card.button_url %}
             <!-- external page -->
                 <a href="{{ card.button_url }}">
                 <div class="highlight">
-                {% image card.image fill-260x200 %}  
+                {% image card.image fill-300x240 %}  
                 </div>
-                <div class="description">
-                    <h2>{{ card.title }}</h2>
-                    <p>{{ card.text }}</p>
+                <div class="description guide">
+                    <h3 class="title">{{ card.title }}</h2>
+                    <p class="subtitle">{{ card.text }}</p>
                 </div>
                 </a>  
             {% else %}
             <a href="#">
             <div class="highlight">
-            {% image card.image fill-260x200 %}  
+            {% image card.image fill-300x240 %}  
             </div>
-            <div class="description">
+            <div class="description guide">
                 <h2>{{ card.title }}</h2>
                 <p>{{ card.text }}</p>
             </div>
