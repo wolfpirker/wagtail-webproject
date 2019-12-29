@@ -83,24 +83,31 @@ class TourDestinationOrderable(Orderable):
     def __str__(self):
         return self.page.title
 
-class TourProvincesOrderable(Orderable):
-    """This allows us to select one or more tour provinces from Snippets."""
+#class TourProvincesOrderable(Orderable):
+#    """This allows us to select one or more tour provinces from Snippets."""
+#
+#    page = ParentalKey("tours.TourPage", related_name="tour_provinces")
+#    province = models.ForeignKey(
+#        "tours.TourProvince",
+#        on_delete=models.CASCADE,
+#    )
 
-    page = ParentalKey("tours.TourPage", related_name="tour_provinces")
-    province = models.ForeignKey(
-        "tours.TourProvince",
-        on_delete=models.CASCADE,
-    )
-
-    panels = [
-        SnippetChooserPanel("province"),
-    ]
+#    panels = [
+#        SnippetChooserPanel("province"),
+#    ]
 
 @register_snippet
 class TourProvince(models.Model):
     """Tour provinces for snippets."""
     province_name = models.CharField(max_length=31)
-    province_website = models.URLField(blank=True, null=True)
+
+    slug = models.SlugField(
+        verbose_name="slug",
+        allow_unicode=True,
+        max_length=31,
+        help_text='A slug to identify tours by this category',
+    )
+    
     map_image = models.ForeignKey(
         "wagtailimages.Image",
         on_delete=models.SET_NULL,
@@ -113,15 +120,10 @@ class TourProvince(models.Model):
         MultiFieldPanel(
             [
                 FieldPanel("province_name"),
+                FieldPanel("slug"),
                 ImageChooserPanel("map_image"),
             ],
             heading="Province",
-        ),
-        MultiFieldPanel(
-            [
-                FieldPanel("province_website"),
-            ],
-            heading="Links"
         )
     ]
 
@@ -155,11 +157,21 @@ class ToursIndexPage(Page):
         context['tourpages'] = tourpages
         
         context['categories'] = TourCategory.objects.all()
+        context['provinces'] = TourProvince.objects.all()
         category = request.GET.get('category')
+        province = request.GET.get('province')
+        tourpages_filtered = []
         if category is not None:
-            category = category.capitalize()
-            tourpages_filtered = TourPage.objects.filter(categories__name=category)
-            context['tourpages_filtered'] = tourpages_filtered
+            category = category.lower()        
+            tourpages_filtered = TourPage.objects.filter(categories__slug=category)
+        if province is not None:
+            province = province.lower()
+            if category is None:
+                #tourpages_filtered = TourPage.objects.filter(tour_provinces__province=province)
+                tourpages_filtered = TourPage.objects.filter(provinces__slug=province)
+            else:
+                tourpages_filtered = TourPage.objects.filter(categories__slug=category, provinces__slug=province)            
+        context['tourpages_filtered'] = tourpages_filtered
         return context
 
     content_panels = Page.content_panels + [
@@ -170,13 +182,11 @@ class ToursIndexPage(Page):
         verbose_name = "Tours Index Page"
         verbose_name_plural = "Tours Index Pages"
 
-
 class TourPage(Page):
     template = "tours/tour_page.html"
 
     date = models.DateField("Post date")
-    short_description = models.CharField(max_length=255)
-    #author = models.CharField(max_length=64)
+    short_description = models.CharField(max_length=255)    
     body = RichTextField(blank=True)
     tour_duration = models.DurationField(blank=True,null=True,help_text="duration usual for this tour - type as 'DD HH:MM:SS' or 'HH:MM:SS'")
     price_low_season = models.IntegerField(blank=True,null=True,help_text="enter the price for the group on low season time [$]")
@@ -227,6 +237,9 @@ class TourPage(Page):
         else:
             return None
 
+    categories = ParentalManyToManyField("tours.TourCategory", blank=True)
+    provinces = ParentalManyToManyField("tours.TourProvince", blank=True)
+
     def destinations_exist(self):
         if len(self.tour_destinations.all()) == 0:
             return False
@@ -239,20 +252,21 @@ class TourPage(Page):
         return destinations
     
     def get_province_names(self):
-        provinces = [
-            n.province.province_name for n in self.tour_provinces.all()
+        p = [
+            n.province.province_name for n in self.provinces.all()
         ]
-        return provinces
+        return p
 
     def get_province_names_as_string(self):
-        '''Tour could take place in several provinces, so I need a method to get it...'''
-        provinces = ''
+        '''Tour could take place in several provinces, 
+        so I need a method to get it...'''
+        provinces_str = ''
         for province in self.get_province_names():
-            provinces += province + ', ' 
-        provinces = provinces[:-2]
-        return provinces
+            provinces_str += province + ', ' 
+        provinces_str = provinces_str[:-2]
+        return provinces_str
 
-    categories = ParentalManyToManyField("tours.TourCategory", blank=True)
+ # neu!
 
     search_fields = Page.search_fields + [
         index.SearchField('short_description'),
@@ -263,8 +277,14 @@ class TourPage(Page):
         MultiFieldPanel([
             FieldPanel('date'),
             ImageChooserPanel("image"),
-            InlinePanel("tour_provinces", label="Province", min_num=1, max_num=3),                        
+            #InlinePanel("provinces", label="Province", min_num=1, max_num=3),                        
         ], heading="Tour general information"),
+        MultiFieldPanel(
+            [
+                FieldPanel("provinces", widget=forms.CheckboxSelectMultiple)
+            ],
+            heading="Provinces"
+        ),
         MultiFieldPanel([
             InlinePanel("tour_destinations", label="Destinations", min_num=0, max_num=6), 
         ], heading="Tour Destinations"),

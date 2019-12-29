@@ -12,21 +12,42 @@
 		<h2 class="subtitle">{{ page.title }}</h2>
 		<div class="intro">{{ page.intro|richtext }}</div>
 		<div class="tags are-medium">
+            <span class="tag is-light">Categories</span>
 		{% for iter in categories %}
 			<a class="tag is-link" href="?category={{ iter.slug }}">
 			{{ iter.name }}
 			</a>
-		{% endfor %}
+        {% endfor %}
+        </div>
+        {% endcache %}
+        <div class="tags are-medium">
+        <span class="tag is-light">Provinces</span>
+        {% if request.GET.category|length %}
+            {% for iter in provinces %}
+            <a class="tag is-link" href="?category={{ request.GET.category.capitalize }}&province={{ iter.slug }}">
+            {{ iter.province_name }}
+            </a>
+            {% endfor %}
+        {% else %}
+            {% for iter in provinces %}
+            <a class="tag is-link" href="?province={{ iter.slug }}">
+            {{ iter.province_name }}
+            </a>
+            {% endfor %}
+        {% endif %}
 		</div>    
 	</div>
 </section>
 
-{% endcache %}
+
     
 <section class="section" >
 	<div class="container is-fluid">
-    {% if request.GET.category|length %}
-        <h4 class="title">Showing tours in category "{{ request.GET.category.capitalize }}"</h4>
+    {% if request.GET.province|length or request.GET.category|length %}
+        <!--<h4 class="title">Showing tours in category "{{ request.GET.category.capitalize }}"</h4>-->
+        {% if request.GET.province|length %}
+            <h4 class="title">Showing tours in province "{{ request.GET.province.capitalize }}"</h4>
+        {% endif %}
         <p><a href="{{ page.url }}">Show All Tours</a></p>
         {% for tour in tourpages_filtered %}
         {% with tour=tour.specific %}
@@ -46,7 +67,7 @@
                         {% if tour.tour_duration %}
                         {{ tour.get_readable_tour_duration }} tour,
                         from {{ tour.price_low_season }} dollars and up per tour.
-                        <br/>Province {{ tour.get_province_names_as_string }}                    
+                        <!-- TODO: add province-->
                         {% endif %}                
                 </detail>
                 <button class="cta button is-link" onclick="window.location.href = '{% pageurl tour %}';">Find Out More</button>
@@ -76,7 +97,7 @@
                         {% if tour.price_low_season > 0 %}
                         from {{ tour.price_low_season }} dollars and up per tour.
                         {% endif %}
-                        <br/>Province {{ tour.get_province_names_as_string }}                    
+                        <!-- TODO: add province -->
                     </detail>
                     <button class="cta button is-link" onclick="window.location.href = '{% pageurl tour %}';">Find Out More</button>                    
                 </div>
