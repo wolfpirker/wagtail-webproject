@@ -166,8 +166,7 @@ class ToursIndexPage(Page):
             tourpages_filtered = TourPage.objects.filter(categories__slug=category)
         if province is not None:
             province = province.lower()
-            if category is None:
-                #tourpages_filtered = TourPage.objects.filter(tour_provinces__province=province)
+            if category is None:                
                 tourpages_filtered = TourPage.objects.filter(provinces__slug=province)
             else:
                 tourpages_filtered = TourPage.objects.filter(categories__slug=category, provinces__slug=province)            
@@ -250,23 +249,15 @@ class TourPage(Page):
             n.destination_pages for n in self.tour_destinations.all()
         ]
         return destinations
-    
-    def get_province_names(self):
-        p = [
-            n.province.province_name for n in self.provinces.all()
-        ]
-        return p
 
     def get_province_names_as_string(self):
         '''Tour could take place in several provinces, 
         so I need a method to get it...'''
         provinces_str = ''
-        for province in self.get_province_names():
-            provinces_str += province + ', ' 
+        for province in self.provinces.all():
+            provinces_str += province.province_name + ', ' 
         provinces_str = provinces_str[:-2]
         return provinces_str
-
- # neu!
 
     search_fields = Page.search_fields + [
         index.SearchField('short_description'),
@@ -276,8 +267,7 @@ class TourPage(Page):
     content_panels = Page.content_panels + [
         MultiFieldPanel([
             FieldPanel('date'),
-            ImageChooserPanel("image"),
-            #InlinePanel("provinces", label="Province", min_num=1, max_num=3),                        
+            ImageChooserPanel("image"),                                    
         ], heading="Tour general information"),
         MultiFieldPanel(
             [

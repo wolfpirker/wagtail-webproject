@@ -34,8 +34,8 @@
             {{ iter.province_name }}
             </a>
             {% endfor %}
-        {% endif %}
-		</div>    
+        {% endif %}        
+        </div>    
 	</div>
 </section>
 
@@ -44,11 +44,20 @@
 <section class="section" >
 	<div class="container is-fluid">
     {% if request.GET.province|length or request.GET.category|length %}
-        <!--<h4 class="title">Showing tours in category "{{ request.GET.category.capitalize }}"</h4>-->
-        {% if request.GET.province|length %}
-            <h4 class="title">Showing tours in province "{{ request.GET.province.capitalize }}"</h4>
-        {% endif %}
-        <p><a href="{{ page.url }}">Show All Tours</a></p>
+        <div class="tags are-medium">
+            <a class="tag is-primary" href="{{ page.url }}">
+                Show All Tours
+            </a>
+        </div>
+        {% if request.GET.category|length %} 
+            {% if request.GET.province|length %}
+                <h3 class="subtitle">Showing tours in category "{{ request.GET.category.capitalize }}", province "{{ request.GET.province.capitalize }}"</h3>        
+            {% else %}
+                <h3 class="subtitle">Showing tours in category "{{ request.GET.category.capitalize }}"</h3>        
+            {% endif %}
+        {% elif request.GET.province|length %}
+            <h3 class="subtitle">Showing tours in province "{{ request.GET.province.capitalize }}"</h3>
+        {% endif %}        
         {% for tour in tourpages_filtered %}
         {% with tour=tour.specific %}
             <div class="acticleintro">
@@ -63,12 +72,15 @@
                 </div>
                 </a>  
                 <detail>
-                        <p>{{ tour.short_description }}</p>
-                        {% if tour.tour_duration %}
-                        {{ tour.get_readable_tour_duration }} tour,
-                        from {{ tour.price_low_season }} dollars and up per tour.
-                        <!-- TODO: add province-->
-                        {% endif %}                
+                    <p>{{ tour.short_description }}</p>
+                    {% if tour.tour_duration  %}
+                    {{ tour.get_readable_tour_duration }} tour,
+                    {% endif %}
+                    {% if tour.price_low_season > 0 %}
+                    from {{ tour.price_low_season }} dollars and up per tour.
+                    {% endif %}
+                    <!-- TODO: add province -->
+                    <br/>Province {{ tour.get_province_names_as_string }}          
                 </detail>
                 <button class="cta button is-link" onclick="window.location.href = '{% pageurl tour %}';">Find Out More</button>
             </div>
@@ -98,6 +110,7 @@
                         from {{ tour.price_low_season }} dollars and up per tour.
                         {% endif %}
                         <!-- TODO: add province -->
+                        <br/>Province {{ tour.get_province_names_as_string }}
                     </detail>
                     <button class="cta button is-link" onclick="window.location.href = '{% pageurl tour %}';">Find Out More</button>                    
                 </div>

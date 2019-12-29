@@ -14288,3 +14288,257 @@ Watching for file changes with StatReloader
 "GET /tours/?category=city HTTP/1.1" 200 18677
 "GET /tours/ HTTP/1.1" 200 22031
 "GET /tours/?category=city HTTP/1.1" 200 18677
+Watching for file changes with StatReloader
+"GET /tours/?category=city HTTP/1.1" 200 18679
+"GET /tours/?category=city HTTP/1.1" 200 18685
+"GET /tours/?category=city HTTP/1.1" 200 18809
+"GET /tours/?category=city HTTP/1.1" 200 18801
+"GET /tours/?category=city HTTP/1.1" 200 18810
+"GET /tours/?category=city HTTP/1.1" 200 18801
+"GET /tours/?category=countryside HTTP/1.1" 200 19879
+"GET /tours/?category=culture HTTP/1.1" 200 20649
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+"GET /tours/?category=Culture&province=battambang HTTP/1.1" 200 18896
+"GET /tours/?category=Culture&province=battambang HTTP/1.1" 200 18835
+"GET /tours/?category=Culture&province=battambang HTTP/1.1" 200 18835
+"GET /tours/?category=Culture&province=sihanoukville HTTP/1.1" 200 17722
+"GET /tours/?category=Culture&province=battambang HTTP/1.1" 200 18835
+"GET /tours/?category=Culture&province=battambang HTTP/1.1" 200 18883
+"GET /tours/?category=countryside HTTP/1.1" 200 19926
+"GET /tours/?category=Countryside&province=battambang HTTP/1.1" 200 18899
+"GET /tours/?category=Countryside&province=battambang HTTP/1.1" 200 18900
+"GET /tours/?category=Countryside&province=battambang HTTP/1.1" 200 18902
+"GET /tours/?category=Countryside&province=battambang HTTP/1.1" 200 18903
+"GET /media/images/Battambang_shrine.2e16d0ba.fill-480x384.jpg HTTP/1.1" 304 0
+"GET /tours/ HTTP/1.1" 200 22200
+"GET /media/images/P1020803.2e16d0ba.fill-480x384.jpg HTTP/1.1" 304 0
+"GET /media/images/P1020085.2e16d0ba.fill-480x384.jpg HTTP/1.1" 304 0
+"GET /media/images/siemreap_countryside.2e16d0ba.fill-480x384.jpg HTTP/1.1" 304 0
+"GET /tours/ HTTP/1.1" 200 22046
+"GET /tours/?province=battambang HTTP/1.1" 200 18775
+"GET /tours/?category=countryside HTTP/1.1" 200 19928
+"GET /tours/ HTTP/1.1" 200 22047
+"GET /tours/?province=siemreap HTTP/1.1" 200 21659
+"GET /tours/?category=countryside HTTP/1.1" 200 19928
+"GET /tours/?category=Countryside&province=battambang HTTP/1.1" 200 18903
+"GET /tours/?category=city HTTP/1.1" 200 18850
+"GET /tours/?category=culture HTTP/1.1" 200 20698
+"GET /tours/?category=Culture&province=battambang HTTP/1.1" 200 18888
+"GET /tours/ HTTP/1.1" 200 22045
+"GET /tours/?category=cycling HTTP/1.1" 200 19840
+"GET /tours/?category=Cycling&province=battambang HTTP/1.1" 200 17772
+"GET /tours/ HTTP/1.1" 200 22045
+/home/wolfi/Projekte/python/siemreap-page/tours/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolfi/Projekte/python/siemreap-page/tours/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolfi/Projekte/python/siemreap-page/tours/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolfi/Projekte/python/siemreap-page/tours/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /tours/battambang-culture-sightseeing/ HTTP/1.1" 200 19680
+"GET /media/images/Battambang_shrine.width-620.jpg HTTP/1.1" 200 48547
+"GET /static/debug_toolbar/img/djdt_vertical.png HTTP/1.1" 200 882
+"GET /tours/battambang-culture-sightseeing/ HTTP/1.1" 200 19873
+"GET /tours/battambang-culture-sightseeing/ HTTP/1.1" 200 20187
+"GET /media/images/Siem_Reap_locator_map.2e16d0ba.fill-90x90.png HTTP/1.1" 200 12846
+"GET /media/images/Battambang_locator_map.2e16d0ba.fill-90x90.png HTTP/1.1" 200 11167
+/home/wolfi/Projekte/python/siemreap-page/tours/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolfi/Projekte/python/siemreap-page/tours/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolfi/Projekte/python/siemreap-page/tours/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolfi/Projekte/python/siemreap-page/tours/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /tours/ HTTP/1.1" 200 22049
+"GET /tours/?category=countryside HTTP/1.1" 200 19928
+"GET /tours/?category=Countryside&province=battambang HTTP/1.1" 200 18901
+"GET /tours/ HTTP/1.1" 200 22045
+"GET /tours/?category=countryside HTTP/1.1" 200 19928
+"GET /tours/?category=Countryside&province=battambang HTTP/1.1" 200 18902
+"GET /tours/?category=Countryside&province=sihanoukville HTTP/1.1" 200 17791
+"GET /tours/?category=Countryside&province=battambang HTTP/1.1" 200 18903
+"GET /tours/?category=Countryside&province=siemreap HTTP/1.1" 200 19951
+"GET /tours/?category=city HTTP/1.1" 200 18851
+"GET /tours/?category=countryside HTTP/1.1" 200 19928
+"GET /tours/ HTTP/1.1" 200 22045
+"GET /tours/ HTTP/1.1" 200 22045
+"GET /tours/ HTTP/1.1" 200 22045
+"GET /tours/ HTTP/1.1" 200 22045
+/home/wolfi/Projekte/python/siemreap-page/tours/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/wolfi/Projekte/python/siemreap-page/tours/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /tours/
+Traceback (most recent call last):
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/templatetags/cache.py", line 47, in render
+    value = self.nodelist.render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/defaulttags.py", line 513, in render
+    return self.nodelist.render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 858, in _resolve_lookup
+    current = current()
+  File "/home/wolfi/Projekte/python/siemreap-page/tours/models.py", line 257, in get_province_names_as_string
+    for province in self.provinces.objects.all():
+AttributeError: 'DeferringManyRelatedManager' object has no attribute 'objects'
+"GET /tours/ HTTP/1.1" 500 241948
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 12761
+/home/wolfi/Projekte/python/siemreap-page/tours/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /tours/
+Traceback (most recent call last):
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/templatetags/cache.py", line 47, in render
+    value = self.nodelist.render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/defaulttags.py", line 513, in render
+    return self.nodelist.render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/wolfi/.local/share/virtualenvs/python-PdzR0_Gx/lib/python3.8/site-packages/django/template/base.py", line 858, in _resolve_lookup
+    current = current()
+  File "/home/wolfi/Projekte/python/siemreap-page/tours/models.py", line 258, in get_province_names_as_string
+    provinces_str += province + ', '
+TypeError: unsupported operand type(s) for +: 'TourProvince' and 'str'
+"GET /tours/ HTTP/1.1" 500 242106
+/home/wolfi/Projekte/python/siemreap-page/tours/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /tours/ HTTP/1.1" 200 22197
+"GET /tours/ HTTP/1.1" 200 22197
+"GET /tours/?category=countryside HTTP/1.1" 200 20026
+"GET /tours/?category=Countryside&province=battambang HTTP/1.1" 200 18958
+/home/wolfi/Projekte/python/siemreap-page/tours/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /tours/?category=Countryside&province=battambang HTTP/1.1" 200 18951
+"GET /tours/ HTTP/1.1" 200 22200
+/home/wolfi/Projekte/python/siemreap-page/tours/models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /tours/ HTTP/1.1" 200 22199
+"GET /tours/ HTTP/1.1" 200 22253
+"GET /tours/battambang-culture-sightseeing/ HTTP/1.1" 200 20187
+"GET /tours/?category=city HTTP/1.1" 200 18919
+"GET /tours/?category=city HTTP/1.1" 200 18919
+"GET /team/yasako/ HTTP/1.1" 200 18981
+"GET /media/images/blurred-background-casual-close-up-2888113.width-240.jpg HTTP/1.1" 200 18181
+"GET /static/bundles/app.js HTTP/1.1" 200 390023
+"GET /tours/ HTTP/1.1" 200 22249
+"GET /tours/battambang-culture-sightseeing/ HTTP/1.1" 200 20187
+"GET /team HTTP/1.1" 301 0
+"GET /team/ HTTP/1.1" 200 20035
+"GET /media/images/blurred-background-casual-close-up.2e16d0ba.fill-300x240.jpg HTTP/1.1" 200 14728
+"GET /media/images/beautiful-bike-biker-2885429.2e16d0ba.fill-300x240.jpg HTTP/1.1" 200 22080
+"GET /media/images/adult-casual-close-up-2857942.2e16d0ba.fill-300x240.jpg HTTP/1.1" 200 13193
+"GET /team/yasako/ HTTP/1.1" 200 18982

@@ -61,9 +61,9 @@
                     {% image page.image width-620 %}
                 </figure>
                 <figure class="tour-location-map">
-                    {% for iter in self.tour_provinces.all %}
-                        {% image iter.province.map_image fill-90x90 class="province-map" %}
-                        <figcaption>{{ iter.province.province_name }}</figcaption>
+                    {% for iter in self.provinces.all %}
+                        {% image iter.map_image fill-90x90 class="province-map" %}
+                        <figcaption>{{ iter.province_name }}</figcaption>
                     {% endfor %} 
                 </figure>
             </div>
