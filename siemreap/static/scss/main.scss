@@ -185,7 +185,25 @@ label{
 
 // -> TODO check all forms styling, what is needed and what not!
 
+// tour guide pages
+figure.tour-location-map {
+  margin: 1rem;
+  margin-left: 2rem;
+  display: inline-flex;
+}
 
+figure.tour-location-map figcaption{
+  margin-top: 0.5rem;
+  margin-left: 5px;
+  font-family: serif;
+  font-stretch: expanded;
+  font-size: 1.1em;
+  bottom: 0;
+  color: black;
+  font-family: 'Lato', sans-serif;
+  height: 3rem;
+  width: 150px;
+}
 
 #mapcanvas{
   height: 400px; // The height is 400 pixels 

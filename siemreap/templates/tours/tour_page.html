@@ -10,71 +10,66 @@
         <p class="subtitle">{{ page.short_description }}</p>
         </br>
     </div>
+</section>
+<section>
     <div class="container">
-        <div class="tags are-medium">
-                <span class="tag is-light">Categories</span>
-            {% for iter in self.categories.all %}
+        <div class="columns">
+            <div class="column">
+                <div class="tags are-medium">
+                        <span class="tag is-light">Categories</span>
+                    {% for iter in self.categories.all %}
 
-                <a class="tag is-link" href="{{ self.get_parent.url }}?category={{ iter.slug }}">
-                {{ iter.name }}
-                </a>
-            {% endfor %}
+                        <a class="tag is-link" href="{{ self.get_parent.url }}?category={{ iter.slug }}">
+                        {{ iter.name }}
+                        </a>
+                    {% endfor %}
+                </div>
+                {% if self.destinations_exist %}
+                <div class="tags are-medium">
+                <span class="tag is-light">Destinations</span>
+                {% for destination in self.get_destination_page %}
+                    <a class="tag is-link" href="{{ destination.url }}">
+                    {{ destination }}
+                    </a>
+                {% endfor %}
+                </div>
+                {% endif %}
+                <div class="tags are-medium">
+                    <span class="tag is-light">Guides</span>
+                    {% for guide in self.get_guide %}
+                    <a class="tag is-link" href="{{ guide.page.url }}">      
+                        {{ guide }}
+                    </a>
+                    {% endfor %}
+                </div>
+                <div class="content">
+                    <ul>
+                    <li>Low season price: {{ page.price_low_season }} $ per tour;</li>
+                    <li>High season price: {{ page.price_high_season }} $ per tour;</li>
+                    <li>Group size up to {{ page.max_num_people }} people;</li>
+                    {% if self.tour_duration %}
+                        <li>Tour duration: {{ self.get_readable_tour_duration }}</li>
+                    {% endif %}
+                    </ul>
+                </div>
+                <article class="content">
+                    {{ page.body|richtext }}
+                </article>
+            </div>
+            <div class="column">
+                <figure class="tour-main-photo">
+                    {% image page.image width-620 %}
+                </figure>
+                <figure class="tour-location-map">
+                    {% for iter in self.tour_provinces.all %}
+                        {% image iter.province.map_image fill-90x90 class="province-map" %}
+                        <figcaption>{{ iter.province.province_name }}</figcaption>
+                    {% endfor %} 
+                </figure>
+            </div>
         </div>
-        {% if self.destinations_exist %}
-        <div class="tags are-medium">
-        <span class="tag is-light">Destinations</span>
-        {% for destination in self.get_destination_page %}
-            <a class="tag is-link" href="{{ destination.url }}">
-            {{ destination }}
-            </a>
-        {% endfor %}
-        </div>
-        {% endif %}
-        <div class="tags are-medium">
-            <span class="tag is-light">Guides</span>
-            {% for guide in self.get_guide %}
-            <a class="tag is-link" href="{{ guide.page.url }}">      
-                {{ guide }}
-            </a>
-     {% endfor %}
-        </div>
-
-
         </br>
     </div>
-    <div class="container">
-        <div class="content">
-            <ul>
-            <li>Low season price: {{ page.price_low_season }} $ per tour;</li>
-            <li>High season price: {{ page.price_high_season }} $ per tour;</li>
-            <li>Group size up to {{ page.max_num_people }} people;</li>
-            {% if self.tour_duration %}
-                <li>Tour duration: {{ self.get_readable_tour_duration }}</li>
-            {% endif %}
-            </ul>
-        </div>
-    </div>
 </section>
-<section class="section">
-    <div class="columns">
-    <div class="column">       
-        <article class="content">
-        {{ page.body|richtext }}
-        </article>
-    </div>
-    <div class="column">
-        <figure class="tour-location-map">
-            {% for iter in self.tour_provinces.all %}
-                {% image iter.province.map_image fill-90x90 class="province-map" %}
-                <figcaption>{{ iter.province.province_name }}</figcaption>
-            {% endfor %} 
-        </figure>
-        <figure class="tour-main-photo">
-            {% image page.image width-620 %}
-        </figure>
-    </div>
-    </div>
-</section>
-
 
 {% endblock %}
