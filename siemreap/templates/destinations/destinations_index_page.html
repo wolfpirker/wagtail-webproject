@@ -4,43 +4,52 @@
 {% block body_class %}template-indexpage{% endblock %}
 
 {% block content %}
+<section class="section">
     {% cache 259200 destinations_header %}
-        <div class="hero is-light is-bold" >
-		<div class="hero-body">
-			<div class="container">
-				<h1 class="title">{{ page.title }}</h1>
-			    <h2 class="subtitle">For your travel through Cambodia!</h2>
-			</div>
-		</div>
-    </div>
-    <div class="intro">{{ page.intro|richtext }}</div>
-    {% endcache %}
-    {% for destination in destinationpages %}
-        {% cache 259200 destination_preview destination.id %}
-        {% with destination=destination.specific %}
-            <div class="blogintro">
-                <a href="{% pageurl destination %}">
-                <div class="highlight">
-                {% with destination.main_image as destination_main_image %}
-                    {% image destination_main_image fill-300x260 %}
-                {% endwith %}   
-                </div>
-                <div class="description">
-                    <h2>{{ destination.title }}</h2>
-                    <p>{{ destination.destination_name }}</p>
-                </div>
-                </a>  
-                <div class="small footer">
-                    {% if destination.use_destination_name_as_map_location %}
-                        <p><a class='cta link' href="https://google.com/maps/?q={{ destination.title }}">See Map</a></p>
-                    {% else %}
-                        <p><a class='cta link' href="https://google.com/maps/?q={{ destination.lat_long }}">See Map</a></p>
-                    {% endif %}
-                </div>
+        <div class="container">
+            <h1 class="title">{{ page.title }}</h1>
+            <h2 class="subtitle">For your travel through Cambodia!</h2>
+            <div class="content">{{ page.intro|richtext }}</div>
+            <div class="tags are-medium">
+            <span class="tag is-light">Provinces</span>
             </div>
-        {% endwith %}
-        {% endcache %}
-    {% endfor %}
+        </div>
+    </div>
+    {% endcache %}
+    </section>
+    <section class="section" >   
+        <div class="container is-fluid">   
+        {% for destination in destinationpages %}
+            {% cache 259200 destination_preview destination.id %}
+            {% with destination=destination.specific %}
+                <div class="acticleintro">
+                    <a href="{% pageurl destination %}">
+                    <div class="highlight">
+                    {% with destination.main_image as destination_main_image %}
+                        {% image destination_main_image fill-300x260 %}
+                    {% endwith %}   
+                    </div>
+                    <div class="description">
+                        <h2 class="title">{{ destination.title }}</h2>
+                        
+                    </div>
+                    <detail>
+                        <p>{{ destination.destination_name }}</p>
+                    </detail>
+                    </a>  
+                    <div class="small footer">
+                        {% if destination.use_destination_name_as_map_location %}
+                            <button class="cta button is-link" onclick="window.location.href = 'https://google.com/maps/?q={{ destination.title }}';">See Map</button>                            
+                        {% else %}                            
+                            <button class="cta button is-link" onclick="window.location.href = 'https://google.com/maps/?q={{ destination.lat.long }}';">See Map</button>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endwith %}
+            {% endcache %}
+        {% endfor %}
+        </div>
+    </section>
     {% if destinationpages.paginator.num_pages > 1 %}
     <ul class=category-tags>
         {% if destinationpages.has_previous %}
