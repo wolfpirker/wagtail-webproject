@@ -10,9 +10,9 @@
             <h1 class="title">{{ page.title }}</h1>
             <h2 class="subtitle">For your travel through Cambodia!</h2>
             <div class="content">{{ page.intro|richtext }}</div>
-            <div class="tags are-medium">
+            <!--<div class="tags are-medium">
             <span class="tag is-light">Provinces</span>
-            </div>
+            </div>-->
         </div>
     </div>
     {% endcache %}
@@ -26,24 +26,23 @@
                     <a href="{% pageurl destination %}">
                     <div class="highlight">
                     {% with destination.main_image as destination_main_image %}
-                        {% image destination_main_image fill-300x260 %}
+                        {% image destination_main_image fill-480x384 %}
                     {% endwith %}   
                     </div>
                     <div class="description">
-                        <h2 class="title">{{ destination.title }}</h2>
+                        <h3 class="title">{{ destination.title }}</h2>
                         
                     </div>
                     <detail>
                         <p>{{ destination.destination_name }}</p>
+                        <br>
                     </detail>
                     </a>  
-                    <div class="small footer">
-                        {% if destination.use_destination_name_as_map_location %}
-                            <button class="cta button is-link" onclick="window.location.href = 'https://google.com/maps/?q={{ destination.title }}';">See Map</button>                            
-                        {% else %}                            
-                            <button class="cta button is-link" onclick="window.location.href = 'https://google.com/maps/?q={{ destination.lat.long }}';">See Map</button>
-                        {% endif %}
-                    </div>
+                    {% if destination.use_destination_name_as_map_location %}
+                        <button class="cta button is-link" onclick="window.location.href = 'https://google.com/maps/?q={{ destination.title }}';">See Map</button>                            
+                    {% else %}                            
+                        <button class="cta button is-link" onclick="window.location.href = 'https://google.com/maps/?q={{ destination.lat.long }}';">See Map</button>
+                    {% endif %}
                 </div>
             {% endwith %}
             {% endcache %}

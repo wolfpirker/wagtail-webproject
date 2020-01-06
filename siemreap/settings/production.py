@@ -17,7 +17,7 @@ DEBUG = False
 CACHES = {
     "default": {
         "BACKEND": "django.core.cache.backends.filebased.FileBasedCache",
-        "LOCATION": "/home/wolf/siemreap-page/cache"
+        "LOCATION": "./cache"
         }
 }
 

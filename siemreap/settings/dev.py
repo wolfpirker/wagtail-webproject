@@ -33,7 +33,7 @@ from django.urls import path
 CACHES = {
     "default": {
         "BACKEND": "django.core.cache.backends.filebased.FileBasedCache",
-        "LOCATION": "/home/wolfi/Projekte/python/siemreap-page/cache"
+        "LOCATION": "./cache"
         }
 }
 
