@@ -10,7 +10,6 @@
 	<div class="container">
 		<h1 class="title">Tours</h1>
 		<h2 class="subtitle">{{ page.title }}</h2>
-		<div class="content">{{ page.intro|richtext }}</div>
 		<div class="tags are-medium">
             <span class="tag is-light">Categories</span>
 		{% for iter in categories %}
@@ -43,6 +42,8 @@
     
 <section class="section" >
 	<div class="container is-fluid">
+		<div class="content">{{ page.intro|richtext }}</div>
+
     {% if request.GET.province|length or request.GET.category|length %}
         <div class="tags are-medium">
             <a class="tag is-primary" href="{{ page.url }}">

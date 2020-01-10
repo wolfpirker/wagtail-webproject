@@ -9,7 +9,6 @@
         <div class="container">
             <h1 class="title">{{ page.title }}</h1>
             <h2 class="subtitle">For your travel through Cambodia!</h2>
-            <div class="content">{{ page.intro|richtext }}</div>
             <!--<div class="tags are-medium">
             <span class="tag is-light">Provinces</span>
             </div>-->
@@ -18,7 +17,8 @@
     {% endcache %}
     </section>
     <section class="section" >   
-        <div class="container is-fluid">   
+        <div class="container is-fluid">
+            <div class="content">{{ page.intro|richtext }}</div>   
         {% for destination in destinationpages %}
             {% cache 259200 destination_preview destination.id %}
             {% with destination=destination.specific %}

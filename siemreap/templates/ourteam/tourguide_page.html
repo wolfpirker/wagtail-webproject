@@ -3,84 +3,96 @@
 {% load render_bundle from webpack_loader %}
 
 {% block content %}
-    <div class="row">
-    <div class="column left">
-    <h1>{{ page.title }}</h1>
+<section class="section" >
+	<div class="container">
+        
+    <h1 class="title">{{ page.title }}</h1>
     {% if page.intro %}
-        <div class="intro"><p>{{ page.intro }}</p></div>
+        <p class="subtitle">{{ page.intro }}</p>
     {% endif %}
-    <p>Qualifications</p>
-    <ul class=guide-list>  
-        {% for iter in self.qualifications.all %}
-        <li>                
-            {{ iter.qualification }}                
-        </li>
-        {% endfor %}
-    </ul>
-    <p>Tours</p>
-    <ul class=guide-list>  
-        {% for iter in self.guide_tours.all %}
-        <li>      
-            <a href="{{ iter.tours_pages.url }}">          
-            {{ iter.tours_pages }}      
-            </a>          
-        </li>
-        {% endfor %}
-    </ul>   
-    {% if page.body %}
-        <div class="body">{{ page.body|richtext }}</div>
-    {% endif %}
-    <hr/>
-    {% if page.allow_direct_guide_booking %}
-        <p>This guide can be booked at an hourly rate with a fixed charge per each day added.
-        If you use this: Please contact the guide in advance, best before booking. Wished changes to tours are subject to feasibility.</p>
-        <p>Booking Details:</p>        
-        <ul class=guide-list>  
-        <li>              
-            rate low season: {{ page.hourly_rate_low_season }} $ per hour             
-        </li>
-        <li>              
-            rate high season: {{ page.hourly_rate_high_season }} $ per hour             
-        </li>
-        <li>              
-            additional charge per day: {{ page.additional_charge_per_day }} $             
-        </li>
-        <li>
-            minimum time per day: 3 hours
-        </li>
-        <li>
-            maximum group size: 7 people
-        </li>
-    </ul>  
-    <p>
-    Note: Booking tours directly is possible as well. If you have no guide preference, this might be better for you.
-    </p>
-    {% else %}
-    <p>Note: currently this guide cannot be booked directly. Please book the tours instead, you can give your guide preference in the checkout process.</p>
-    {% endif %} 
     </div>
-    <div class="column right">
-        <figure class="framed-photo">
-        {% image page.image width-240 %}
-        </figure>
-        <figure class="calendar">
-			<div id="app">
-				<demo></demo>
-			</div>
-		{% render_bundle 'main' %}
-        </figure>
-        {% if page.include_contact_form %}        
-        <h3>Contact {{ self.title }}</h3>
-        <form action="{% pageurl page.get_parent.specific %}" method="post">
-            {% csrf_token %}
-            <ul>
-            {{ ourteamsform.as_ul }}
-            </ul>
-            <input type="submit" value="Submit" />
-        </form>
-    {% endif %}  
-    </div>
-    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                <div class="tags are-medium">
+                    <span class="tag is-light">Qualifications</span>
+                    {% for iter in self.qualifications.all %}
+                    <span class="tag is-light">                
+                        {{ iter.qualification }}                
+                    </span>
+                    {% endfor %}
+                </div>
+                <div class="tags are-medium">
+                    <span class="tag is-light">Tours</span> 
+                        {% for iter in self.guide_tours.all %}      
+                            <a class="tag is-link" href="{{ iter.tours_pages.url }}">          
+                            {{ iter.tours_pages }}      
+                            </a>          
+                        {% endfor %}
+                </div> 
+                {% if page.body %}
+                <article class="content">
+                    {{ page.body|richtext }}
+                </article>
+                {% endif %}
+                <figure class="calendar">
+                    <div id="app">
+                        <demo></demo>
+                    </div>
+                {% render_bundle 'main' %}
+                </figure>
+            </div>
+            <div class="column">
+                <figure class="framed-photo">
+                    {% image page.image width-240 %}
+                </figure>
+                {% if page.allow_direct_guide_booking %}
+                <div class="content">
+                    <p>This guide can be booked at an hourly rate with a fixed charge per each day added.
+                    If you use this: Please contact the guide in advance, best before booking. Wished changes to tours are subject to feasibility.</p>
+                    <p>Booking Details:</p>        
+                    <ul class=guide-list>  
+                        <li>              
+                            rate low season: {{ page.hourly_rate_low_season }} $ per hour             
+                        </li>
+                        <li>              
+                            rate high season: {{ page.hourly_rate_high_season }} $ per hour             
+                        </li>
+                        <li>              
+                            additional charge per day: {{ page.additional_charge_per_day }} $             
+                        </li>
+                        <li>
+                            minimum time per day: 3 hours
+                        </li>
+                        <li>
+                            maximum group size: 7 people
+                        </li>
+                    </ul>  
+                    <p>
+                    Note: Booking tours directly is possible as well. If you have no guide preference, this might be better for you.
+                    </p>
+                {% else %}
+                    <p>Note: currently this guide cannot be booked directly. Please book the tours instead, you can give your guide preference in the checkout process.</p>
+                {% endif %} 
+                        
+                {% if page.include_contact_form %}        
+                    <h3>Contact {{ self.title }}</h3>
+                    <form action="{% pageurl page.get_parent.specific %}" method="post">
+                        {% csrf_token %}
+                        <ul>
+                        {{ ourteamsform.as_ul }}
+                        </ul>
+                        <input type="submit" value="Submit" />
+                    </form>
+                {% endif %}  
+
+            </div>
+        </div>
+    </div>    
+</section>
+
 
    
 {% endblock %}
