@@ -2,8 +2,9 @@ $white-terd: #e8e0e0;
 $highlight-color: #daa2c8;
 $box-shadow: 0 8px 10px rgba(10, 10, 10, 0.25), 0 0 0 1px rgba(10, 10, 10, 0.25);
 $description-gradient: linear-gradient(to bottom, rgba(250,245,255,0.2) 0%, rgba(224,224,224,1) 50%);
-$whitespace-white: #eee;
-$active-form-color: #111111;
+$whitespace-gray: #aaa;
+$active-form-color: #4a4a4a;
+
 
 @mixin placeholder {
   ::-webkit-input-placeholder {@content}
@@ -13,7 +14,7 @@ $active-form-color: #111111;
 }
 
 @include placeholder {
-  color: $whitespace-white;
+  color: $whitespace-gray;
   opacity:  1;
 }
 
@@ -176,6 +177,10 @@ form li input.form-control{
   textarea.form-control{
     width: 88%;
   }
+}
+
+form.guidecontact li {
+  color: $active-form-color;
 }
 
 label{

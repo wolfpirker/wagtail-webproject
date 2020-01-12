@@ -57,15 +57,7 @@ class ContactPage(AbstractEmailForm):
     def get_form(self, *args, **kwargs):
         form = super().get_form(*args, **kwargs)
         # iterate through the fields in the generated form
-        for name, field in form.fields.items():
-            # here we want to adjust the widgets on each field
-            # if the field is a TextArea - adjust the rows
-            if isinstance(field.widget, widgets.Input):
-                field.widget.attrs['placeholder'] = field.label
-                #field.label = ''
-            if isinstance(field.widget, widgets.Textarea):
-                field.widget.attrs['placeholder'] = field.label
-                #field.label = ''                               
+        for name, field in form.fields.items():                             
             # for all fields, get any existing CSS classes and add 'form-control'
             # ensure the 'class' attribute is a string of classes with spaces
             css_classes = field.widget.attrs.get('class', '').split()

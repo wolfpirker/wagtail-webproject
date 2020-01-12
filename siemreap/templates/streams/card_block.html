@@ -1,7 +1,7 @@
 {% load wagtailcore_tags wagtailimages_tags %}
 
 {% block content %}
-    <h1>{{ self.title}}</h1>
+    <h2 class="title">{{ self.title}}</h2>
     {% for card in self.cards %}
             <div class="acticleintro guidecard">
             {% if card.button_page %}

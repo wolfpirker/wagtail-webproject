@@ -10551,22 +10551,22 @@ label.panel-block:hover {
 }
 
 ::-webkit-input-placeholder {
-  color: #eee;
+  color: #aaa;
   opacity: 1;
 }
 
 :-moz-placeholder {
-  color: #eee;
+  color: #aaa;
   opacity: 1;
 }
 
 ::-moz-placeholder {
-  color: #eee;
+  color: #aaa;
   opacity: 1;
 }
 
 :-ms-input-placeholder {
-  color: #eee;
+  color: #aaa;
   opacity: 1;
 }
 
@@ -10655,7 +10655,7 @@ body p {
   padding-left: 20px;
 }
 
-.description h3 {
+.description h2, h3 {
   font-size: 1.4em;
   color: black;
   padding: 10px;
@@ -10715,7 +10715,7 @@ form li input.form-control {
 }
 
 .form-control:focus {
-  color: #111111;
+  color: #4a4a4a;
   background-color: #fff;
   border-color: #80bdff;
   outline: 0;
@@ -10726,6 +10726,10 @@ form li input.form-control {
   textarea.form-control {
     width: 88%;
   }
+}
+
+form.guidecontact li {
+  color: #4a4a4a;
 }
 
 label {

@@ -78,13 +78,13 @@
                 {% endif %} 
                         
                 {% if page.include_contact_form %}        
-                    <h3>Contact {{ self.title }}</h3>
-                    <form action="{% pageurl page.get_parent.specific %}" method="post">
+                    <h3 class="title">Contact {{ self.title }}</h3>
+                    <form class="guidecontact" action="{% pageurl page.get_parent.specific %}" method="post">
                         {% csrf_token %}
                         <ul>
                         {{ ourteamsform.as_ul }}
                         </ul>
-                        <input type="submit" value="Submit" />
+                        <input class="button is-primary is-medium" type="submit" />
                     </form>
                 {% endif %}  
 
