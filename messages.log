@@ -15339,3 +15339,714 @@ Watching for file changes with StatReloader
 "GET /team/john-doe/ HTTP/1.1" 200 20681
 "GET /static/bulma/css/style.css HTTP/1.1" 304 0
 "GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+Watching for file changes with StatReloader
+"GET /team/john-doe/ HTTP/1.1" 200 20683
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /contact/ HTTP/1.1" 200 17117
+"GET /destinations HTTP/1.1" 301 0
+"GET /destinations/ HTTP/1.1" 200 16755
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+"GET /media/images/TaProhm_tree.2e16d0ba.fill-480x384.jpg HTTP/1.1" 200 71020
+"GET /media/images/P1020085.2e16d0ba.fill-480x384.jpg HTTP/1.1" 200 42468
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 17194
+"GET /media/images/P1020085.height-600.jpg HTTP/1.1" 200 106923
+"GET /media/images/AnkgorWat_panorama.height-600.jpg HTTP/1.1" 200 101294
+"GET /team/ HTTP/1.1" 200 18341
+"GET /team/john-doe/ HTTP/1.1" 200 20683
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 17194
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 16312
+"GET /media/images/AnkgorWat_panorama_bit_darker.width-1368.jpg HTTP/1.1" 200 90491
+"GET /static/bulma/css/style.css HTTP/1.1" 200 226383
+"GET /static/wagtailadmin/css/userbar.css HTTP/1.1" 304 0
+"GET /static/wagtailadmin/js/userbar.js HTTP/1.1" 304 0
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+"GET /static/debug_toolbar/img/ajax-loader.gif HTTP/1.1" 304 0
+"GET /static/wagtailadmin/fonts/opensans-regular.woff2 HTTP/1.1" 304 0
+"GET /static/wagtailadmin/fonts/wagtail.woff HTTP/1.1" 200 24140
+"GET /static/debug_toolbar/img/djdt_vertical.png HTTP/1.1" 304 0
+"GET /tours/ HTTP/1.1" 200 22256
+"GET /media/images/Battambang_shrine.2e16d0ba.fill-480x384.jpg HTTP/1.1" 304 0
+"GET /media/images/P1020085.2e16d0ba.fill-480x384.jpg HTTP/1.1" 304 0
+"GET /media/images/P1020803.2e16d0ba.fill-480x384.jpg HTTP/1.1" 304 0
+"GET /media/images/siemreap_countryside.2e16d0ba.fill-480x384.jpg HTTP/1.1" 304 0
+"GET /team/ HTTP/1.1" 200 20044
+"GET /media/images/beautiful-bike-biker-2885429.2e16d0ba.fill-300x240.jpg HTTP/1.1" 200 22080
+"GET /media/images/blurred-background-casual-close-up.2e16d0ba.fill-300x240.jpg HTTP/1.1" 200 14728
+"GET /media/images/adult-casual-close-up-2857942.2e16d0ba.fill-300x240.jpg HTTP/1.1" 200 13193
+"GET /team/john-doe/ HTTP/1.1" 200 22387
+"GET /static/bundles/app.js HTTP/1.1" 200 390023
+"GET /media/images/adult-casual-close-up-2857942.width-240.jpg HTTP/1.1" 200 16194
+"GET /team/john-doe/ HTTP/1.1" 200 22386
+"GET /destinations HTTP/1.1" 301 0
+"GET /destinations/ HTTP/1.1" 200 18456
+"GET /media/images/TaProhm_tree.2e16d0ba.fill-480x384.jpg HTTP/1.1" 200 71020
+"GET /static/favicon.ico HTTP/1.1" 200 2666
+"GET /destinations/ta-prohm/ HTTP/1.1" 200 18175
+"GET /media/images/TaProhm_tree.height-600.jpg HTTP/1.1" 200 85854
+"GET /media/images/P1020450_ausschnitt.height-600.jpg HTTP/1.1" 200 256109
+"GET / HTTP/1.1" 200 16308
+"GET /static/bulma/css/style.css HTTP/1.1" 200 226383
+"GET /static/wagtailadmin/fonts/wagtail.woff HTTP/1.1" 200 24140
+"GET /tours/ HTTP/1.1" 200 22253
+"GET /contact HTTP/1.1" 301 0
+"GET /contact/ HTTP/1.1" 200 17117
+"GET /team/ HTTP/1.1" 200 20044
+"GET /tours/ HTTP/1.1" 200 22252
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 16365
+"GET /static/bulma/css/style.css HTTP/1.1" 200 227391
+"GET /static/wagtailadmin/fonts/wagtail.woff HTTP/1.1" 304 0
+"GET /team/ HTTP/1.1" 200 20097
+"GET /static/bulma/css/style.css HTTP/1.1" 200 227391
+"GET /team/john-doe/ HTTP/1.1" 200 22443
+"GET /destinations/ HTTP/1.1" 200 18510
+"GET /media/images/TaProhm_tree.2e16d0ba.fill-480x384.jpg HTTP/1.1" 304 0
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 18950
+"GET /media/images/P1020085.height-600.jpg HTTP/1.1" 200 106923
+"GET /media/images/AnkgorWat_panorama.height-600.jpg HTTP/1.1" 200 101294
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 20627
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 20694
+"GET /static/bulma/css/style.css HTTP/1.1" 200 227391
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 18989
+"GET /static/bulma/css/style.css HTTP/1.1" 200 227391
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 41
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13213
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 14835
+"GET /static/debug_toolbar/img/ajax-loader.gif HTTP/1.1" 200 404
+"GET /media/images/AnkgorWat_panorama.height-600.jpg HTTP/1.1" 200 101294
+"GET /media/images/P1020085.height-600.jpg HTTP/1.1" 200 106923
+"GET /static/favicon.ico HTTP/1.1" 200 2666
+"GET /static/debug_toolbar/img/djdt_vertical.png HTTP/1.1" 200 882
+"GET /static/bulma/css/style.css.map HTTP/1.1" 200 267760
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 18989
+Watching for file changes with StatReloader
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 18991
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /tours HTTP/1.1" 301 0
+"GET /tours/ HTTP/1.1" 200 20673
+"GET /media/images/P1020803.2e16d0ba.fill-480x384.jpg HTTP/1.1" 200 12813
+"GET /media/images/Battambang_shrine.2e16d0ba.fill-480x384.jpg HTTP/1.1" 200 36865
+"GET /media/images/siemreap_countryside.2e16d0ba.fill-480x384.jpg HTTP/1.1" 200 46648
+"GET /media/images/P1020085.2e16d0ba.fill-480x384.jpg HTTP/1.1" 200 42468
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /tours/siem-reap-countryside/ HTTP/1.1" 200 18524
+"GET /media/images/Siem_Reap_locator_map.2e16d0ba.fill-90x90.png HTTP/1.1" 200 12846
+"GET /media/images/siemreap_countryside.width-620.jpg HTTP/1.1" 200 63808
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /team HTTP/1.1" 301 0
+"GET /team/ HTTP/1.1" 200 18462
+"GET /media/images/beautiful-bike-biker-2885429.2e16d0ba.fill-300x240.jpg HTTP/1.1" 200 22080
+"GET /media/images/blurred-background-casual-close-up.2e16d0ba.fill-300x240.jpg HTTP/1.1" 200 14728
+"GET /media/images/adult-casual-close-up-2857942.2e16d0ba.fill-300x240.jpg HTTP/1.1" 200 13193
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /team/john-doe/ HTTP/1.1" 200 20806
+"GET /static/bundles/app.js HTTP/1.1" 200 390023
+"GET /media/images/adult-casual-close-up-2857942.width-240.jpg HTTP/1.1" 200 16194
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /destinations HTTP/1.1" 301 0
+"GET /destinations/ HTTP/1.1" 200 16874
+"GET /media/images/TaProhm_tree.2e16d0ba.fill-480x384.jpg HTTP/1.1" 200 71020
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /destinations/ta-prohm/ HTTP/1.1" 200 18267
+"GET /media/images/TaProhm_tree.height-600.jpg HTTP/1.1" 200 85854
+"GET /media/images/P1020450_ausschnitt.height-600.jpg HTTP/1.1" 200 256109
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /destinations/ta-prohm/ HTTP/1.1" 200 18104
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /destinations/ta-prohm/ HTTP/1.1" 200 18267
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /team/ HTTP/1.1" 200 18460
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /team/john-doe/ HTTP/1.1" 200 20806
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+Not Found: /favicon.ico
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+Not Found: /favicon.ico
+"GET /destinations/ta-prohm/ HTTP/1.1" 200 18267
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+Watching for file changes with StatReloader
+"GET /destinations/ta-prohm/ HTTP/1.1" 200 18209
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+"GET /destinations/ HTTP/1.1" 200 16812
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 18929
+"GET /team/ HTTP/1.1" 200 18402
+"GET /team/john-doe/ HTTP/1.1" 200 20744
+Watching for file changes with StatReloader
+"GET /team/john-doe/ HTTP/1.1" 200 20747
+"GET /destinations/ta-prohm/ HTTP/1.1" 200 18207
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+"GET /destinations/ta-prohm/ HTTP/1.1" 200 19913
+"GET /static/bulma/css/style.css HTTP/1.1" 200 227391
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 41
+"GET /static/debug_toolbar/img/ajax-loader.gif HTTP/1.1" 200 404
+"GET /static/bulma/css/style.css.map HTTP/1.1" 200 267760
+"GET /team/ HTTP/1.1" 200 20104
+"GET /static/bulma/css/style.css HTTP/1.1" 200 227391
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /team/john-doe/ HTTP/1.1" 200 22450
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+Internal Server Error: /destinations/ta-prohm/
+Traceback (most recent call last):
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'render_bundle'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/response.py", line 65, in resolve_template
+    return get_template(template, using=self.using)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 42: 'render_bundle', expected 'endblock'. Did you forget to register or load this tag?
+"GET /destinations/ta-prohm/ HTTP/1.1" 500 185294
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 12761
+Internal Server Error: /destinations/ta-prohm/
+Traceback (most recent call last):
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'render_bundle'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/response.py", line 65, in resolve_template
+    return get_template(template, using=self.using)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 42: 'render_bundle', expected 'endblock'. Did you forget to register or load this tag?
+"GET /destinations/ta-prohm/ HTTP/1.1" 500 185575
+"GET /destinations/ta-prohm/ HTTP/1.1" 200 18280
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+Watching for file changes with StatReloader
+"GET /destinations/ta-prohm/ HTTP/1.1" 200 18282
+"GET /team/john-doe/ HTTP/1.1" 200 22449
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+"GET /destinations/ HTTP/1.1" 200 18516
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 20707
+"GET /destinations/ta-prohm/ HTTP/1.1" 200 16649
+"GET /destinations/ta-prohm/ HTTP/1.1" 200 16652
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 19076
+Internal Server Error: /destinations/ta-prohm/
+Traceback (most recent call last):
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/library.py", line 192, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/webpack_loader/templatetags/webpack_loader.py", line 12, in render_bundle
+    tags = utils.get_as_tags(bundle_name, extension=extension, config=config, attrs=attrs)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/webpack_loader/utils.py", line 45, in get_as_tags
+    bundle = _get_bundle(bundle_name, extension, config)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/webpack_loader/utils.py", line 23, in _get_bundle
+    bundle = get_loader(config).get_bundle(bundle_name)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/webpack_loader/loader.py", line 97, in get_bundle
+    raise WebpackError(error)
+webpack_loader.exceptions.WebpackError: 
+            ModuleParseError in 
+            Module parse failed: Unexpected character '@' (1:0)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+> @import 'vl-calendar';
+| @import 'vl-calendar-month';
+| 
+            
+"GET /destinations/ta-prohm/ HTTP/1.1" 500 183370
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/library.py", line 192, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/webpack_loader/templatetags/webpack_loader.py", line 12, in render_bundle
+    tags = utils.get_as_tags(bundle_name, extension=extension, config=config, attrs=attrs)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/webpack_loader/utils.py", line 45, in get_as_tags
+    bundle = _get_bundle(bundle_name, extension, config)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/webpack_loader/utils.py", line 23, in _get_bundle
+    bundle = get_loader(config).get_bundle(bundle_name)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/webpack_loader/loader.py", line 97, in get_bundle
+    raise WebpackError(error)
+webpack_loader.exceptions.WebpackError: 
+            ModuleParseError in 
+            Module parse failed: Unexpected character '@' (1:0)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+> @import 'vl-calendar';
+| @import 'vl-calendar-month';
+| 
+            
+"GET /team/john-doe/ HTTP/1.1" 500 184815
+Watching for file changes with StatReloader
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/library.py", line 192, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/webpack_loader/templatetags/webpack_loader.py", line 12, in render_bundle
+    tags = utils.get_as_tags(bundle_name, extension=extension, config=config, attrs=attrs)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/webpack_loader/utils.py", line 45, in get_as_tags
+    bundle = _get_bundle(bundle_name, extension, config)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/webpack_loader/utils.py", line 23, in _get_bundle
+    bundle = get_loader(config).get_bundle(bundle_name)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/webpack_loader/loader.py", line 97, in get_bundle
+    raise WebpackError(error)
+webpack_loader.exceptions.WebpackError: 
+            ModuleParseError in 
+            Module parse failed: Unexpected character '@' (1:0)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+> @import 'vl-calendar';
+| @import 'vl-calendar-month';
+| 
+            
+"GET /team/john-doe/ HTTP/1.1" 500 184813
+"GET /team/ HTTP/1.1" 200 18402
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+Internal Server Error: /team/john-doe/
+Traceback (most recent call last):
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/django/template/library.py", line 192, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/webpack_loader/templatetags/webpack_loader.py", line 12, in render_bundle
+    tags = utils.get_as_tags(bundle_name, extension=extension, config=config, attrs=attrs)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/webpack_loader/utils.py", line 45, in get_as_tags
+    bundle = _get_bundle(bundle_name, extension, config)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/webpack_loader/utils.py", line 23, in _get_bundle
+    bundle = get_loader(config).get_bundle(bundle_name)
+  File "/home/wolf/.local/share/virtualenvs/venv-bGqGxLCV/lib/python3.7/site-packages/webpack_loader/loader.py", line 97, in get_bundle
+    raise WebpackError(error)
+webpack_loader.exceptions.WebpackError: 
+            ModuleParseError in 
+            Module parse failed: Unexpected character '@' (1:0)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+> @import 'vl-calendar';
+| @import 'vl-calendar-month';
+| 
+            
+"GET /team/john-doe/ HTTP/1.1" 500 184958
+Watching for file changes with StatReloader
+"GET /destinations/ta-prohm/ HTTP/1.1" 200 18283
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+"GET /team/john-doe/ HTTP/1.1" 200 20747
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 16312
+"GET /static/bulma/css/style.css HTTP/1.1" 200 227391
+"GET /team/ HTTP/1.1" 200 20044
+"GET /static/bulma/css/style.css HTTP/1.1" 200 227391
+"GET /static/wagtailadmin/css/userbar.css HTTP/1.1" 200 13603
+"GET /team/john-doe/ HTTP/1.1" 200 22390
+"GET /static/bulma/css/style.css HTTP/1.1" 304 0
+"GET /destinations/ HTTP/1.1" 200 18458
+"GET /static/bulma/css/style.css HTTP/1.1" 200 227391
+"GET /static/wagtailadmin/css/userbar.css HTTP/1.1" 200 13603
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 20647
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+Watching for file changes with StatReloader
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 20648
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 18942
+"GET /static/bulma/css/style.css HTTP/1.1" 200 227391
+"GET /static/bundles/app.js HTTP/1.1" 200 447442
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 41
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 14835
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13213
+"GET /static/debug_toolbar/img/ajax-loader.gif HTTP/1.1" 200 404
+"GET /media/images/AnkgorWat_panorama.height-600.jpg HTTP/1.1" 200 101294
+"GET /media/images/P1020085.height-600.jpg HTTP/1.1" 200 106923
+"GET /static/favicon.ico HTTP/1.1" 200 2666
+"GET /destinations HTTP/1.1" 301 0
+"GET /destinations/ HTTP/1.1" 200 16756
+"GET /media/images/TaProhm_tree.2e16d0ba.fill-480x384.jpg HTTP/1.1" 200 71020
+"GET /media/images/P1020085.2e16d0ba.fill-480x384.jpg HTTP/1.1" 200 42468
+"GET /team HTTP/1.1" 301 0
+"GET /team/ HTTP/1.1" 200 18340
+"GET /media/images/beautiful-bike-biker-2885429.2e16d0ba.fill-300x240.jpg HTTP/1.1" 200 22080
+"GET /media/images/blurred-background-casual-close-up.2e16d0ba.fill-300x240.jpg HTTP/1.1" 200 14728
+"GET /media/images/adult-casual-close-up-2857942.2e16d0ba.fill-300x240.jpg HTTP/1.1" 200 13193
+"GET /team/john-doe/ HTTP/1.1" 200 20684
+"GET /static/bundles/app.js HTTP/1.1" 304 0
+"GET /media/images/adult-casual-close-up-2857942.width-240.jpg HTTP/1.1" 200 16194
+"GET /destinations/ HTTP/1.1" 200 16752
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 18942
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 20647
+"GET /static/bulma/css/style.css HTTP/1.1" 200 227391
+"GET /static/wagtailadmin/js/userbar.js HTTP/1.1" 200 1802
+"GET /static/wagtailadmin/css/userbar.css HTTP/1.1" 200 13603
+"GET /media/images/AnkgorWat_panorama.height-600.jpg HTTP/1.1" 200 101294
+"GET /media/images/P1020085.height-600.jpg HTTP/1.1" 200 106923
+"GET /static/bundles/app.js HTTP/1.1" 200 447442
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 41
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13213
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 14835
+"GET /static/debug_toolbar/img/ajax-loader.gif HTTP/1.1" 200 404
+"GET /static/wagtailadmin/fonts/wagtail.woff HTTP/1.1" 200 24140
+"GET /static/wagtailadmin/fonts/opensans-regular.woff2 HTTP/1.1" 200 68812
+"GET /static/favicon.ico HTTP/1.1" 200 2666
+"GET /static/debug_toolbar/img/djdt_vertical.png HTTP/1.1" 200 882
+"GET /static/bulma/css/style.css.map HTTP/1.1" 200 267760
+"GET /team HTTP/1.1" 301 0
+"GET /team/ HTTP/1.1" 200 20044
+"GET /media/images/beautiful-bike-biker-2885429.2e16d0ba.fill-300x240.jpg HTTP/1.1" 200 22080
+"GET /media/images/blurred-background-casual-close-up.2e16d0ba.fill-300x240.jpg HTTP/1.1" 200 14728
+"GET /media/images/adult-casual-close-up-2857942.2e16d0ba.fill-300x240.jpg HTTP/1.1" 200 13193
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /team/john-doe/ HTTP/1.1" 200 22390
+"GET /media/images/adult-casual-close-up-2857942.width-240.jpg HTTP/1.1" 200 16194
+"GET /static/bundles/app.js HTTP/1.1" 304 0
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /destinations HTTP/1.1" 301 0
+"GET /destinations/ HTTP/1.1" 200 18455
+"GET /media/images/TaProhm_tree.2e16d0ba.fill-480x384.jpg HTTP/1.1" 200 71020
+"GET /media/images/P1020085.2e16d0ba.fill-480x384.jpg HTTP/1.1" 200 42468
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 20647
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /team/ HTTP/1.1" 200 20045
+"GET /team/john-doe/ HTTP/1.1" 200 22389
+"GET /static/bundles/app.js HTTP/1.1" 304 0
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 18780
+"GET /static/bulma/css/style.css HTTP/1.1" 200 227391
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 41
+"GET /static/bundles/app.js HTTP/1.1" 200 447442
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 14835
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13213
+"GET /static/debug_toolbar/img/ajax-loader.gif HTTP/1.1" 200 404
+"GET /media/images/P1020085.height-600.jpg HTTP/1.1" 200 106923
+"GET /media/images/AnkgorWat_panorama.height-600.jpg HTTP/1.1" 200 101294
+"GET /static/favicon.ico HTTP/1.1" 200 2666
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 16310
+"GET /static/bulma/css/style.css HTTP/1.1" 200 227391
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+"GET /media/images/AnkgorWat_panorama_bit_darker.width-1368.jpg HTTP/1.1" 200 90491
+"GET /static/debug_toolbar/img/ajax-loader.gif HTTP/1.1" 304 0
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+"GET /static/wagtailadmin/fonts/opensans-regular.woff2 HTTP/1.1" 200 68812
+"GET /static/debug_toolbar/img/djdt_vertical.png HTTP/1.1" 304 0
+"GET /destinations/ HTTP/1.1" 200 18459
+"GET /media/images/TaProhm_tree.2e16d0ba.fill-480x384.jpg HTTP/1.1" 200 71020
+"GET /media/images/P1020085.2e16d0ba.fill-480x384.jpg HTTP/1.1" 200 42468
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 20483
+"GET /media/images/P1020085.height-600.jpg HTTP/1.1" 200 106923
+"GET /media/images/AnkgorWat_panorama.height-600.jpg HTTP/1.1" 200 101294
+"GET /static/bundles/app.js HTTP/1.1" 200 447442
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 18941
+"GET /static/bulma/css/style.css HTTP/1.1" 200 227391
+"GET /static/bundles/app.js HTTP/1.1" 200 447442
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 41
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 14835
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13213
+"GET /static/debug_toolbar/img/ajax-loader.gif HTTP/1.1" 200 404
+"GET /media/images/AnkgorWat_panorama.height-600.jpg HTTP/1.1" 200 101294
+"GET /media/images/P1020085.height-600.jpg HTTP/1.1" 200 106923
+"GET /static/favicon.ico HTTP/1.1" 200 2666
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 20646
+"GET /static/bulma/css/style.css HTTP/1.1" 200 227391
+"GET /static/wagtailadmin/css/userbar.css HTTP/1.1" 200 13603
+"GET /static/wagtailadmin/js/userbar.js HTTP/1.1" 200 1802
+"GET /static/bundles/app.js HTTP/1.1" 200 447442
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 41
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 14835
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13213
+"GET /static/debug_toolbar/img/ajax-loader.gif HTTP/1.1" 200 404
+"GET /media/images/P1020085.height-600.jpg HTTP/1.1" 200 106923
+"GET /media/images/AnkgorWat_panorama.height-600.jpg HTTP/1.1" 200 101294
+"GET /static/wagtailadmin/fonts/wagtail.woff HTTP/1.1" 200 24140
+"GET /static/wagtailadmin/fonts/opensans-regular.woff2 HTTP/1.1" 200 68812
+"GET /static/debug_toolbar/img/djdt_vertical.png HTTP/1.1" 200 882
+"GET /static/favicon.ico HTTP/1.1" 200 2666
+"GET /static/bulma/css/style.css.map HTTP/1.1" 200 267760
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 20693
+"GET /static/bundles/app.js HTTP/1.1" 304 0
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 41
+Watching for file changes with StatReloader
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 19505
+"GET /static/bundles/app.js HTTP/1.1" 304 0
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 19477
+"GET /static/bulma/css/style.css.map HTTP/1.1" 304 0
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 19765
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 41
+Watching for file changes with StatReloader
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 19766
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 19751
+"GET /static/bundles/app.js HTTP/1.1" 304 0
+Watching for file changes with StatReloader
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 19785
+"GET /static/bulma/css/style.css HTTP/1.1" 200 227391
+"GET /static/wagtailadmin/css/userbar.css HTTP/1.1" 200 13603
+"GET /static/wagtailadmin/js/userbar.js HTTP/1.1" 200 1802
+"GET /static/bundles/app.js HTTP/1.1" 200 447442
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 41
+"GET /media/images/AnkgorWat_panorama.height-600.jpg HTTP/1.1" 200 101294
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 14835
+"GET /media/images/P1020085.height-600.jpg HTTP/1.1" 200 106923
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13213
+"GET /static/debug_toolbar/img/ajax-loader.gif HTTP/1.1" 200 404
+"GET /static/wagtailadmin/fonts/wagtail.woff HTTP/1.1" 200 24140
+"GET /static/wagtailadmin/fonts/opensans-regular.woff2 HTTP/1.1" 200 68812
+"GET /static/favicon.ico HTTP/1.1" 200 2666
+"GET /static/debug_toolbar/img/djdt_vertical.png HTTP/1.1" 200 882
+Watching for file changes with StatReloader
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 19236
+"GET /static/bulma/css/style.css HTTP/1.1" 200 227391
+"GET /static/wagtailadmin/css/userbar.css HTTP/1.1" 200 13603
+"GET /static/wagtailadmin/js/userbar.js HTTP/1.1" 200 1802
+"GET /static/bundles/app.js HTTP/1.1" 200 447442
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 14835
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 41
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13213
+"GET /static/debug_toolbar/img/ajax-loader.gif HTTP/1.1" 200 404
+"GET /media/images/AnkgorWat_panorama.height-600.jpg HTTP/1.1" 200 101294
+"GET /media/images/P1020085.height-600.jpg HTTP/1.1" 200 106923
+"GET /static/wagtailadmin/fonts/wagtail.woff HTTP/1.1" 200 24140
+"GET /static/wagtailadmin/fonts/opensans-regular.woff2 HTTP/1.1" 200 68812
+"GET /static/favicon.ico HTTP/1.1" 200 2666
+"GET /static/debug_toolbar/img/djdt_vertical.png HTTP/1.1" 200 882
+Watching for file changes with StatReloader
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 19202
+Watching for file changes with StatReloader
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 17241
+"GET /static/bulma/css/style.css HTTP/1.1" 200 227391
+"GET /static/bundles/app.js HTTP/1.1" 200 457153
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 41
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 14835
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13213
+"GET /static/debug_toolbar/img/ajax-loader.gif HTTP/1.1" 200 404
+"GET /media/images/AnkgorWat_panorama.height-600.jpg HTTP/1.1" 200 101294
+"GET /media/images/P1020085.height-600.jpg HTTP/1.1" 200 106923
+"GET /static/favicon.ico HTTP/1.1" 200 2666
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 18944
+"GET /static/bundles/app.js HTTP/1.1" 200 457153
+"GET /destinations/angkor-wat/ HTTP/1.1" 200 17238
+"GET /static/bulma/css/style.css HTTP/1.1" 200 227391
+"GET /static/bundles/app.js HTTP/1.1" 200 457153
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 14835
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 41
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13213
+"GET /static/debug_toolbar/img/ajax-loader.gif HTTP/1.1" 200 404
+"GET /media/images/P1020085.height-600.jpg HTTP/1.1" 200 106923
+"GET /media/images/AnkgorWat_panorama.height-600.jpg HTTP/1.1" 200 101294
+"GET /static/favicon.ico HTTP/1.1" 200 2666
+"GET /static/debug_toolbar/img/djdt_vertical.png HTTP/1.1" 200 882

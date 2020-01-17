@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load wagtailcore_tags wagtailimages_tags %}
+{% load render_bundle from webpack_loader %}
 
 {% block content %}
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -13,7 +14,7 @@
             {% for loop_cycle in self.carousel_images.all %}
             {% image loop_cycle.carousel_image height-600 as img %}
             <div class="carousel-item{% if forloop.counter == 1 %} active{% endif %} data-interval='250'">
-            <img src="{{ img.url }}" class="d-block h-80" alt="{{ img.alt }}">
+            <img src="{{ img.url }}" class="d-block h-80" alt="{{ img.alt }}" />
             </div>
             {% endfor %}
     </div>
@@ -30,9 +31,11 @@
      </li>
      {% endfor %}
    </ul>
-  <div class="map-container">
-      <div id="map" class="maps embed-container"></div>
-  </div> 
+  <div id="app">
+    <Gallery>
+      </Gallery>      
+  </div>
+  {% render_bundle 'main' %}
   {{ page.body|richtext }}
 <iframe id='mapcanvas' src='https://maps.google.com/maps?q={{ map_location }}&amp;t=k&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'><div class="zxos8_gm"><a rel="bookmark"  href="https://sites.google.com/site/avengedavarice/">here</a></div>
 <div style='overflow:hidden;'><div id='gmap_canvas'></div></div>

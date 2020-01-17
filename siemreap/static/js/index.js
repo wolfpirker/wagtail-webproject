@@ -1,10 +1,16 @@
-import Vue from 'vue';
-import Demo from "./components/Demo.vue";
+import Vue from 'vue'
+import Demo from './components/Demo.vue'
+import VueAgile from 'vue-agile'
+import Gallery from './components/Gallery.vue'
+
+Vue.use(VueAgile)
 
 window.Vue = Vue;
-const app = new Vue({
+app = new Vue({
     el: '#app',
     components: {
-        Demo
+        agile: VueAgile,
+        Gallery,
+        Demo,
     }
 });
