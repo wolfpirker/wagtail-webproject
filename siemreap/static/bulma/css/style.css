@@ -10599,8 +10599,30 @@ body p {
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
 }
 
+figure.framed-photo {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  position: static;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 8px;
+  background: whitesmoke;
+  display: inline-flex;
+}
+
 .gallery {
   max-width: 480px;
+}
+
+.gallery img {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  position: static;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 8px;
+  background: whitesmoke;
+  display: inline-flex;
 }
 
 .highlight {

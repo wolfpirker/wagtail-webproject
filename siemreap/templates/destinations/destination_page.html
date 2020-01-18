@@ -3,40 +3,39 @@
 {% load render_bundle from webpack_loader %}
 
 {% block content %}
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-     <ol class="carousel-indicators">
-      {% for loop_cycle in self.carousel_images.all %}
-        <li data-target="#carouselExampleIndicators" data-slide-to="{{ forloop.counter0 }}" class="{% if forloop.counter == 1 %} active{% endif %}" ></li>
-      {% endfor %}
-    </ol>
-        <div class="carousel-inner">
-            
-            {% for loop_cycle in self.carousel_images.all %}
-            {% image loop_cycle.carousel_image height-600 as img %}
-            <div class="carousel-item{% if forloop.counter == 1 %} active{% endif %} data-interval='250'">
-            <img src="{{ img.url }}" class="d-block h-80" alt="{{ img.alt }}" />
-            </div>
-            {% endfor %}
+<div class="hero is-light is-bold" >
+  <div class="hero-body">
+    <div class="container">
+        <h1 class="title is-family-secondary">{{ page.title }}</h1>    
+        <h3 class="subtitle is-family-secondary">{{ page.destination_name }}</h3>
     </div>
   </div>
-  <h1>{{ page.title }}</h1>
-  <p>{{ page.destination_name }}</p> 
-  <ul class=category-tags>  
-     <li>Our Tours</li>
-     {% for tour in self.get_tours %}
-     <li>  
-        <a href="{{ tour.page.url }}">      
-        {{ tour }}
-        </a>
-     </li>
-     {% endfor %}
-   </ul>
   <div id="app">
     <Gallery>
       </Gallery>      
   </div>
-  {% render_bundle 'main' %}
-  {{ page.body|richtext }}
+</div>
+{% render_bundle 'main' %}
+<section>
+  <div class="container">
+    <br>
+    <div class="tags are-medium">
+      <span class="tag is-light">Our Tours</span> 
+          {% for tour in self.get_tours %}      
+              <a class="tag is-link" href={{ tour.page.url }}>          
+                {{ tour }}      
+              </a>          
+          {% endfor %}
+    </div> 
+    <br>
+  </div>
+  <div class="container">
+    <div class="content">
+      {{ page.body|richtext }}
+      <br>
+    </div>
+  </div>
+</section>
 <iframe id='mapcanvas' src='https://maps.google.com/maps?q={{ map_location }}&amp;t=k&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'><div class="zxos8_gm"><a rel="bookmark"  href="https://sites.google.com/site/avengedavarice/">here</a></div>
 <div style='overflow:hidden;'><div id='gmap_canvas'></div></div>
 <div><small>Powered by <a href="https://www.embedgooglemap.co.uk">Embed Google Map</a></small></div></iframe>
