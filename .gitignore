@@ -1,2 +1,10 @@
 .vscode/*
 env/*
+*.pyc
+.DS_Store
+*.swp
+/venv/
+/static/
+/media/
+.env
+*/node_modules/*
