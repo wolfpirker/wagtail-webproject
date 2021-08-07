@@ -11,6 +11,8 @@ Another reason was the tourism slowdown due to the Coronavirus pandemic.
 Apart from Wagtail, this project also uses following technlogies:
 * Bulma CSS framework
 * Vue.js -> vuelendar for Calendar functionality
+* Webpack
+* and some others
 
 The project was started on wagtail/bakerydemo and 
 then  adapted and extended. 
