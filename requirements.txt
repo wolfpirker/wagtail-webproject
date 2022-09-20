@@ -37,7 +37,7 @@ soupsieve==2.2.1
 sqlparse==0.4.1
 static3==0.7.0
 tablib==3.0.0
-urllib3==1.26.4
+urllib3==1.26.5
 wagtail==2.12.3
 webencodings==0.5.1
 whitenoise==5.2.0
